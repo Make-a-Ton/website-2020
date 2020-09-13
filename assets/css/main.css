@@ -12,9 +12,47 @@
 /* End of Section for Naseem */
 
 /* Section for Kiran */
+.Schedule{
+    padding: 4%;
+    background: conic-gradient(from 180deg at 50% 85.28%, #000000 0deg, #313131 228.75deg, #000000 360deg);
+}
+.Schedule h2{
+    color: white;
+    
+}
+.dates p{
+    color: #ffffff;
+    
+}
+.sept{
+    text-align: center;
+    padding: 10px ;
+    border: 2px solid #000000 ;
+    border-radius: 40px;
+    box-sizing: content-box;
+    background-color: #000000;
+}
+
+.event-left{
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+    border-radius: 30px 0px 30px 30px;
+}
+
+.event-right{
+    text-align: right;
+    padding: 10px;
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+    border-radius: 0px 30px 30px 30px;
+}
 
 
-
+.space-div{
+    height: 3vh;
+}
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
