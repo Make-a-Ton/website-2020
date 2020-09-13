@@ -42,7 +42,7 @@
 }
 
 .event-right{
-    text-align: right;
+    text-align: left;
     padding: 10px;
     background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
     box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
