@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 /* Section for Naseem */
 .masthead {
     height: 100vh;
@@ -57,7 +61,34 @@
 
 /* Section for Abhinav */
 
+.social-icon{
+    color: white;
+    padding-right: 10px;
+ 
+}
+.fa{
+    color:white;
+}
+.footer-main{
+    background-color:rgba(14, 118, 188, 1) ;
+    padding-bottom: 25px;
+    /* position: fixed; */
+    bottom: 0%;
+    left: 0%;
+    color:white;
+}
+/* start of team members */
+.team-section{
+    background-color: black;
+    color:white;
+    margin-top:50px;
+}
+.card-wrap{
+    display: flex;
+    justify-content: space-around;
+}
 
+/* end of team members */
 
 /* End of Section for Abhinav */
 
