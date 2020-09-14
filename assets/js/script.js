@@ -126,43 +126,31 @@ var data;
     
 })
 
-// By Ajal
+// By Ajal for sponsors
 var sponsors;
 fetch('../sponsors.json')
 .then((response)=>{
     return response.json()
 })
 .then((res)=>{
-    console.log(res)
     sponsors=res;
-    console.log(sponsors)
-    
-
-sponsors.forEach(doc => {
+    sponsors.forEach(doc => {
     var card=`
-
-
-  <!-- Grid column -->
-
     <div class="avatar mx-auto my-3">
-      <img src="${doc.photo}" class="rounded-circle z-depth-1"
+      <img src="${doc.photo}" class="img-fluid rounded-circle z-depth-1"
         alt="Sample avatar">
     </div>
-
 `
 let div=document.createElement('div')
 div.className="col-lg-4 col-md-6 col-xl-3"
 ref=document.getElementById('sponsors');
 div.innerHTML = card;
-ref.appendChild(div);
-
-
-
-
-    
+ref.appendChild(div); 
 });
-
 })
+.catch(err => console.log(err));
+
+// End for Ajal
 
 }
     
