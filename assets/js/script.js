@@ -1,3 +1,5 @@
+
+
 // /* Section for Naseem */
 
 
@@ -11,19 +13,13 @@
 // /* End of Section for Kiran */
 
 // /* Section for Abhinav */
-window.onload=()=>{
-    var data;
-    fetch('../team.json')
-    .then((result)=>{
-        return result.json()
-    })
-    .then((res)=>{
-        console.log(res)
-        data=res;
-        console.log(data)
-        
-    
-    data.forEach(ele => {
+
+
+
+window.onload=()=>{     
+    // team
+    team.forEach(ele => {
+      console.log(ele.name)
         var card=`
   
   
@@ -56,8 +52,8 @@ window.onload=()=>{
 
     `
     let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 "
-    ref=document.getElementById('team');
+    div.className="col-lg-4 col-md-6 frame"
+    var ref=document.getElementById('team')
     div.innerHTML = card;
     ref.appendChild(div);
 
@@ -67,21 +63,13 @@ window.onload=()=>{
         
     });
     
-})
+
 
 // for contact
-var data;
-    fetch('../team.json')
-    .then((result)=>{
-        return result.json()
-    })
-    .then((res)=>{
-        console.log(res)
-        data=res;
-        console.log(data)
+   
         
     
-    data.forEach(ele => {
+    contact.forEach(ele => {
         var card=`
   
   
@@ -114,8 +102,8 @@ var data;
 
     `
     let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 "
-    ref=document.getElementById('contact');
+    div.className="col-lg-4 col-md-6 frame"
+    var ref=document.getElementById('contact');
     div.innerHTML = card;
     ref.appendChild(div);
 
@@ -123,8 +111,61 @@ var data;
 
         
     });
+
+  // for faq
+  faq.forEach(ele => {
+    var card=`
+
+
     
-})
+    <div class="toggle-title ">
+        <h3 class="title-name accordion">
+            ${ele.ques}
+        </h3>
+    </div>
+    <div class="toggle-inner panel" id="panel">
+        <p>${ele.ans}</p>
+    </div>
+    
+
+`
+let div=document.createElement('div')
+div.className="toggle"
+let ref=document.getElementById('faqq');
+div.innerHTML = card;
+ref.appendChild(div);
+
+
+
+    
+});
+
+    
+
+// accordian start
+var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+           
+            var panel = this.parentElement.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+
+
+// accordian end
+
+// init faq
+
+
+// faq end
 
 // By Ajal
 var sponsors;
