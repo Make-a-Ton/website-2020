@@ -11,9 +11,19 @@
 // /* End of Section for Kiran */
 
 // /* Section for Abhinav */
+
+var myinit={
+  method:'GET',
+  headers:{
+    'Content-Type':'application/json'
+  },
+  mode:'cors',
+  cache:'default'};
+let myRequest=new Request("../team.json",myinit);
+
 window.onload=()=>{
     var data;
-    fetch('./team.json')
+    fetch(myRequest)
     .then((result)=>{
         return result.json()
     })
