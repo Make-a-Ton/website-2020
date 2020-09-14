@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+    
+}
+
 /* Section for Naseem */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 body{
@@ -53,19 +58,164 @@ body{
 /* End of Section for Naseem */
 
 /* Section for Kiran */
+.Schedule{
+    padding: 4%;
+    background: conic-gradient(from 180deg at 50% 85.28%, #000000 0deg, #313131 228.75deg, #000000 360deg);
+}
+.Schedule h2{
+    color: white;
+    
+}
+.dates p{
+    color: #ffffff;
+    
+}
+.sept{
+    text-align: center;
+    padding: 10px ;
+    border: 2px solid #000000 ;
+    border-radius: 40px;
+    box-sizing: content-box;
+    background-color: #000000;
+}
+
+.event-left{
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+    border-radius: 30px 0px 30px 30px;
+}
+
+.event-right{
+    text-align: right;
+    padding: 10px;
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+    border-radius: 0px 30px 30px 30px;
+}
 
 
-
+.space-div{
+    height: 3vh;
+}
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
+.toggle:last-child {
+	border-bottom: 1px solid #dddddd;
+}
 
+.toggle .toggle-title {
+	position: relative;
+	display: block;
+	border-top: 1px solid #dddddd;
+	margin-bottom: 6px;
+}
 
+.toggle .toggle-title h3 {
+	font-size: 20px;
+	margin: 0px;
+	line-height: 1;
+	cursor: pointer;
+	font-weight: 200;
+}
+
+.toggle .toggle-inner {
+	padding: 7px 25px 10px 25px;
+	display: none;
+	margin: -7px 0 6px;
+}
+
+.toggle .toggle-inner div {
+	max-width: 100%;
+}
+
+.toggle .toggle-title .title-name {
+	display: block;
+	padding: 25px 25px 14px;
+}
+
+.toggle .toggle-title a i {
+	font-size: 22px;
+	margin-right: 5px;
+}
+
+.toggle .toggle-title i {
+	position: absolute;
+	background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s ease;
+	margin: 20px;
+	right: 0;
+}
+
+.toggle .toggle-title.active i {
+	background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+
+}
+.faqcontainer {
+	width: 70%;
+    margin: 150px auto;
+    color:white;
+}
+
+.social-icon{
+    color: white;
+    padding-right: 10px;
+ 
+}
+.fa{
+    color:white;
+}
+.footer-main{
+    background-color:rgba(14, 118, 188, 1) ;
+    padding-bottom: 25px;
+    /* position: fixed; */
+    bottom: 0%;
+    left: 0%;
+    color:white;
+    height: 15vh;
+    font-size: 19px;
+    padding-top: 10px;
+   
+    
+}
+/* start of team members */
+.team-section{
+    background-color: black;
+    color:white;
+    margin-top:50px;
+}
+.card-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* end of team members */
 
 /* End of Section for Abhinav */
 
 /* Section for Ajal */
 
+.sponsorsSection {
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.holdingContainer {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sponsorsText {
+    color:black;
+}
 
 /* End of Section for Ajal */
