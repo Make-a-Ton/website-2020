@@ -100,6 +100,23 @@ body{
 
 /* Section for Ajal */
 
+.sponsorsSection {
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.holdingContainer {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sponsorsText {
+    color:black;
+}
 
 /* End of Section for Ajal */
