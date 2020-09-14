@@ -1,14 +1,55 @@
 /* Section for Naseem */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif!important;
+}
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: radial-gradient(500.22% 500.06% at 74.39% 54.17%, #000000 25%, rgba(0, 0, 0, 0) 100%);
+}
+.navbar-brand{
+    margin: 10px;
+    padding: 0px 10px 0px 0px!important;
+    background-color: #0E76BB;
+    display: flex!important;
+    align-items: center;
+    box-sizing: border-box;
+}
+.navbar-brand img{
+    background-color: #000000;
+    padding: 10px;
+    border: 3px solid #56B3ED;
+}
+.navbar-brand p{
+    color: white!important;
+    font-weight: bold;
+    margin: 10px 10px 10px 20px;
+}
+.navbar-nav > .active{
+    font-weight: 700!important;
+    border-bottom: 5px solid #5bc0eb;
+    box-sizing: border-box;
 }
 
-
+.cta{
+    background-color: #0E76BC;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 46px #0e76bc96;
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cta:hover{
+    box-shadow: 0px 0px 50px #0e76bc;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+.navbar-nav > .cta{
+    margin-left: 30px;
+}
 /* End of Section for Naseem */
 
 /* Section for Kiran */
