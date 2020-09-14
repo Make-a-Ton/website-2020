@@ -58,6 +58,53 @@ body{
 .navbar-nav > .cta{
     margin-left: 30px;
 }
+.cittic-presents{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+.cittic-presents img{
+    margin: 5px;
+    max-width: 120px;
+}
+
+.cittic-presents p{
+    align-self: flex-end;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.masthead h1{
+    font-size: 70px;
+}
+.masthead .lead{
+    font-size: 15px;
+}
+.masthead .lead strong{
+    font-weight: 700;
+}
+.masthead .hero-date{
+    font-weight: 700;
+    border-left: 3px solid #4CA4DA;
+    padding-left: 8px;
+}
+@media only screen and (max-width: 400px) {
+    
+    .navbar-brand img{
+        background-color: #000000;
+        padding: 7px;
+        border: 2px solid #56B3ED;
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-brand p{
+        color: white!important;
+        font-weight: bold;
+        margin: 5px 5px 5px 10px;
+        font-size: 15px!important;
+    }
+}
 /* End of Section for Naseem */
 
 /* Section for Kiran */
