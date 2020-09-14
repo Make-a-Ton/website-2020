@@ -58,6 +58,53 @@ body{
 .navbar-nav > .cta{
     margin-left: 30px;
 }
+.cittic-presents{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+.cittic-presents img{
+    margin: 5px;
+    max-width: 120px;
+}
+
+.cittic-presents p{
+    align-self: flex-end;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.masthead h1{
+    font-size: 70px;
+}
+.masthead .lead{
+    font-size: 15px;
+}
+.masthead .lead strong{
+    font-weight: 700;
+}
+.masthead .hero-date{
+    font-weight: 700;
+    border-left: 3px solid #4CA4DA;
+    padding-left: 8px;
+}
+@media only screen and (max-width: 400px) {
+    
+    .navbar-brand img{
+        background-color: #000000;
+        padding: 7px;
+        border: 2px solid #56B3ED;
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-brand p{
+        color: white!important;
+        font-weight: bold;
+        margin: 5px 5px 5px 10px;
+        font-size: 15px!important;
+    }
+}
 /* End of Section for Naseem */
 
 /* Section for Kiran */
@@ -79,29 +126,128 @@ body{
     border: 2px solid #000000 ;
     border-radius: 40px;
     box-sizing: content-box;
-    background-color: #000000;
+    background-color: #000000;  
 }
 
 .event-left{
-    text-align: left;
-    padding: 10px;
-    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
-    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
-    border-radius: 30px 0px 30px 30px;
-}
-
-.event-right{
     text-align: right;
     padding: 10px;
     background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
     box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
-    border-radius: 0px 30px 30px 30px;
+    border-radius: 10px 0px 10px 10px;
+    Display : flex;
+    Flex-direction : column;
+    Align-items : flex-end;
 }
 
+.event-right{
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+    border-radius: 0px 10px 10px 10px;
+}
+.timeline-right {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  /* The actual timeline-right (the vertical ruler) */
+.timeline-right::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: white;
+    top: 80px;
+    bottom: 0;
+    left: 110%;
+    margin-left: -3px;
+}
+.timeline-left {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  /* The actual timeline-left (the vertical ruler) */
+.timeline-left::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: white;
+    top: 80px;
+    bottom: 0;
+    left: -10%;
+    margin-left: -3px;
+}
+.dot-left {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #56B3ED;
+    border: 4px solid #0E76BC;
+    margin-left: -67px;
+}
+.dot-right {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #56B3ED;
+    border: 4px solid #0E76BC;
+    margin-right: -65px;
+}
+.div-width{
+    width: 15%;
+}
 
 .space-div{
     height: 3vh;
 }
+@media screen and (max-width: 575px){
+    .dot-right{
+        display: none;
+    }
+    .dot-left{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .dot-right{
+        margin-right: -59px;
+    }
+    .dot-left{
+        margin-left: -63px;
+    }
+}
+@media screen and (max-width: 991px){
+    .dot-right{
+        margin-right: -53px;
+    }
+    .dot-left{
+        margin-left: -57px;
+    }
+    .timeline-right::after{
+        top: 110px;
+    }
+    .timeline-left::after{
+        top: 110px;
+    }
+}
+@media screen and (max-width: 767px){
+    .dot-right{
+        margin-right: -48px;
+    }
+    .dot-left{
+        margin-left: -52px;
+    }
+    .timeline-right::after{
+        top: 135px;
+    }
+    .timeline-left::after{
+        top: 135px;
+    }
+}
+
+
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
@@ -164,7 +310,7 @@ body{
 .social-icon{
     color: white;
     padding-right: 10px;
- 
+
 }
 .fa{
     color:white;
@@ -238,8 +384,78 @@ f
     border-radius: 20px;
 }
 
+.mainContainer img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    transform: rotate(270deg);
+}
+.mainContainer img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+}
+.mainContainer img:nth-child(3) {
+    position: absolute;
+    top: 30%;
+    left: -40px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(120deg);
+}
+
 .sponsorsText {
     color:black;
 }
+
+.whySection {
+    background-color: #181818;
+    position: relative;
+    min-height: 600px;
+    height: auto;
+}
+
+.whyText {
+    color: white;
+}
+
+.imgContainer {
+    position: relative;
+    margin: 2%;
+}
+
+.imgFilter {
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to top,
+    #0E76BC,
+    #56b3ed1f
+  );
+  width: 100%;
+  height: 35%;
+}
+
+.customImage {
+    filter: saturate(0%);
+}
+
+.imgText {
+    position: absolute;
+    bottom: 10%;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.imgBox {
+    margin-top: 5%;
+}
+
 
 /* End of Section for Ajal */
