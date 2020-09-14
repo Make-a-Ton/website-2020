@@ -11,6 +11,10 @@ body{
     min-height: 500px;
     background: radial-gradient(500.22% 500.06% at 74.39% 54.17%, #000000 25%, rgba(0, 0, 0, 0) 100%);
 }
+.navbar{
+    background-color: #00000073;
+    backdrop-filter: blur(10px); 
+}
 .navbar-brand{
     margin: 10px;
     padding: 0px 10px 0px 0px!important;
@@ -164,13 +168,13 @@ body{
 
 /* Section for Abhinav */
 .toggle:last-child {
-	border-bottom: 1px solid #dddddd;
+	border-bottom: 1px solid #f5f0f0;
 }
 
 .toggle .toggle-title {
 	position: relative;
 	display: block;
-	border-top: 1px solid #dddddd;
+	border-top: 1px solid  #f5f0f0;
 	margin-bottom: 6px;
 }
 
@@ -204,7 +208,7 @@ body{
 
 .toggle .toggle-title i {
 	position: absolute;
-	background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+
 	width: 24px;
 	height: 24px;
 	transition: all 0.3s ease;
@@ -212,14 +216,11 @@ body{
 	right: 0;
 }
 
-.toggle .toggle-title.active i {
-	background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
 
-}
 .faqcontainer {
 	width: 70%;
     margin: 150px auto;
-    color:white;
+    color:#56B3ED;
 }
 
 .social-icon{
@@ -242,6 +243,9 @@ body{
     padding-top: 10px;
    
     
+}
+.code{
+    right: 0;
 }
 .accordion {
    
