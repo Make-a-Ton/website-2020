@@ -79,29 +79,91 @@ body{
     border: 2px solid #000000 ;
     border-radius: 40px;
     box-sizing: content-box;
-    background-color: #000000;
+    background-color: #000000;  
 }
 
 .event-left{
-    text-align: left;
-    padding: 10px;
-    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
-    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
-    border-radius: 30px 0px 30px 30px;
-}
-
-.event-right{
     text-align: right;
     padding: 10px;
     background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
     box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
-    border-radius: 0px 30px 30px 30px;
+    border-radius: 10px 0px 10px 10px;
 }
 
+.event-right{
+    text-align: left;
+    padding: 10px;
+    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+    box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+    border-radius: 0px 10px 10px 10px;
+}
+.timeline-right {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  /* The actual timeline-right (the vertical ruler) */
+.timeline-right::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: white;
+    top: 80px;
+    bottom: 0;
+    left: 110%;
+    margin-left: -3px;
+}
+.timeline-left {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  /* The actual timeline-left (the vertical ruler) */
+.timeline-left::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: white;
+    top: 80px;
+    bottom: 0;
+    left: -10%;
+    margin-left: -3px;
+}
+.dot-left {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #56B3ED;
+    border: 4px solid #0E76BC;
+    margin-left: -4.2vw;
+}
+.dot-right {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #56B3ED;
+    border: 4px solid #0E76BC;
+    
+
+    margin-left: -3vw;
+}
+.div-width{
+    width: 15%;
+}
 
 .space-div{
     height: 3vh;
 }
+@media screen and (max-width: 575px){
+    .dot-right{
+        display: none;
+    }
+    .dot-left{
+        display: none;
+    }
+}
+
+
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
@@ -164,7 +226,7 @@ body{
 .social-icon{
     color: white;
     padding-right: 10px;
- 
+
 }
 .fa{
     color:white;
@@ -225,20 +287,6 @@ body{
 
 /* Section for Ajal */
 
-.sponsorsSection {
-    background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
-    height: auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.holdingContainer {
-    background-color: white;
-    border-radius: 20px;
-}
 
 .mainContainer img:nth-child(1) {
     position: absolute;
