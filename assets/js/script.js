@@ -1,3 +1,5 @@
+
+
 // /* Section for Naseem */
 
 
@@ -14,21 +16,10 @@
 
 
 
-window.onload=()=>{
-  // initAccordions();
-  // initfaq()
-    var data;
-    fetch('../../team.json')
-    .then((result)=>{
-        return result.json()
-    })
-    .then((res)=>{
-        console.log(res)
-        data=res;
-        console.log(data)
-        
-    
-    data.forEach(ele => {
+window.onload=()=>{     
+    // team
+    team.forEach(ele => {
+      console.log(ele.name)
         var card=`
   
   
@@ -61,8 +52,8 @@ window.onload=()=>{
 
     `
     let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 "
-    ref=document.getElementById('team');
+    div.className="col-lg-4 col-md-6 frame"
+    var ref=document.getElementById('team')
     div.innerHTML = card;
     ref.appendChild(div);
 
@@ -72,23 +63,13 @@ window.onload=()=>{
         
     });
     
-})
-.catch((err)=>{
-  console.log(err)
-})
+
 
 // for contact
-    fetch('../../team.json')
-    .then((result)=>{
-        return result.json()
-    })
-    .then((res)=>{
-        console.log(res)
-        data=res;
-        console.log(data)
+   
         
     
-    data.forEach(ele => {
+    contact.forEach(ele => {
         var card=`
   
   
@@ -121,8 +102,8 @@ window.onload=()=>{
 
     `
     let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 "
-    ref=document.getElementById('contact');
+    div.className="col-lg-4 col-md-6 frame"
+    var ref=document.getElementById('contact');
     div.innerHTML = card;
     ref.appendChild(div);
 
@@ -130,72 +111,59 @@ window.onload=()=>{
 
         
     });
+
+  // for faq
+  faq.forEach(ele => {
+    var card=`
+
+
     
-})
+    <div class="toggle-title ">
+        <h3 class="title-name accordion">
+            ${ele.ques}
+        </h3>
+    </div>
+    <div class="toggle-inner panel" id="panel">
+        <p>${ele.ans}</p>
+    </div>
+    
+
+`
+let div=document.createElement('div')
+div.className="toggle"
+let ref=document.getElementById('faqq');
+div.innerHTML = card;
+ref.appendChild(div);
+
+
+
+    
+});
+
+    
+
 // accordian start
-
-function initAccordions() {
-  if ($('.accordion').length) {
-    var accs = $('.accordion');
-
-    accs.each(function () {
-      var acc = $(this);
-
-      if (acc.hasClass('active')) {
-        var panel = $(acc.next());
-        var panelH = panel.prop('scrollHeight') + "px";
-
-        if (panel.css('max-height') == "0px") {
-          panel.css('max-height', panel.prop('scrollHeight') + "px");
-        } else {
-          panel.css('max-height', "0px");
+var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+           
+            var panel = this.parentElement.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
         }
-      }
 
-      acc.on('click', function () {
-        if (acc.hasClass('active')) {
-          acc.removeClass('active');
-          var panel = $(acc.next());
-          var panelH = panel.prop('scrollHeight') + "px";
-
-          if (panel.css('max-height') == "0px") {
-            panel.css('max-height', panel.prop('scrollHeight') + "px");
-          } else {
-            panel.css('max-height', "0px");
-          }
-        } else {
-          acc.addClass('active');
-          var panel = $(acc.next());
-          var panelH = panel.prop('scrollHeight') + "px";
-
-          if (panel.css('max-height') == "0px") {
-            panel.css('max-height', panel.prop('scrollHeight') + "px");
-          } else {
-            panel.css('max-height', "0px");
-          }
-        }
-      });
-    });
-  }
-}
 
 // accordian end
 
 // init faq
-function initfaq() {
 
-  if (jQuery(".toggle .toggle-title").hasClass('active')) {
-    jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
-  }
-  jQuery(".toggle .toggle-title").click(function () {
-    if (jQuery(this).hasClass('active')) {
-      jQuery(this).removeClass("active").closest('.toggle').find('.toggle-inner').slideUp(200);
-      console.log('clicked');
-    } else {
-      jQuery(this).addClass("active").closest('.toggle').find('.toggle-inner').slideDown(200);
-    }
-  });
-}
 
 // faq end
 

@@ -181,6 +181,25 @@ body{
    
     
 }
+.accordion {
+   
+    border: none;
+    
+    outline: none;
+    
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    
+    display: none;
+
+    overflow: hidden;
+  }
 /* start of team members */
 .team-section{
     background-color: black;
@@ -190,6 +209,10 @@ body{
 .card-wrap{
     display: flex;
     justify-content: space-around;
+   
+}
+.frame{
+    margin-bottom: 30px;
 }
 
 /* end of team members */
