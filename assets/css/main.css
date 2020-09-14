@@ -141,6 +141,25 @@ body{
    
     
 }
+.accordion {
+   
+    border: none;
+    
+    outline: none;
+    
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    
+    display: none;
+
+    overflow: hidden;
+  }
 /* start of team members */
 .team-section{
     background-color: black;
