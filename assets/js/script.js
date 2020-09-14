@@ -52,7 +52,7 @@ window.onload=()=>{
 
     `
     let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6"
+    div.className="col-lg-4 col-md-6 frame"
     var ref=document.getElementById('team')
     div.innerHTML = card;
     ref.appendChild(div);
@@ -102,7 +102,7 @@ window.onload=()=>{
 
     `
     let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 "
+    div.className="col-lg-4 col-md-6 frame"
     var ref=document.getElementById('contact');
     div.innerHTML = card;
     ref.appendChild(div);
@@ -111,9 +111,53 @@ window.onload=()=>{
 
         
     });
+
+  // for faq
+  faq.forEach(ele => {
+    var card=`
+
+
+    
+    <div class="toggle-title ">
+        <h3 class="title-name accordion">
+            ${ele.ques}
+        </h3>
+    </div>
+    <div class="toggle-inner panel" id="panel">
+        <p>${ele.ans}</p>
+    </div>
+    
+
+`
+let div=document.createElement('div')
+div.className="toggle"
+let ref=document.getElementById('faqq');
+div.innerHTML = card;
+ref.appendChild(div);
+
+
+
+    
+});
+
     
 
 // accordian start
+var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+           
+            var panel = this.parentElement.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
 
 
 // accordian end

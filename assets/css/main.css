@@ -169,6 +169,10 @@ body{
 .card-wrap{
     display: flex;
     justify-content: space-around;
+   
+}
+.frame{
+    margin-bottom: 30px;
 }
 
 /* end of team members */
