@@ -19,9 +19,11 @@ var myinit={
   },
   mode:'cors',
   cache:'default'};
-let myRequest=new Request("../team.json",myinit);
+let myRequest=new Request("../../team.json",myinit);
 
 window.onload=()=>{
+  initAccordions();
+  initfaq()
     var data;
     fetch(myRequest)
     .then((result)=>{
@@ -84,7 +86,7 @@ window.onload=()=>{
 
 // for contact
 var data;
-    fetch('./team.json')
+    fetch('../../team.json')
     .then((result)=>{
         return result.json()
     })
@@ -138,6 +140,72 @@ var data;
     });
     
 })
+// accordian start
+
+function initAccordions() {
+  if ($('.accordion').length) {
+    var accs = $('.accordion');
+
+    accs.each(function () {
+      var acc = $(this);
+
+      if (acc.hasClass('active')) {
+        var panel = $(acc.next());
+        var panelH = panel.prop('scrollHeight') + "px";
+
+        if (panel.css('max-height') == "0px") {
+          panel.css('max-height', panel.prop('scrollHeight') + "px");
+        } else {
+          panel.css('max-height', "0px");
+        }
+      }
+
+      acc.on('click', function () {
+        if (acc.hasClass('active')) {
+          acc.removeClass('active');
+          var panel = $(acc.next());
+          var panelH = panel.prop('scrollHeight') + "px";
+
+          if (panel.css('max-height') == "0px") {
+            panel.css('max-height', panel.prop('scrollHeight') + "px");
+          } else {
+            panel.css('max-height', "0px");
+          }
+        } else {
+          acc.addClass('active');
+          var panel = $(acc.next());
+          var panelH = panel.prop('scrollHeight') + "px";
+
+          if (panel.css('max-height') == "0px") {
+            panel.css('max-height', panel.prop('scrollHeight') + "px");
+          } else {
+            panel.css('max-height', "0px");
+          }
+        }
+      });
+    });
+  }
+}
+
+// accordian end
+
+// init faq
+function initfaq() {
+
+  if (jQuery(".toggle .toggle-title").hasClass('active')) {
+    jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
+  }
+  jQuery(".toggle .toggle-title").click(function () {
+    if (jQuery(this).hasClass('active')) {
+      jQuery(this).removeClass("active").closest('.toggle').find('.toggle-inner').slideUp(200);
+      console.log('clicked');
+    } else {
+      jQuery(this).addClass("active").closest('.toggle').find('.toggle-inner').slideDown(200);
+    }
+  });
+}
+
+// faq end
 
 // By Ajal
 var sponsors;
