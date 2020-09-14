@@ -179,10 +179,10 @@ var acc = document.getElementsByClassName("accordion");
 
 // /* Section for Ajal */
 
-function generateSponsors (sponsorsJson) {
-  if(sponsorsJson !== undefined) {
+function generateSponsors () {
+
     let html = ''; 
-    sponsorsJson.forEach(doc => {
+    sponsorsList.forEach(doc => {
         html += `
         <div class="avatar mx-auto my-3 col-lg-4 col-md-6 col-xl-3">
              <img src="${doc.photo}" class="img-fluid rounded-circle z-depth-1"
@@ -191,8 +191,6 @@ function generateSponsors (sponsorsJson) {
         `
     });
     return html;
-  }
 }
 
-generateSponsors();
 // /* End of Section for Ajal */
