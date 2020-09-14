@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    
 }
 
 /* Section for Naseem */
@@ -60,6 +61,64 @@ body{
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
+.toggle:last-child {
+	border-bottom: 1px solid #dddddd;
+}
+
+.toggle .toggle-title {
+	position: relative;
+	display: block;
+	border-top: 1px solid #dddddd;
+	margin-bottom: 6px;
+}
+
+.toggle .toggle-title h3 {
+	font-size: 20px;
+	margin: 0px;
+	line-height: 1;
+	cursor: pointer;
+	font-weight: 200;
+}
+
+.toggle .toggle-inner {
+	padding: 7px 25px 10px 25px;
+	display: none;
+	margin: -7px 0 6px;
+}
+
+.toggle .toggle-inner div {
+	max-width: 100%;
+}
+
+.toggle .toggle-title .title-name {
+	display: block;
+	padding: 25px 25px 14px;
+}
+
+.toggle .toggle-title a i {
+	font-size: 22px;
+	margin-right: 5px;
+}
+
+.toggle .toggle-title i {
+	position: absolute;
+	background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s ease;
+	margin: 20px;
+	right: 0;
+}
+
+.toggle .toggle-title.active i {
+	background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+
+}
+.faqcontainer {
+	width: 70%;
+    margin: 150px auto;
+    color:white;
+}
 
 .social-icon{
     color: white;
@@ -76,6 +135,11 @@ body{
     bottom: 0%;
     left: 0%;
     color:white;
+    height: 15vh;
+    font-size: 19px;
+    padding-top: 10px;
+   
+    
 }
 /* start of team members */
 .team-section{
