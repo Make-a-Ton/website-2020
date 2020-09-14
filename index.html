@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make-a-Ton 2020</title>
-    <script type="module" src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/sponsors.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -62,9 +63,44 @@
     </section>
     
     <!-- // /* Section for Ajal */ -->
-    <section>
-        <h1>Section for Ajal</h1>
-        • Why make a ton section: Ajal
+    <section class="whySection">
+        <div class="container-fluid py-5 px-5 h-100">
+            <div class="mainContainer">
+            <img src="./assets/images/WhyElement.svg" alt="svg" class="img-responsive">
+            <img src="./assets/images/WhyElement.svg" alt="svg" class="img-responsive">
+            <img src="./assets/images/WhyElement.svg" alt="svg" class="img-responsive">
+            </div>
+            <h1 class="h1-responsive font-weight-bold whyText">Why Make-a-ton?</h1>
+            <div class="row justify-content-center imgBox">
+                <div class="imgContainer my-3">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-responsive rounded z-depth-2 customImage"
+                      alt="Sample Image">
+                      <div class="imgText">
+                        <h2 class="h2-responsive">Hello This is text</h2>
+                        <small>Description</small>
+                    </div>
+                      <div class="imgFilter"></div>
+                </div>
+                <div class="imgContainer my-3">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-responsive rounded z-depth-2 customImage"
+                      alt="Sample Image">
+                      <div class="imgText">
+                        <h2 class="h2-responsive">Hello This is text</h2>
+                        <small>Description</small>
+                    </div>
+                      <div class="imgFilter"></div>
+                </div>
+                <div class="imgContainer my-3">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-responsive rounded z-depth-2 customImage"
+                      alt="Sample Image">
+                      <div class="imgText">
+                        <h2 class="h2-responsive">Hello This is text</h2>
+                        <small>Description</small>
+                    </div>
+                      <div class="imgFilter"></div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- // /* End of Section for Ajal */ -->
 
@@ -152,10 +188,16 @@
 
             <div class="container-fluid holdingContainer py-5 my-5">
 
+<<<<<<< HEAD
                 <div class="row " id ="sponsors">
 
+=======
+                <div class="row" id ="sponsors">
+>>>>>>> 3b586717ea8ade2f3d105398f71ac00594566d4b
                 </div>
-
+                <script>
+                    document.getElementById('sponsors').innerHTML = generateSponsors(sponsorsList);
+                </script>
             </div>
         </div>
     </section>
