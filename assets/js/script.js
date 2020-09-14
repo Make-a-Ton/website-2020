@@ -12,20 +12,13 @@
 
 // /* Section for Abhinav */
 
-var myinit={
-  method:'GET',
-  headers:{
-    'Content-Type':'application/json'
-  },
-  mode:'cors',
-  cache:'default'};
-let myRequest=new Request("../../team.json",myinit);
+
 
 window.onload=()=>{
   initAccordions();
   initfaq()
     var data;
-    fetch(myRequest)
+    fetch('../../team.json')
     .then((result)=>{
         return result.json()
     })
