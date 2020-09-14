@@ -15,8 +15,8 @@
 
 
 window.onload=()=>{
-  initAccordions();
-  initfaq()
+  // initAccordions();
+  // initfaq()
     var data;
     fetch('../../team.json')
     .then((result)=>{
