@@ -163,6 +163,42 @@ body{
         display: none;
     }
 }
+@media screen and (max-width: 1200px){
+    .dot-right{
+        margin-right: -59px;
+    }
+    .dot-left{
+        margin-left: -63px;
+    }
+}
+@media screen and (max-width: 991px){
+    .dot-right{
+        margin-right: -53px;
+    }
+    .dot-left{
+        margin-left: -57px;
+    }
+    .timeline-right::after{
+        top: 110px;
+    }
+    .timeline-left::after{
+        top: 110px;
+    }
+}
+@media screen and (max-width: 767px){
+    .dot-right{
+        margin-right: -48px;
+    }
+    .dot-left{
+        margin-left: -52px;
+    }
+    .timeline-right::after{
+        top: 135px;
+    }
+    .timeline-left::after{
+        top: 135px;
+    }
+}
 
 
 /* End of Section for Kiran */
