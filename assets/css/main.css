@@ -11,6 +11,10 @@ body{
     min-height: 500px;
     background: radial-gradient(500.22% 500.06% at 74.39% 54.17%, #000000 25%, rgba(0, 0, 0, 0) 100%);
 }
+.navbar{
+    background-color: #00000073;
+    backdrop-filter: blur(10px); 
+}
 .navbar-brand{
     margin: 10px;
     padding: 0px 10px 0px 0px!important;
