@@ -339,12 +339,14 @@ f
   }
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+    /* background-color: #ccc;  */
+    
   }
   
   .panel {
     
     display: none;
+    color:white;
 
     overflow: hidden;
   }
