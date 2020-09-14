@@ -13,7 +13,7 @@
 // /* Section for Abhinav */
 window.onload=()=>{
     var data;
-    fetch('../team.json')
+    fetch('./team.json')
     .then((result)=>{
         return result.json()
     })
@@ -74,7 +74,7 @@ window.onload=()=>{
 
 // for contact
 var data;
-    fetch('../team.json')
+    fetch('./team.json')
     .then((result)=>{
         return result.json()
     })
