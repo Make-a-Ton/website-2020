@@ -73,10 +73,11 @@ window.onload=()=>{
     });
     
 })
-
+.catch((err)=>{
+  console.log(err)
+})
 
 // for contact
-var data;
     fetch('../../team.json')
     .then((result)=>{
         return result.json()
