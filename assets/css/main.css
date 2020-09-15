@@ -175,7 +175,7 @@ body{
     z-index: 5;
     bottom: 0px;
     /* background-color: #0E76BB; */
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     width: 100%;
 }
 .hero-scroll-learnmore{
@@ -184,6 +184,7 @@ body{
     padding: 5px;
     border-radius: 5px;
     background-color: #00000098;
+    backdrop-filter: blur(5px);
     transition: all 0.5s ease-in-out;
     margin: 10px;
     
@@ -266,7 +267,13 @@ body{
         opacity: 0;
         max-height: 120px;
     }
+    .hero-sponsor-item-container{
+        display: none!important;
+    }
+    .made-possible{
+        display: none!important;
 
+    }
 }
 
 @media only screen and (max-width: 460px) {

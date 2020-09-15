@@ -79,7 +79,9 @@
             </div>
             <div class="row align-items-center text-light hero-learnmore-sponsors-container">
                 <div class="col col-12 col-md-2 col-md-2 mt-auto mx-auto order-12 order-sm-12 order-md-1">
-                    <img class="hero-scroll-learnmore mx-auto d-block" src="assets/img/scroll_learn_more.png" alt="" srcset="">
+                    <a href="#about" id="learnMorelink">
+                        <img class="hero-scroll-learnmore mx-auto d-block" src="assets/img/scroll_learn_more.png" alt="" srcset="">
+                    </a>
                 </div>
                 <div class="col col-12 col-md-10 hero-sponsors-container order-1 order-sm-1" id="hero-sponsors-container">
                     Sponsors
@@ -279,6 +281,16 @@
     <script defer>
         $(document).ready(function() {
             $('.nav-link').on('click', function() {
+                var page = $(this).attr('href');
+                var speed = 750;
+                var offset = 120;
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top - offset
+                }, speed);
+                $('.navbar-collapse').collapse('hide');
+                return false;
+            });
+            $('#learnMorelink').on('click', function() {
                 var page = $(this).attr('href');
                 var speed = 750;
                 var offset = 120;
