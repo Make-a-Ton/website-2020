@@ -7,7 +7,37 @@
 // /* End of Section for Naseem */
 
 // /* Section for Kiran */
+// events
+function events_day1 () {
+  let html = ''; 
+  schedule_day1.forEach(ele => {
+      html += `
+      <div class="event-left">
+        <div class="dot-right"></div>
+          <p class="time">${ele.Time}</p>
+          <p class="event-info">${ele.Event}</p>
+        </div>
+        <div class="space-div"></div>
+      `
+  });
+  return html;
+}
 
+function events_day2 () {
+  let html = ''; 
+  schedule_day2.forEach(ele => {
+      html += `
+      <div class="event-right">
+        <div class="dot-left"></div>
+          <p class="time">${ele.Time}</p>
+          <p class="event-info">${ele.Event}</p>
+        </div>
+      </div>
+      <div class="space-div"></div>
+      `
+  });
+  return html;
+}
 
 
 // /* End of Section for Kiran */
