@@ -39,7 +39,43 @@ body{
     border-bottom: 5px solid #5bc0eb;
     box-sizing: border-box;
 }
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+} 
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
 
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
 .cta{
     background-color: #0E76BC;
     border: none;
@@ -89,7 +125,18 @@ body{
     border-left: 3px solid #4CA4DA;
     padding-left: 8px;
 }
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 992px){
+    .navbar-collapse{
+        height: 100vh;
+        
+    }
+    .navbar-nav {
+        height: 100vh!important;
+    }
+    
+}
+@media only screen and (max-width: 460px) {
     
     .navbar-brand img{
         background-color: #000000;
@@ -104,6 +151,30 @@ body{
         margin: 5px 5px 5px 10px;
         font-size: 15px!important;
     }
+    .masthead h1{
+        font-size: 50px;
+    }
+    .masthead .lead{
+        font-size: 10px;
+    }
+    .masthead .hero-date{
+        font-size: 10px;
+    }
+    .cittic-presents{
+        max-width: 200px;
+    }
+    
+    .cittic-presents img{
+        margin: 5px;
+        max-width: 100px;
+    }
+    
+    .cittic-presents p{
+        
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    
 }
 /* End of Section for Naseem */
 
@@ -357,12 +428,14 @@ f
   }
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+    /* background-color: #ccc;  */
+    
   }
   
   .panel {
     
     display: none;
+    color:white;
 
     overflow: hidden;
   }
