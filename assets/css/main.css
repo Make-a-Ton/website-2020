@@ -9,11 +9,27 @@ body{
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background: radial-gradient(500.22% 500.06% at 74.39% 54.17%, #000000 25%, rgba(0, 0, 0, 0) 100%);
+    /* background: radial-gradient(500.22% 500.06% at 74.39% 54.17%, #000000 25%, rgba(0, 0, 0, 0) 100%); */
+    overflow: hidden;
+}
+.bg-wrapper {
+    position: absolute;
+    z-index: -100;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(45deg,#000000,#292929,#000000,#0cb2ffaa,#000000,#555555);
+    background-size: 600% 100%;
+    animation: gradient-animation 16s ease infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient-animation {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
 }
 .navbar{
-    background-color: #00000073;
-    backdrop-filter: blur(10px); 
+    background-color: #251c1c73;
+    backdrop-filter: blur(10px);
+    max-width: 100vw!important;
 }
 .navbar-brand{
     margin: 10px;
@@ -83,13 +99,24 @@ body{
     font-weight: bold;
     padding: 10px 20px 10px 20px;
     border-radius: 50px;
-    box-shadow: 0px 8px 46px #0e76bc96;
+    box-shadow: 0px 8px 26px #0e76bc96;
     transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: gradient-animation 2s ease infinite;
+    animation-direction: alternate;
+
 }
 .cta:hover{
     box-shadow: 0px 0px 50px #0e76bc;
     transition: all 0.2s ease-in-out;
     transform: scale(1.05);
+}
+@keyframes cta-animation {
+    0% {
+        box-shadow: 0px 8px 26px #0e76bc96;
+    }
+    100% {
+        box-shadow: 0px 0px 1px #2dabffd2;
+    }
 }
 .navbar-nav > .cta{
     margin-left: 30px;
@@ -99,7 +126,12 @@ body{
     align-items: center;
     max-width: 300px;
 }
-
+.hero-img{
+    position: relative;
+    width: 800px;
+    top: 25px;
+    transition: all 0.5s ease-in-out;
+}
 .cittic-presents img{
     margin: 5px;
     max-width: 120px;
@@ -126,18 +158,78 @@ body{
     padding-left: 8px;
 }
 
+.masthead > .container-fluid{
+    /* background-color: #0E76BB!important; */
+    display: flex;
+    flex-direction: column;
+}
+.custom-space-1{
+    opacity: 0;
+    max-height: 85px;
+}
+.hero-learnmore-sponsors-container{
+    padding: 10px;
+    position: absolute!important;
+    z-index: 5;
+    bottom: 0px;
+    /* background-color: #0E76BB; */
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+.hero-scroll-learnmore{
+    cursor: pointer;
+    max-width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #00000098;
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+    
+}
+
+.hero-scroll-learnmore:hover{
+    background-color: rgba(0, 0, 0, 0.782);
+}
+
+.hero-sponsors-container{
+    display: flex!important;
+    flex-direction: column;
+    
+}
+
+.hero-sponsor-item-container{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.hero-sponsor-item{
+    height: 50px;
+    width: auto;
+    filter: grayscale(1);
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+.hero-sponsor-item:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+    padding: 10px;
+}
+.made-possible{
+    position: relative!important;
+    top: 0;
+}
 @media only screen and (max-width: 992px){
     .navbar-collapse{
         height: 100vh;
         
     }
+    
     .navbar-nav {
         height: 100vh!important;
     }
-    
-}
-@media only screen and (max-width: 460px) {
-    
     .navbar-brand img{
         background-color: #000000;
         padding: 7px;
@@ -154,8 +246,44 @@ body{
     .masthead h1{
         font-size: 50px;
     }
+    .hero-img{
+        width: 600px;
+        left: -60px;
+        z-index: 1;
+    }
+    .custom-space-1{
+        opacity: 0;
+        max-height: 100px;
+    }
+}
+@media only screen and (max-width: 770px){
+    .custom-space-1{
+        opacity: 0;
+        max-height: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+    
+    .navbar-brand img{
+        background-color: #000000;
+        padding: 7px;
+        border: 2px solid #56B3ED;
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-brand p{
+        color: white!important;
+        font-weight: bold;
+        margin: 5px 5px 5px 10px;
+        font-size: 15px!important;
+    }
+    .masthead h1{
+        font-size: 35px;
+    }
     .masthead .lead{
-        font-size: 10px;
+        font-size: 12px;
     }
     .masthead .hero-date{
         font-size: 10px;
@@ -166,13 +294,23 @@ body{
     
     .cittic-presents img{
         margin: 5px;
-        max-width: 100px;
+        max-width: 80px;
     }
     
     .cittic-presents p{
-        
-        font-size: 15px;
+        margin-top: 20px!important;
+        font-size: 12px;
         padding-left: 5px;
+    }
+
+    .hero-img{
+        width: 500px;
+        top: 0;
+        left: 0;
+    }
+    .cta{
+        padding: 5px 10px 5px 10px;
+        font-size: 15px!important;
     }
     
 }

@@ -57,7 +57,7 @@ window.onload=()=>{
     div.innerHTML = card;
     ref.appendChild(div);
 
-    
+    document.getElementById('hero-sponsors-container').innerHTML = generateSponsorsHeroSection(sponsorsList);
     
 
         
@@ -186,11 +186,26 @@ function generateSponsors () {
         html += `
         <div class="avatar mx-auto my-3 col-lg-4 col-md-6 col-xl-3">
              <img src="${doc.photo}" class="img-fluid rounded-circle z-depth-1"
-                 alt="Sample avatar">
+                 alt="${doc.name}">
              </div>
         `
     });
     return html;
+}
+
+function generateSponsorsHeroSection () {
+
+  let html = ''; 
+  html+=`<p class="made-possible mx-auto">Made possible by</p> <div class="hero-sponsor-item-container">`  
+  sponsorsList.forEach(doc => {
+    html += `
+      
+        <img src="${doc.photo}" class="hero-sponsor-item" alt="${doc.name}">
+      
+      `
+  });
+  html+="</div>"
+  return html;
 }
 
 // /* End of Section for Ajal */
