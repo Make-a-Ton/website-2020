@@ -1,32 +1,28 @@
-
-
 // /* Section for Naseem */
-
-
 
 // /* End of Section for Naseem */
 
 // /* Section for Kiran */
 // events
-function events_day1 () {
-  let html = ''; 
-  schedule_day1.forEach(ele => {
-      html += `
+function events_day1() {
+  let html = "";
+  schedule_day1.forEach((ele) => {
+    html += `
       <div class="event-left">
         <div class="dot-right"></div>
           <p class="time">${ele.Time}</p>
           <p class="event-info">${ele.Event}</p>
         </div>
         <div class="space-div"></div>
-      `
+      `;
   });
   return html;
 }
 
-function events_day2 () {
-  let html = ''; 
-  schedule_day2.forEach(ele => {
-      html += `
+function events_day2() {
+  let html = "";
+  schedule_day2.forEach((ele) => {
+    html += `
       <div class="event-right">
         <div class="dot-left"></div>
           <p class="time">${ele.Time}</p>
@@ -34,23 +30,20 @@ function events_day2 () {
         </div>
       </div>
       <div class="space-div"></div>
-      `
+      `;
   });
   return html;
 }
-
 
 // /* End of Section for Kiran */
 
 // /* Section for Abhinav */
 
-
-
-window.onload=()=>{     
-    // team
-    team.forEach(ele => {
-      console.log(ele.name)
-        var card=`
+window.onload = () => {
+  // team
+  team.forEach((ele) => {
+    console.log(ele.name);
+    var card = `
   
   
       <!-- Grid column -->
@@ -80,27 +73,22 @@ window.onload=()=>{
         </ul>
     
 
-    `
-    let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 frame"
-    var ref=document.getElementById('team')
+    `;
+    let div = document.createElement("div");
+    div.className = "col-lg-4 col-md-6 frame";
+    var ref = document.getElementById("team");
     div.innerHTML = card;
     ref.appendChild(div);
 
-    document.getElementById('hero-sponsors-container').innerHTML = generateSponsorsHeroSection(sponsorsList);
-    
+    document.getElementById(
+      "hero-sponsors-container"
+    ).innerHTML = generateSponsorsHeroSection(sponsorsList);
+  });
 
-        
-    });
-    
+  // for contact
 
-
-// for contact
-   
-        
-    
-    contact.forEach(ele => {
-        var card=`
+  contact.forEach((ele) => {
+    var card = `
   
   
       <!-- Grid column -->
@@ -130,21 +118,17 @@ window.onload=()=>{
         </ul>
     
 
-    `
-    let div=document.createElement('div')
-    div.className="col-lg-4 col-md-6 frame"
-    var ref=document.getElementById('contact');
+    `;
+    let div = document.createElement("div");
+    div.className = "col-lg-4 col-md-6 frame";
+    var ref = document.getElementById("contact");
     div.innerHTML = card;
     ref.appendChild(div);
-
-    
-
-        
-    });
+  });
 
   // for faq
-  faq.forEach(ele => {
-    var card=`
+  faq.forEach((ele) => {
+    var card = `
 
 
     
@@ -158,96 +142,66 @@ window.onload=()=>{
     </div>
     
 
-`
-let div=document.createElement('div')
-div.className="toggle"
-let ref=document.getElementById('faqq');
-div.innerHTML = card;
-ref.appendChild(div);
+`;
+    let div = document.createElement("div");
+    div.className = "toggle";
+    let ref = document.getElementById("faqq");
+    div.innerHTML = card;
+    ref.appendChild(div);
+  });
 
+  // accordian start
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
 
-    
-});
+      var panel = this.parentElement.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 
-    
+  // accordian end
 
-// accordian start
-var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-           
-            var panel = this.parentElement.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-            hideAll(this);
-          });
-        }
+  // init faq
 
-        function hideAll(exceptThis) {
-          for (var i = 0; i < acc.length; i++) {
-            if (acc[i] !== exceptThis) {
-              acc[i].classList.remove("active");
-              acc[i].parentElement.nextElementSibling.style.display="none"
-            }
-          }
-        }
-
-       
-
-
-
-// accordian end
-
-// init faq
-
-
-// faq end
-
-
-
-}
-    
-
-
-
+  // faq end
+};
 
 // /* End of Section for Abhinav */
 
 // /* Section for Ajal */
 
-function generateSponsors () {
-
-    let html = ''; 
-    sponsorsList.forEach(doc => {
-        html += `
-        <div class="avatar mx-auto my-3 col-lg-4 col-md-6 col-xl-3">
-             <img src="${doc.photo}" class="img-fluid rounded-circle z-depth-1"
-                 alt="${doc.name}">
-             </div>
-        `
-    });
-    return html;
+function generateSponsors() {
+  let html = "";
+  sponsorsList.forEach((doc) => {
+    html += `
+      <div class="avatar mx-auto my-3 col-lg-4 col-md-6 col-xl-3">
+           <img src="${doc.photo}" class="img-fluid rounded-circle z-depth-1 sponsorsImage"
+               alt="Sample avatar">
+           </div>
+      `;
+  });
+  return html;
 }
 
-function generateSponsorsHeroSection () {
-
-  let html = ''; 
-  html+=`<p class="made-possible mx-auto">Made possible by</p> <div class="hero-sponsor-item-container">`  
-  sponsorsList.forEach(doc => {
+function generateSponsorsHeroSection() {
+  let html = "";
+  html += `<p class="made-possible mx-auto">Made possible by</p> <div class="hero-sponsor-item-container">`;
+  sponsorsList.forEach((doc) => {
     html += `
       
         <img src="${doc.photo}" class="hero-sponsor-item" alt="${doc.name}">
       
-      `
+      `;
   });
-  html+="</div>"
+  html += "</div>";
   return html;
 }
 
