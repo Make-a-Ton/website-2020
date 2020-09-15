@@ -322,13 +322,20 @@ body{
     bottom: 0%;
     left: 0%;
     color:white;
-    height: 13vh;
+    height: 11vh;
     font-size: 19px;
     padding-top: 10px;
    
     
 }
-f
+.code{
+    text-align: right;
+}
+@media only screen and (max-width: 600px) {
+    .footer-sub{
+        text-align: center;
+    }
+  }
 .accordion {
    
     border: none;
