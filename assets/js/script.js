@@ -186,8 +186,21 @@ var acc = document.getElementsByClassName("accordion");
             } else {
               panel.style.display = "block";
             }
+            hideAll(this);
           });
         }
+
+        function hideAll(exceptThis) {
+          for (var i = 0; i < acc.length; i++) {
+            if (acc[i] !== exceptThis) {
+              acc[i].classList.remove("active");
+              acc[i].parentElement.nextElementSibling.style.display="none"
+            }
+          }
+        }
+
+       
+
 
 
 // accordian end
