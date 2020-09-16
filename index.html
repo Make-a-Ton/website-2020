@@ -7,6 +7,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/data/sponsors.js"></script>
     <script src="./assets/data/schedule.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link
       rel="stylesheet"
@@ -97,8 +98,8 @@
               />
               <p>presents</p>
             </div>
-            <h1 class="font-weight-light">MAKE-A-TON</h1>
-            <p class="lead">
+            <h1 class="font-weight-light letter" id="hero-heading">MAKE-A-TON</h1>
+            <p class="lead letter2" id="hero-para">
               <em
                 >A 48 hour flagship hackathon from
                 <strong>Cochin University of Science and Technology</strong> for
@@ -106,7 +107,12 @@
                 <strong>embrace the spirit of innovation.</strong></em
               >
             </p>
-            <p class="hero-date">1 OCT 2020 - 20 OCT 2020</p>
+            <p class="hero-date">
+                <span class="text-wrapper">
+                  <span class="ml13 letter3">1 OCT 2020 - 20 OCT 2020</span>
+                </span>
+            </p>
+            <!-- <p class="hero-date">1 OCT 2020 - 20 OCT 2020</p> -->
             <button class="cta">REGISTER NOW</button>
           </div>
           <div class="col-12 col-md-4 col-lg-6 hero-img-container">
@@ -379,7 +385,7 @@
     <!-- // /* End of Section for Abhinav */ -->
 
     <!-- Bootstrap stuff -->
-
+    <script src="./assets/js/animations.js"></script>
     <script src="./assets/data/contact.js"></script>
     <script src="./assets//data/team.js"></script>
     <script src="./assets//data/faq.js"></script>
