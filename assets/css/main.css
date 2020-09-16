@@ -555,32 +555,29 @@ body {
 .fa {
   color: white;
 }
-.footer-main{
-    background-color:rgba(14, 118, 188, 1) ;
-    padding-bottom: 25px;
-    /* position: fixed; */
-    
-    color:white;
-    height: 11vh;
-    font-size: 19px;
-    padding-top: 10px;
-   
-    
+.footer-main {
+  background-color: rgba(14, 118, 188, 1);
+  padding-bottom: 25px;
+  /* position: fixed; */
+
+  color: white;
+  height: 11vh;
+  font-size: 19px;
+  padding-top: 10px;
 }
 
-.code{
-    text-align: right;
-
+.code {
+  text-align: right;
 }
-@media  screen and (max-width: 600px) {
-    .footer-sub{
-        text-align: center;
-        /* padding-right: 17px; */
-    }
-    .code{
-        text-align: center;
-    }
+@media screen and (max-width: 600px) {
+  .footer-sub {
+    text-align: center;
+    /* padding-right: 17px; */
   }
+  .code {
+    text-align: center;
+  }
+}
 
 .accordion {
   border: none;
@@ -612,12 +609,10 @@ body {
   height: 0%;
 }
 /* start of team members */
-.team-title{
+.team-title {
   padding-bottom: 5%;
-  padding-top:4px;
-  font-size:40
-  
-
+  padding-top: 4px;
+  font-size: 40;
 }
 .team-section {
   background-color: black;
@@ -636,18 +631,14 @@ body {
 
 /* end of team members */
 
-.contact-main{
-margin-bottom: 15%;
-color: #56b3ed;
-height: 100%;
-
-
-
+.contact-main {
+  margin-bottom: 15%;
+  color: #56b3ed;
+  height: 100%;
 }
-@media (min-width: 700px){
-  .contact-main{
-    margin-bottom:5%;
-   
+@media (min-width: 700px) {
+  .contact-main {
+    margin-bottom: 5%;
   }
   .contact-head{
     padding-bottom: 20px;
@@ -712,7 +703,7 @@ height: 100%;
 }
 
 .whySection {
-  background-color: #181818;
+  background-color: black;
   position: relative;
   min-height: 600px;
   height: auto;
@@ -752,4 +743,29 @@ height: 100%;
   margin-top: 5%;
 }
 
+/* About Section */
+
+.aboutText {
+  color: #0e76bb;
+  font-size: x-large;
+}
+
+.smallBox {
+  max-width: 275px !important;
+  height: 175px !important;
+  background-image: linear-gradient(to top, #137fc7, #3daef5cb);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.aboutHeading {
+  color: white;
+}
+
+/* End of about section */
 /* End of Section for Ajal */
