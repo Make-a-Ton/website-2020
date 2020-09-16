@@ -557,25 +557,33 @@ body {
 .fa {
   color: white;
 }
-.footer-main {
-  background-color: rgba(14, 118, 188, 1);
-  padding-bottom: 25px;
-  /* position: fixed; */
-  bottom: 0%;
-  left: 0%;
-  color: white;
-  height: 11vh;
-  font-size: 19px;
-  padding-top: 10px;
+.footer-main{
+    background-color:rgba(14, 118, 188, 1) ;
+    padding-bottom: 25px;
+    /* position: fixed; */
+    
+    color:white;
+    height: 11vh;
+    font-size: 19px;
+    padding-top: 10px;
+   
+    
 }
-.code {
-  text-align: right;
+
+.code{
+    text-align: right;
+
 }
-@media only screen and (max-width: 600px) {
-  .footer-sub {
-    text-align: center;
+@media  screen and (max-width: 600px) {
+    .footer-sub{
+        text-align: center;
+        /* padding-right: 17px; */
+    }
+    .code{
+        text-align: center;
+    }
   }
-}
+
 .accordion {
   border: none;
 
@@ -596,10 +604,19 @@ body {
   overflow: hidden;
 }
 /* start of team members */
+.team-title{
+  padding-bottom: 5%;
+  padding-top:4px;
+  font-size:40
+  
+
+}
 .team-section {
   background-color: black;
   color: white;
-  margin-top: 50px;
+  height: 100%;
+  margin-top: 100px;
+  padding-top: 90px;
 }
 .card-wrap {
   display: flex;
@@ -610,6 +627,14 @@ body {
 }
 
 /* end of team members */
+
+.contact-main{
+margin-bottom: 5%;
+color: #56b3ed;
+}
+/* .contact-head{
+  color: white;
+} */
 
 /* End of Section for Abhinav */
 
