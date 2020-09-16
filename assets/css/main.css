@@ -147,6 +147,7 @@ body {
   width: 800px;
   top: -150px;
   left: -50px;
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
 .hero-img-card{

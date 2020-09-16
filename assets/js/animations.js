@@ -77,9 +77,8 @@ function heroImageAnimation(){
     anime.timeline({loop: false})
     .add({
         targets: '.hero-img',
-        translateX: [300,0],
-        translateZ: 0,
         opacity: [0,1],
+        translateZ: 0,
         easing: "easeInOutQuad",
         duration: 1200,
         delay: 2800
