@@ -629,8 +629,21 @@ body {
 /* end of team members */
 
 .contact-main{
-margin-bottom: 5%;
+margin-bottom: 15%;
 color: #56b3ed;
+height: 100%;
+
+
+
+}
+@media (min-width: 700px){
+  .contact-main{
+    margin-bottom:5%;
+   
+  }
+  .contact-head{
+    margin-bottom: 50px;
+  }
 }
 /* .contact-head{
   color: white;
