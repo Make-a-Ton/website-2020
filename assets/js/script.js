@@ -137,7 +137,7 @@ window.onload = () => {
             ${ele.ques}
         </h3>
     </div>
-    <div class="toggle-inner panel" id="panel">
+    <div class=" panel" id="panel">
         <p>${ele.ans}</p>
     </div>
     
@@ -156,13 +156,16 @@ window.onload = () => {
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
+      hideAll(this)
+      
+      // this.classList.toggle("active");
 
       var panel = this.parentElement.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
+      hideAll(this)
+      if (panel.style.maxHeight === "100%") {
+        panel.style.maxHeight = 0;
       } else {
-        panel.style.display = "block";
+        panel.style.maxHeight = "100%";
       }
       hideAll(this)
     });
@@ -172,7 +175,7 @@ window.onload = () => {
     for (var i = 0; i < acc.length; i++) {
       if (acc[i] !== exceptThis) {
         acc[i].classList.remove("active");
-        acc[i].parentElement.nextElementSibling.style.display="none"
+        acc[i].parentElement.nextElementSibling.style.maxHeight=0
       }
     }
   }

@@ -515,9 +515,7 @@ body {
 }
 
 .toggle .toggle-inner {
-  padding: 7px 25px 10px 25px;
-  display: none;
-  margin: -7px 0 6px;
+  
 }
 
 .toggle .toggle-inner div {
@@ -598,10 +596,20 @@ body {
 }
 
 .panel {
-  display: none;
+  /* display: none; */
+ max-height: 0;
   color: white;
 
   overflow: hidden;
+  padding-right: 10px;
+  padding-left: 25px;
+  margin: -7px 0 6px;
+  transition: all  ease-in-out;
+  /* transition-duration: .5s; */
+  transition-delay: .3s;
+}
+.panel p{
+  height: 0%;
 }
 /* start of team members */
 .team-title{
@@ -642,7 +650,7 @@ height: 100%;
    
   }
   .contact-head{
-    margin-bottom: 50px;
+    padding-bottom: 20px;
   }
 }
 /* .contact-head{
