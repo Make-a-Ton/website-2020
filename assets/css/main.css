@@ -142,9 +142,53 @@ body {
 .hero-img {
   position: relative;
   width: 800px;
-  top: 25px;
+  top: -150px;
+  left: -50px;
   transition: all 0.5s ease-in-out;
 }
+.hero-img-card{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  animation: hero-card-animation 1.7s ease-in-out infinite;
+  animation-direction: alternate;
+}
+.hero-img-bg{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hero-img-card-shadow{
+  width: 100%;
+  position: absolute;
+  left: -10px;
+  top: 60px;
+  z-index: 50;
+  opacity: 0.5;
+  filter: saturate(0) invert(1) blur(20px);
+  animation: hero-card-shadow-animation 1.7s ease-in-out infinite;
+  animation-direction: alternate;
+}
+@keyframes hero-card-animation {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+@keyframes hero-card-shadow-animation {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
 .cittic-presents img {
   margin: 5px;
   max-width: 120px;
@@ -178,7 +222,7 @@ body {
 }
 .custom-space-1 {
   opacity: 0;
-  max-height: 85px;
+  max-height: 200px;
 }
 .hero-learnmore-sponsors-container {
   padding: 10px;
@@ -278,6 +322,10 @@ body {
   .made-possible {
     display: none !important;
   }
+  .hero-img{
+    top: 0;
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -321,7 +369,7 @@ body {
   .hero-img {
     width: 500px;
     top: 0;
-    left: 0;
+    left: -50px;
   }
   .cta {
     padding: 5px 10px 5px 10px;
