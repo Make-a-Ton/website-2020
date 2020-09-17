@@ -722,6 +722,7 @@ h3 {
 .toggle .toggle-title .title-name {
   display: block;
   padding: 25px 25px 14px;
+  color: #56b3ed;
 }
 
 .toggle .toggle-title a i {
@@ -743,6 +744,7 @@ h3 {
   width: 70%;
   margin: 150px auto;
   color: #56b3ed;
+
 }
 
 .social-icon {
@@ -755,12 +757,17 @@ h3 {
 .footer-main {
   background-color: rgba(14, 118, 188, 1);
   padding-bottom: 25px;
-  /* position: fixed; */
+  /* position: relative; */
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   color: white;
   height: 11vh;
   font-size: 19px;
-  padding-top: 10px;
+  padding-top: 10px
+  position: absolute;
+  
 }
 
 .code {
@@ -798,9 +805,16 @@ h3 {
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
+<<<<<<< HEAD
   transition: all ease-in-out;
   /* transition-duration: .5s; */
   transition-delay: 0.3s;
+=======
+  transition: all  ease-in;
+  
+  /* transition-delay: .2s; */
+  /* transition-duration: .1s; */
+>>>>>>> 5755279c133d5e94f22dd75dc50f960bccf44a62
 }
 .panel p {
   height: 0%;
