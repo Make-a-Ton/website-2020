@@ -383,6 +383,7 @@ body {
 /* End of Section for Naseem */
 
 /* Section for Kiran */
+/*Event day schedule*/
 .Schedule {
   padding: 4%;
   background: conic-gradient(
@@ -543,6 +544,150 @@ body {
     top: 135px;
   }
 }
+
+/*New Schedule style before event day*/
+
+.Schedulenew {
+  padding: 4%;
+  background: conic-gradient(
+    from 180deg at 50% 85.28%,
+    #000000 0deg,
+    #313131 228.75deg,
+    #000000 360deg
+  );
+}
+.Schedulenew h2,h3{
+  color: white;
+}
+
+/* The new timeline (the vertical ruler) */
+.timelinenew {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The new timeline (the vertical ruler) */
+.timelinenew::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containernew {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  
+}
+
+/* The circles on the timeline */
+.containernew::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background: #56B3ED;
+  border: 6px solid #0E76BC;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.leftnew {
+  left: 0;
+}
+
+/* Place the container to the right */
+.rightnew {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.leftnew::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.rightnew::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.rightnew::after {
+  left: -16px;
+}
+
+/* The actual content */
+.contentnew {
+  padding: 20px 30px;
+  background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+  box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timelinenew::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .containernew {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containernew::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .leftnew::after, .rightnew::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .rightnew {
+  left: 0%;
+  }
+}
+
+
 
 /* End of Section for Kiran */
 

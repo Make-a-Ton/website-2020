@@ -259,50 +259,21 @@
     <!-- // /* End of Section for Ajal */ -->
 
     <!-- // /* Section for Kiran */ -->
-    <section class="Schedule" id="schedule">
-      <div class="container">
-        <h2 class="text-center">The Schedule</h2>
-        <div class="space-div"></div>
-        <div class="space-div"></div>
-        <div class="dates row">
-          <div class="div-width"></div>
-          <div class="col-sm div-width">
-            <p class="sept">21 SEPTEMBER 2020</p>
-            <!--For events-->
-            <div class="timeline-right">
-              <div class="events">
-                <!--Individual event-->
-                <div id="schedule_day1"></div>
-                <script>
-                  document.getElementById(
-                    "schedule_day1"
-                  ).innerHTML = events_day1(schedule_day1);
-                </script>
-              </div>
-            </div>
-          </div>
-
-          <div class="div-width"></div>
-          <div class="col-sm div-width">
-            <p class="sept">22 SEPTEMBER 2020</p>
-            <!--For events-->
-            <div class="timeline-left">
-              <div class="events">
-                <!--Individual event-->
-                <div id="schedule_day2"></div>
-                <script>
-                  document.getElementById(
-                    "schedule_day2"
-                  ).innerHTML = events_day2(schedule_day2);
-                </script>
-              </div>
-            </div>
-          </div>
-          <div class="div-width"></div>
-        </div>
-        <div></div>
+    <!--For placing event day schedule use the code in schedule.txt copy paste that-->
+    <section class="Schedulenew">
+      <h3 class="text-center">The Schedule</h3>
+      <div class="space-div"></div>
+      <div class="space-div"></div>
+      <div class="timelinenew" id="timelinenew">
       </div>
+      <script>
+        document.getElementById(
+          "timelinenew"
+        ).innerHTML = before_day(before_day_events);
+      </script>
     </section>
+
+
     <!-- // /* End of Section for Kiran */ -->
 
     <!-- // /* Section for Ajal */ -->

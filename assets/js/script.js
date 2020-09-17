@@ -35,6 +35,28 @@ function events_day2() {
   return html;
 }
 
+function before_day() {
+  let html = "";
+  before_day_events.forEach((ele) => {
+    html += `
+    <div class="containernew leftnew">
+    <div class="contentnew">
+      <h2>${ele.Right.Date}</h2>
+      <p>${ele.Right.Event}</p>
+    </div>
+  </div>
+  <div class="containernew rightnew">
+    <div class="contentnew">
+    <h2>${ele.left.Date}</h2>
+    <p>${ele.left.Event}</p>
+    </div>
+  </div>
+      `;
+  });
+  return html;
+}
+
+
 // /* End of Section for Kiran */
 
 // /* Section for Abhinav */

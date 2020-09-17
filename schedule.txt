@@ -1,0 +1,44 @@
+<section class="Schedule" id="schedule">
+      <div class="container">
+        <h2 class="text-center">The Schedule</h2>
+        <div class="space-div"></div>
+        <div class="space-div"></div>
+        <div class="dates row">
+          <div class="div-width"></div>
+          <div class="col-sm div-width">
+            <p class="sept">21 SEPTEMBER 2020</p>
+            <!--For events-->
+            <div class="timeline-right">
+              <div class="events">
+                <!--Individual event-->
+                <div id="schedule_day1"></div>
+                <script>
+                  document.getElementById(
+                    "schedule_day1"
+                  ).innerHTML = events_day1(schedule_day1);
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="div-width"></div>
+          <div class="col-sm div-width">
+            <p class="sept">22 SEPTEMBER 2020</p>
+            <!--For events-->
+            <div class="timeline-left">
+              <div class="events">
+                <!--Individual event-->
+                <div id="schedule_day2"></div>
+                <script>
+                  document.getElementById(
+                    "schedule_day2"
+                  ).innerHTML = events_day2(schedule_day2);
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="div-width"></div>
+        </div>
+        <div></div>
+      </div>
+    </section>
