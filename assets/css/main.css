@@ -725,6 +725,7 @@ body {
 .toggle .toggle-title .title-name {
   display: block;
   padding: 25px 25px 14px;
+  color: #56b3ed;
 }
 
 .toggle .toggle-title a i {
@@ -746,6 +747,7 @@ body {
   width: 70%;
   margin: 150px auto;
   color: #56b3ed;
+
 }
 
 .social-icon {
@@ -801,9 +803,10 @@ body {
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
-  transition: all  ease-in-out;
-  /* transition-duration: .5s; */
-  transition-delay: .3s;
+  transition: all  ease-in;
+  
+  /* transition-delay: .2s; */
+  /* transition-duration: .1s; */
 }
 .panel p{
   height: 0%;
