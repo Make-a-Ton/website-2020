@@ -7,6 +7,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/data/sponsors.js"></script>
     <script src="./assets/data/schedule.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link
       rel="stylesheet"
@@ -65,6 +66,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">CONTACT</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">TEAM</a>
+          </li>
           <button class="cta">REGISTER NOW</button>
         </ul>
       </div>
@@ -94,8 +98,8 @@
               />
               <p>presents</p>
             </div>
-            <h1 class="font-weight-light">MAKE-A-TON</h1>
-            <p class="lead">
+            <h1 class="font-weight-light letter" id="hero-heading">MAKE-A-TON</h1>
+            <p class="lead letter2" id="hero-para">
               <em
                 >A 48 hour flagship hackathon from
                 <strong>Cochin University of Science and Technology</strong> for
@@ -103,16 +107,36 @@
                 <strong>embrace the spirit of innovation.</strong></em
               >
             </p>
-            <p class="hero-date">1 OCT 2020 - 20 OCT 2020</p>
+            <p class="hero-date">
+                <span class="text-wrapper">
+                  <span class="ml13 letter3">1 OCT 2020 - 20 OCT 2020</span>
+                </span>
+            </p>
+            <!-- <p class="hero-date">1 OCT 2020 - 20 OCT 2020</p> -->
             <button class="cta">REGISTER NOW</button>
           </div>
           <div class="col-12 col-md-4 col-lg-6 hero-img-container">
-            <img
-              class="hero-img mx-auto"
-              src="assets/img/heros-section-image-compressd.png"
-              alt=""
-              srcset=""
-            />
+            <div class="hero-img">
+                <img
+                    class="hero-img-card mx-auto"
+                    src="assets/img/heros-section-image-card-compressd.png"
+                    alt=""
+                    srcset=""
+                />
+                <img
+                    class="hero-img-card-shadow mx-auto"
+                    src="assets/img/heros-section-image-card-compressd.png"
+                    alt=""
+                    srcset=""
+                />
+                <img
+                    class="hero-img-bg mx-auto"
+                    src="assets/img/heros-section-image-compressd.png"
+                    alt=""
+                    srcset=""
+                />
+
+            </div>
           </div>
         </div>
         <div
@@ -235,62 +259,33 @@
     <!-- // /* End of Section for Ajal */ -->
 
     <!-- // /* Section for Kiran */ -->
-    <section class="Schedule" id="schedule">
-      <div class="container">
-        <h2 class="text-center">The Schedule</h2>
-        <div class="space-div"></div>
-        <div class="space-div"></div>
-        <div class="dates row">
-          <div class="div-width"></div>
-          <div class="col-sm div-width">
-            <p class="sept">21 SEPTEMBER 2020</p>
-            <!--For events-->
-            <div class="timeline-right">
-              <div class="events">
-                <!--Individual event-->
-                <div id="schedule_day1"></div>
-                <script>
-                  document.getElementById(
-                    "schedule_day1"
-                  ).innerHTML = events_day1(schedule_day1);
-                </script>
-              </div>
-            </div>
-          </div>
-
-          <div class="div-width"></div>
-          <div class="col-sm div-width">
-            <p class="sept">22 SEPTEMBER 2020</p>
-            <!--For events-->
-            <div class="timeline-left">
-              <div class="events">
-                <!--Individual event-->
-                <div id="schedule_day2"></div>
-                <script>
-                  document.getElementById(
-                    "schedule_day2"
-                  ).innerHTML = events_day2(schedule_day2);
-                </script>
-              </div>
-            </div>
-          </div>
-          <div class="div-width"></div>
-        </div>
-        <div></div>
+    <!--For placing event day schedule use the code in schedule.txt copy paste that-->
+    <section class="Schedulenew">
+      <h3 class="text-center">The Schedule</h3>
+      <div class="space-div"></div>
+      <div class="space-div"></div>
+      <div class="timelinenew" id="timelinenew">
       </div>
+      <script>
+        document.getElementById(
+          "timelinenew"
+        ).innerHTML = before_day(before_day_events);
+      </script>
     </section>
+
+
     <!-- // /* End of Section for Kiran */ -->
 
     <!-- // /* Section for Ajal */ -->
-    <section class="sponsorsSection">
+    <section class="sponsorsSection" id="sponsors">
       <div class="container-fluid text-center py-5 px-5 h-100">
         <h1 class="h1-responsive font-weight-bold sponsorsText">
           Amazing Sponsors
         </h1>
         <div class="container-fluid holdingContainer py-5 my-5">
-          <div class="row" id="sponsors"></div>
+          <div class="row" id="sponsorsRoot" ></div>
           <script>
-            document.getElementById("sponsors").innerHTML = generateSponsors(
+            document.getElementById("sponsorsRoot").innerHTML = generateSponsors(
               sponsorsList
             );
           </script>
@@ -361,7 +356,7 @@
     <!-- // /* End of Section for Abhinav */ -->
 
     <!-- Bootstrap stuff -->
-
+    <script src="./assets/js/animations.js"></script>
     <script src="./assets/data/contact.js"></script>
     <script src="./assets//data/team.js"></script>
     <script src="./assets//data/faq.js"></script>
