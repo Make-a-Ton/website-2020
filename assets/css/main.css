@@ -594,7 +594,7 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -12px;
   background: #56B3ED;
   border: 6px solid #0E76BC;
   top: 15px;
@@ -642,7 +642,7 @@ body {
 
 /* Fix the circle for containers on the right side */
 .rightnew::after {
-  left: -16px;
+  left: -12px;
 }
 
 /* The actual content */
@@ -677,13 +677,16 @@ body {
   }
 
   /* Make sure all circles are at the same spot */
-  .leftnew::after, .rightnew::after {
-  left: 15px;
+  .leftnew::after {
+  left: 18px;
   }
+  .rightnew::after {
+    left: 14px;
+    }
   
   /* Make all right containers behave like the left ones */
   .rightnew {
-  left: 0%;
+  left: 1%;
   }
 }
 
