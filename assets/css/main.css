@@ -756,7 +756,7 @@ h3 {
 }
 .footer-main {
   background-color: rgba(14, 118, 188, 1);
-  padding-bottom: 25px;
+  align-content: center;
   /* position: relative; */
   bottom: 0;
   left: 0;
@@ -764,19 +764,31 @@ h3 {
 
   color: white;
   height: 11vh;
-  font-size: 19px;
-  padding-top: 10px
-  position: absolute;
+  font-size: 18px;
+  padding-top: 15px
+  
   
 }
 
-.code {
-  text-align: right;
+@media screen and (min-width:800px){
+  .code {
+    text-align: right;
+
+  }
+  .footer-main{
+    padding-top: 23px;
+  }
 }
+.foot-social a{
+  padding-right: 5px;
+}
+
+
 @media screen and (max-width: 600px) {
   .footer-sub {
     text-align: center;
-    /* padding-right: 17px; */
+   
+  
   }
   .code {
     text-align: center;
@@ -805,16 +817,10 @@ h3 {
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
-<<<<<<< HEAD
-  transition: all ease-in-out;
-  /* transition-duration: .5s; */
-  transition-delay: 0.3s;
-=======
   transition: all  ease-in;
   
   /* transition-delay: .2s; */
   /* transition-duration: .1s; */
->>>>>>> 5755279c133d5e94f22dd75dc50f960bccf44a62
 }
 .panel p {
   height: 0%;
