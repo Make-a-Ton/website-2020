@@ -805,16 +805,10 @@ h3 {
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
-<<<<<<< HEAD
-  transition: all ease-in-out;
-  /* transition-duration: .5s; */
-  transition-delay: 0.3s;
-=======
   transition: all  ease-in;
   
   /* transition-delay: .2s; */
   /* transition-duration: .1s; */
->>>>>>> 5755279c133d5e94f22dd75dc50f960bccf44a62
 }
 .panel p {
   height: 0%;
@@ -874,7 +868,7 @@ h3 {
 }
 
 /* Sponsors image size */
-@media (max-width: 480px) {
+@media screen and  (max-width: 480px) {
   .sponsorsImage {
     width: 150px;
   }
@@ -958,7 +952,7 @@ h3 {
 
 .aboutText {
   color: #56b3ed;
-  font-size: x-large;
+  font-size: large;
 }
 
 .smallBox {
@@ -1038,41 +1032,243 @@ h3 {
 }
 
 .eggHolder img:nth-child(1) {
+  width:350px;
   position: absolute;
-  top: -14%;
-  right: -11%;
+  top: 14%;
+  right: -20%;
 }
 
+
 .eggHolder img:nth-child(2) {
+  width:500px;
   position: absolute;
   top: -46%;
   right: 37%;
 }
 
 .eggHolder img:nth-child(3) {
+  width:800px;
   position: absolute;
   top: -52%;
-  right: 9%;
+  right: 5%;
 }
 
 .eggHolder img:nth-child(4) {
+  width:550px;
   position: absolute;
   top: -88%;
   right: -10%;
 }
 
 .eggHolder img:nth-child(5) {
+  width:600px;
   position: absolute;
   top: -85%;
   right: -7%;
 }
 
 .eggHolder img:nth-child(6) {
+  width:400px;
   position: absolute;
   top: 15%;
   right: 1%;
 }
 
+@media screen and  (max-width: 359px) {
+  .eggHolder img:nth-child(1) {
+    width: 250px;
+    top: 46%;
+    right: -43%;
+  }  
+  .eggHolder img:nth-child(2) {
+    width: 300px;
+    top: 17%;
+    right: 20%;
+  }
+  
+  .eggHolder img:nth-child(3) {
+    width: 400px;
+    top: 34%;
+    right: 2%;
+  }
+  
+  .eggHolder img:nth-child(4) {
+    width: 350px;
+    top: -12%;
+    right: -32%;
+  }
+  
+  .eggHolder img:nth-child(5) {
+    width: 350px;
+    top: -3%;
+    right: -37%;
+  }
+  
+  .eggHolder img:nth-child(6) {
+    width: 200px;
+    top: 64%;
+    right: 4%;
+  }
+}
+
+
+
+@media screen and  (max-width: 420px) and (min-width: 360px) {
+  .eggHolder img:nth-child(1) {
+    width:250px;
+    top: 50%;
+    right: -27%;
+  }
+  
+  
+  .eggHolder img:nth-child(2) {
+    width:300px;
+    top: 20%;
+    right: 28%;
+  }
+  
+  .eggHolder img:nth-child(3) {
+    width: 400px;
+    top: 34%;
+    right: 10%;
+  }
+  
+  .eggHolder img:nth-child(4) {
+    width:350px;
+    top: -15%;
+    right: -10%;
+  }
+  
+  .eggHolder img:nth-child(5) {
+    width:350px;
+    top: -8%;
+    right: -14%;
+  }
+  
+  .eggHolder img:nth-child(6) {
+    width:200px;
+    top: 56%;
+    right: 4%;
+  }
+}
+
+@media screen and  (max-width: 520px) and (min-width: 421px) {
+  .eggHolder img:nth-child(1) {
+    width: 300px;
+    top: 38%;
+    right: -22%;
+  }
+  
+  
+  .eggHolder img:nth-child(2) {
+    width: 350px;
+    top: 13%;
+    right: 34%;
+  }
+  
+  .eggHolder img:nth-child(3) {
+    width: 450px;
+    top: 23%;
+    right: 19%;
+  }
+  
+  .eggHolder img:nth-child(4) {
+    width: 400px;
+    top: -23%;
+    right: -10%;
+  }
+  
+  .eggHolder img:nth-child(5) {
+    width: 400px;
+    top: -12%;
+    right: -14%;
+  }
+  
+  .eggHolder img:nth-child(6) {
+    width:250px;
+    top: 56%;
+    right: 4%;
+  }
+}
+
+@media screen and  (min-width: 521px) and (max-width: 600px) {
+  .eggHolder img:nth-child(1) {
+    width: 350px;
+    top: 21%;
+    right: -22%;
+  }
+  
+  
+  .eggHolder img:nth-child(2) {
+    width: 400px;
+    top: 0%;
+    right: 37%;
+  }
+  
+  .eggHolder img:nth-child(3) {
+    width: 500px;
+    top: 13%;
+    right: 24%;
+  }
+  
+  .eggHolder img:nth-child(4) {
+    width: 450px;
+    top: -41%;
+    right: -10%;
+  }
+  
+  .eggHolder img:nth-child(5) {
+    width: 450px;
+    top: -24%;
+    right: -8%;
+  }
+  
+  .eggHolder img:nth-child(6) {
+    width: 300px;
+    top: 43%;
+    right: 4%;
+  }
+}
+
+
+@media screen and  (min-width: 601px) and (max-width: 700px) {
+  .eggHolder img:nth-child(1) {
+    width: 400px;
+    top: 15%;
+    right: -17%;
+  }
+  
+  
+  .eggHolder img:nth-child(2) {
+    width: 459px;
+    top: -6%;
+    right: 44%;
+  }
+  
+  .eggHolder img:nth-child(3) {
+    width: 558px;
+    top: 5%;
+    right: 31%;
+  }
+  
+  .eggHolder img:nth-child(4) {
+    width: 500px;
+    top: -56%;
+    right: -10%;
+  }
+  
+  .eggHolder img:nth-child(5) {
+    width: 529px;
+    top: -39%;
+    right: 0%;
+  }
+  
+  .eggHolder img:nth-child(6) {
+    width: 375px;
+    top: 34%;
+    right: 12%;
+  }
+}
 /* End of about section */
 
 /* End of Section for Ajal */
