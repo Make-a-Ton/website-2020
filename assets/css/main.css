@@ -693,6 +693,9 @@ h3 {
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
+
+/* faq starts ..................................................... */
+
 .toggle:last-child {
   border-bottom: 1px solid #f5f0f0;
 }
@@ -712,8 +715,6 @@ h3 {
   font-weight: 200;
 }
 
-.toggle .toggle-inner {
-}
 
 .toggle .toggle-inner div {
   max-width: 100%;
@@ -747,6 +748,80 @@ h3 {
 
 }
 
+
+.panel {
+  /* display: none; */
+  max-height: 0;
+  color: white;
+
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 25px;
+  margin: -7px 0 6px;
+  transition: all  ease-in;
+  
+  /* transition-delay: .2s; */
+  /* transition-duration: .1s; */
+}
+.panel p {
+  height: 0%;
+}
+
+.accordion {
+  border: none;
+
+  outline: none;
+
+  transition: 0.4s;
+}
+
+/* faq ends */
+
+
+/* start of team members.............................................................. */
+.team-title {
+  padding-bottom: 5%;
+  padding-top: 4px;
+  font-size: 40;
+}
+.team-section {
+  background-color: black;
+  color: white;
+  height: 100%;
+  margin-top: 100px;
+  padding-top: 90px;
+}
+.card-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.frame {
+  margin-bottom: 30px;
+}
+
+/* end of team members....................................................... */
+
+/* contact start....................................................................... */
+.contact-main {
+  margin-bottom: 15%;
+  color: #56b3ed;
+  height: 100%;
+}
+@media (min-width: 700px) {
+  .contact-main {
+    margin-bottom: 5%;
+  }
+  .contact-head {
+    padding-bottom: 20px;
+  }
+}
+/* .contact-head{
+  color: white;
+} */
+/* contact ends ........................................................................ */
+
+
+/* footer starts .................................... */
 .social-icon {
   color: white;
   padding-right: 10px;
@@ -795,76 +870,7 @@ h3 {
   }
 }
 
-.accordion {
-  border: none;
-
-  outline: none;
-
-  transition: 0.4s;
-}
-
-.active,
-.accordion:hover {
-  /* background-color: #ccc;  */
-}
-
-.panel {
-  /* display: none; */
-  max-height: 0;
-  color: white;
-
-  overflow: hidden;
-  padding-right: 10px;
-  padding-left: 25px;
-  margin: -7px 0 6px;
-  transition: all  ease-in;
-  
-  /* transition-delay: .2s; */
-  /* transition-duration: .1s; */
-}
-.panel p {
-  height: 0%;
-}
-/* start of team members */
-.team-title {
-  padding-bottom: 5%;
-  padding-top: 4px;
-  font-size: 40;
-}
-.team-section {
-  background-color: black;
-  color: white;
-  height: 100%;
-  margin-top: 100px;
-  padding-top: 90px;
-}
-.card-wrap {
-  display: flex;
-  justify-content: space-around;
-}
-.frame {
-  margin-bottom: 30px;
-}
-
-/* end of team members */
-
-.contact-main {
-  margin-bottom: 15%;
-  color: #56b3ed;
-  height: 100%;
-}
-@media (min-width: 700px) {
-  .contact-main {
-    margin-bottom: 5%;
-  }
-  .contact-head {
-    padding-bottom: 20px;
-  }
-}
-/* .contact-head{
-  color: white;
-} */
-
+/* footer ends..................................... */
 /* End of Section for Abhinav */
 
 /* Section for Ajal */
