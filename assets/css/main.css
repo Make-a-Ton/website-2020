@@ -150,7 +150,7 @@ body {
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.hero-img-card{
+.hero-img-card {
   width: 100%;
   position: absolute;
   left: 0;
@@ -159,13 +159,13 @@ body {
   animation: hero-card-animation 1.7s ease-in-out infinite;
   animation-direction: alternate;
 }
-.hero-img-bg{
+.hero-img-bg {
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
 }
-.hero-img-card-shadow{
+.hero-img-card-shadow {
   width: 100%;
   position: absolute;
   left: -10px;
@@ -326,7 +326,7 @@ body {
   .made-possible {
     display: none !important;
   }
-  .hero-img{
+  .hero-img {
     top: 0;
     left: 0;
   }
@@ -556,7 +556,8 @@ body {
     #000000 360deg
   );
 }
-.Schedulenew h2,h3{
+.Schedulenew h2,
+h3 {
   color: white;
 }
 
@@ -569,7 +570,7 @@ body {
 
 /* The new timeline (the vertical ruler) */
 .timelinenew::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: white;
@@ -585,18 +586,17 @@ body {
   position: relative;
   background-color: inherit;
   width: 50%;
-  
 }
 
 /* The circles on the timeline */
 .containernew::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   right: -12px;
-  background: #56B3ED;
-  border: 6px solid #0E76BC;
+  background: #56b3ed;
+  border: 6px solid #0e76bc;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -648,7 +648,7 @@ body {
 /* The actual content */
 .contentnew {
   padding: 20px 30px;
-  background: linear-gradient(180deg, #0E76BC 0%, #56B3ED 100%);
+  background: linear-gradient(180deg, #0e76bc 0%, #56b3ed 100%);
   box-shadow: 0px 51px 118px rgba(0, 0, 0, 0.11);
   position: relative;
   border-radius: 6px;
@@ -658,39 +658,37 @@ body {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timelinenew::after {
-  left: 31px;
+    left: 31px;
   }
-  
+
   /* Full-width containers */
   .containernew {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .containernew::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
   .leftnew::after {
-  left: 18px;
+    left: 18px;
   }
   .rightnew::after {
     left: 14px;
-    }
-  
+  }
+
   /* Make all right containers behave like the left ones */
   .rightnew {
-  left: 1%;
+    left: 1%;
   }
 }
-
-
 
 /* End of Section for Kiran */
 
@@ -715,7 +713,6 @@ body {
 }
 
 .toggle .toggle-inner {
-  
 }
 
 .toggle .toggle-inner div {
@@ -801,19 +798,25 @@ body {
 
 .panel {
   /* display: none; */
- max-height: 0;
+  max-height: 0;
   color: white;
 
   overflow: hidden;
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
+<<<<<<< HEAD
+  transition: all ease-in-out;
+  /* transition-duration: .5s; */
+  transition-delay: 0.3s;
+=======
   transition: all  ease-in;
   
   /* transition-delay: .2s; */
   /* transition-duration: .1s; */
+>>>>>>> 5755279c133d5e94f22dd75dc50f960bccf44a62
 }
-.panel p{
+.panel p {
   height: 0%;
 }
 /* start of team members */
@@ -848,7 +851,7 @@ body {
   .contact-main {
     margin-bottom: 5%;
   }
-  .contact-head{
+  .contact-head {
     padding-bottom: 20px;
   }
 }
@@ -911,7 +914,7 @@ body {
 }
 
 .whySection {
-  background-color: black;
+  background: #101010;
   position: relative;
   min-height: 600px;
   height: auto;
@@ -954,26 +957,122 @@ body {
 /* About Section */
 
 .aboutText {
-  color: #0e76bb;
+  color: #56b3ed;
   font-size: x-large;
 }
 
 .smallBox {
   max-width: 275px !important;
   height: 175px !important;
-  background-image: linear-gradient(to top, #137fc7, #3daef5cb);
-  border-radius: 10px;
+  background: linear-gradient(172.06deg, #0e76bc 22.18%, #56b3ed 106.1%);
+  box-shadow: 0px 20px 84px rgba(14, 118, 188, 0.3);
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .aboutHeading {
   color: white;
 }
 
+.citticContainer {
+  height: fit-content;
+  width: fit-content;
+  max-width: 600px;
+  background: #56b3ed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.citticText {
+  color: black;
+  margin: 8px 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.learnmoreButton {
+  width: 142px;
+  height: 47px;
+  background: #474747;
+  border-radius: 46px;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnmoreButton:hover {
+  cursor: pointer;
+}
+
+.learnMoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 80%;
+  align-items: flex-end;
+}
+
+.eggHolder {
+  position: relative;
+  height: 300px;
+  max-width: 600px;
+}
+
+.eggHolder img:nth-child(1) {
+  position: absolute;
+  top: -14%;
+  right: -11%;
+}
+
+.eggHolder img:nth-child(2) {
+  position: absolute;
+  top: -46%;
+  right: 37%;
+}
+
+.eggHolder img:nth-child(3) {
+  position: absolute;
+  top: -52%;
+  right: 9%;
+}
+
+.eggHolder img:nth-child(4) {
+  position: absolute;
+  top: -88%;
+  right: -10%;
+}
+
+.eggHolder img:nth-child(5) {
+  position: absolute;
+  top: -85%;
+  right: -7%;
+}
+
+.eggHolder img:nth-child(6) {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+}
+
 /* End of about section */
+
 /* End of Section for Ajal */
