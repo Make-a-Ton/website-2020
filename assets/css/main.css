@@ -807,6 +807,9 @@ h3 {
   color: #56b3ed;
   height: 100%;
 }
+.contact-main a{
+  color: #56b3ed;;
+}
 @media (min-width: 700px) {
   .contact-main {
     margin-bottom: 5%;
