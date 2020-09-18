@@ -383,7 +383,7 @@ body {
 /* End of Section for Naseem */
 
 /* Section for Kiran */
-/*Event day schedule*/
+/*--------------------------Event day schedule-------------------*/
 .Schedule {
   padding: 4%;
   background: conic-gradient(
@@ -545,16 +545,11 @@ body {
   }
 }
 
-/*New Schedule style before event day*/
+/*--------------New Schedule style before event day--------------*/
 
 .Schedulenew {
   padding: 4%;
-  background: conic-gradient(
-    from 180deg at 50% 85.28%,
-    #000000 0deg,
-    #313131 228.75deg,
-    #000000 360deg
-  );
+  background: linear-gradient(#101010,#222222);
 }
 .Schedulenew h2,
 h3 {

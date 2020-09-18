@@ -20,23 +20,42 @@ var schedule_day2 = [{
 
 var before_day_events = [{
     Right:{
-        Date:'10 Sep 2020',
+        Date:'20 Sep 2020',
         Event:'Registration start'
     },
     left:{
-        Date:'20 Sep 2020',
+        Date:'30 Sep 2020',
         Event:'Registration end'
     }
 },
 {
     Right:{
-        Date:'30 Sep 2020',
-        Event:'xcv'
+        Date:'1 Oct 2020',
+        Event:'Selection'
+    },
+    left:{
+        Date:'3 Oct 2020',
+        Event:'Payment Last Date'
+    }
+},
+{
+    Right:{
+        Date:'5 Oct 2020',
+        Event:'Participants Finalise'
     },
     left:{
         Date:'10 Oct 2020',
-        Event:'ABC'
+        Event:'Team Formation'
     }
 },
-
+{
+    Right:{
+        Date:'15 Oct 2020',
+        Event:'Finalisation of teams And Domain release'
+    },
+    left:{
+        Date:'17 Oct 2020',
+        Event:'Event Day'
+    }
+},
 ]
