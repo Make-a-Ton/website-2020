@@ -89,6 +89,8 @@ function sponsorsHeroAnimtaion(){
     .add({
         targets: '.made-possible',
         opacity: [0,1],
+        translateX: [500,0],
+
         duration: 700,
         delay: 4500
     })
