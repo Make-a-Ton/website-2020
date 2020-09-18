@@ -284,6 +284,9 @@ body {
     height: 100vh;
   }
 
+  .navbar-nav > .cta{
+    margin: 30px;
+  } 
   .navbar-nav {
     height: 100vh !important;
   }
