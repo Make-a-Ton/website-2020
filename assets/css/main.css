@@ -52,6 +52,10 @@ body {
   display: flex !important;
   align-items: center;
   box-sizing: border-box;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom: 0px solid #5bc0eb;
+
+
 }
 .navbar-brand img {
   background-color: #000000;
@@ -71,6 +75,7 @@ body {
   font-weight: 700 !important;
   border-bottom: 5px solid #5bc0eb;
   box-sizing: border-box;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .icon-bar {
   width: 22px;
