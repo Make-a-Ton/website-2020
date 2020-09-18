@@ -20,11 +20,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body style="background-color: black" ">
+  <body style="background-color: black">
     <!-- /* Section for Naseem */ -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" width="80" height="80" alt="" />
+        <img
+          src="assets/img/logo.png"
+          width="80"
+          height="80"
+          alt="Make-a-Ton Logo"
+        />
         <p>MAKE-A-TON</p>
       </a>
       <button
@@ -98,7 +103,9 @@
               />
               <p>presents</p>
             </div>
-            <h1 class="font-weight-light letter" id="hero-heading">MAKE-A-TON</h1>
+            <h1 class="font-weight-light letter" id="hero-heading">
+              MAKE-A-TON
+            </h1>
             <p class="lead letter2" id="hero-para">
               <em
                 >A 48 hour flagship hackathon from
@@ -108,34 +115,33 @@
               >
             </p>
             <p class="hero-date">
-                <span class="text-wrapper">
-                  <span class="ml13 letter3">1 OCT 2020 - 20 OCT 2020</span>
-                </span>
+              <span class="text-wrapper">
+                <span class="ml13 letter3">1 OCT 2020 - 20 OCT 2020</span>
+              </span>
             </p>
             <!-- <p class="hero-date">1 OCT 2020 - 20 OCT 2020</p> -->
             <button class="cta">REGISTER NOW</button>
           </div>
           <div class="col-12 col-md-4 col-lg-6 hero-img-container">
             <div class="hero-img">
-                <img
-                    class="hero-img-card mx-auto"
-                    src="assets/img/heros-section-image-card-compressd.png"
-                    alt=""
-                    srcset=""
-                />
-                <img
-                    class="hero-img-card-shadow mx-auto"
-                    src="assets/img/heros-section-image-card-compressd.png"
-                    alt=""
-                    srcset=""
-                />
-                <img
-                    class="hero-img-bg mx-auto"
-                    src="assets/img/heros-section-image-compressd.png"
-                    alt=""
-                    srcset=""
-                />
-
+              <img
+                class="hero-img-card mx-auto"
+                src="assets/img/heros-section-image-card-compressd.png"
+                alt=""
+                srcset=""
+              />
+              <img
+                class="hero-img-card-shadow mx-auto"
+                src="assets/img/heros-section-image-card-compressd.png"
+                alt=""
+                srcset=""
+              />
+              <img
+                class="hero-img-bg mx-auto"
+                src="assets/img/heros-section-image-compressd.png"
+                alt=""
+                srcset=""
+              />
             </div>
           </div>
         </div>
@@ -158,7 +164,9 @@
             class="col col-12 col-md-10 hero-sponsors-container order-1 order-sm-1"
             id="hero-sponsors-container"
           >
-            Sponsors
+          <script>
+            document.getElementById("hero-sponsors-container").innerHTML = generateSponsorsHeroSection(sponsorsList);
+          </script>
           </div>
         </div>
       </div>
@@ -168,34 +176,41 @@
     <!-- // /* Section for Ajal */ -->
 
     <!-- About section -->
-    <section id="about" style="background-color: #101010;padding-top: 10%; overflow: hidden;">
+    <section
+      id="about"
+      style="background-color: #101010; padding-top: 10%; overflow: hidden"
+    >
       <div class="row mx-4 pt-5">
         <div class="col-lg-12 col-md-12 col-xl-6 px-5">
-          <h1 class="h1-responsive font-weight-bold aboutHeading">About Make-a-Ton</h1>
+          <h1 class="h1-responsive font-weight-bold aboutHeading">
+            About Make-a-Ton
+          </h1>
           <p class="aboutText font-weight-normal">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-            temporibus minus, et, quidem qui eveniet error repellat beatae
-            adipisci dignissimos ipsam dicta, excepturi dolor id deserunt
-            repudiandae asperiores culpa accusamus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quas obcaecati reiciendis enim atque
-            quam, maiores perspiciatis quaerat dicta eveniet nihil impedit
-            perferendis odio a sed id consequatur similique et molestiae?
+            Make-a-Ton, presented by CITTIC is back with a bang to provide
+            students with a platform to experience an exhilirating 48 hour open
+            online hackathon. This is a big opportunity to pitch their ideas in
+            front of an eminent panel of judges and build it into the best
+            solution. Celebrating the spirit of 'Build over buy ', Make-a-Ton
+            prominently focusses on bringing out passionate innovators. The
+            hackathon opens up problems that fall under different categories to
+            choose. Grab the chance to present your innovative solutions to
+            tackle issues faced by the world today and take away grand prizes.
           </p>
           <div class="row smallBoxContainer my-5">
             <div class="container col-lg-6 col-md-12 smallBox mx-3">
               <h1 class="h1-responsive">100+</h1>
-              <h3 class="h3-responsive">Participants</h1>
+              <h3 class="h3-responsive">Participants</h3>
             </div>
             <div class="container col-lg-6 col-md-12 smallBox mx-3">
               <h1 class="h1-responsive">$10K</h1>
-              <h3 class="h3-responsive">Worth of Prices</h1>
+              <h3 class="h3-responsive">Worth of Prices</h3>
             </div>
           </div>
         </div>
         <div class="col-lg-12 col-md-12 col-xl-6">
           <div class="container-fluid rightContainer h-100">
-          <div class="container-fluid eggHolder">
-            <img
+            <div class="container-fluid eggHolder">
+              <img
                 class="img-responsive"
                 src="assets/img/Photo 5.svg"
                 alt=""
@@ -212,8 +227,8 @@
                 src="assets/img/Photo 6.svg"
                 alt=""
                 srcset=""
-                />
-                <img
+              />
+              <img
                 class="img-responsive"
                 src="assets/img/Photo 2.svg"
                 alt=""
@@ -231,24 +246,31 @@
                 alt=""
                 srcset=""
               />
-          </div>
-          <div class="container-fluid py-5 px-4 citticContainer">
-            <img
+            </div>
+            <div class="container-fluid py-5 px-4 citticContainer">
+              <img
                 src="assets/img/cittic_logo_grey_bg.svg"
                 width="200"
                 alt=""
                 srcset=""
               />
-              <p class="citticText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde mollitia, commodi tempora sapiente, obcaecati non officia cumque in possimus ea excepturi consectetur quae recusandae ducimus quo? Quas suscipit quisquam aperiam.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quidem non quasi, quaerat voluptates dicta aspernatur? Natus temporibus quis nulla porro? Numquam ipsam in, doloribus maiores voluptatibus cumque cupiditate minima?
+              <p class="citticText">
+                The Centre for Innovation, Technology Transfer and Industrial
+                Collaboration (CITTIC),the technology business incubator of
+                Cusat, has nurtured several young startups and has supported the
+                growth of technology in the student community. CITTIC was set up
+                on the campus with central and state government funding to
+                provide a vibrant, innovative and entrepreneurial environment
+                for faculty and students to run university-linked startup
+                companies
               </p>
               <div class="learnMoreContainer">
-              <div class="learnmoreButton ">
-                Learn More
+                <a href="http://cittic.cusat.ac.in/" target="_blank">
+                  <div class="learnmoreButton">Learn More</div>
+                </a>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -316,7 +338,7 @@
       </div>
     </section>
     <!-- End of Why-make-a-ton section -->
-    
+
     <!-- // /* End of Section for Ajal */ -->
 
     <!-- // /* Section for Kiran */ -->
@@ -325,15 +347,13 @@
       <h3 class="text-center">The Schedule</h3>
       <div class="space-div"></div>
       <div class="space-div"></div>
-      <div class="timelinenew" id="timelinenew">
-      </div>
+      <div class="timelinenew" id="timelinenew"></div>
       <script>
-        document.getElementById(
-          "timelinenew"
-        ).innerHTML = before_day(before_day_events);
+        document.getElementById("timelinenew").innerHTML = before_day(
+          before_day_events
+        );
       </script>
     </section>
-
 
     <!-- // /* End of Section for Kiran */ -->
 
@@ -344,11 +364,11 @@
           Amazing Sponsors
         </h1>
         <div class="container-fluid holdingContainer py-5 my-5">
-          <div class="row" id="sponsorsRoot" ></div>
+          <div class="row" id="sponsorsRoot"></div>
           <script>
-            document.getElementById("sponsorsRoot").innerHTML = generateSponsors(
-              sponsorsList
-            );
+            document.getElementById(
+              "sponsorsRoot"
+            ).innerHTML = generateSponsors(sponsorsList);
           </script>
         </div>
       </div>
@@ -371,12 +391,10 @@
 
     <!-- Section: contact v.1 -->
 
-  <div class="col col-12  contact-main" id="contact">
-    <div class="space-50"></div>
-    <div class="row  ">
-        <div class="col col-12 text-center h2 contact-head">
-            CONTACT US
-        </div>
+    <div class="col col-12 contact-main" id="contact">
+      <div class="space-50"></div>
+      <div class="row">
+        <div class="col col-12 text-center h2 contact-head">CONTACT US</div>
         <div class="space-20"></div>
         <div class="space-20"></div>
         <div class="space-20"></div>
@@ -407,9 +425,9 @@
       <div class="row footer-sub">
         <div class="col-md-6 social-icon foot-social">
           <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a href="http://www.twitter.com/MakeaTonCusat" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/company/makeaton" class="fa fa-linkedin"></a>
+          <a href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo" class="fa fa-instagram"></a>
         </div>
         <div class="col-md-6 code">Code of conduct CITTIC © 2020</div>
       </div>
@@ -461,7 +479,8 @@
           $(".navbar-collapse").collapse("hide");
           return false;
         });
-      });
+      });   
+    
     </script>
   </body>
 </html>
