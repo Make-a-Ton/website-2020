@@ -84,7 +84,25 @@ function heroImageAnimation(){
         delay: 2800
     })
 }
-
+function sponsorsHeroAnimtaion(){
+    anime.timeline({loop: false})
+    .add({
+        targets: '.made-possible',
+        opacity: [0,1],
+        duration: 700,
+        delay: 4500
+    })
+    .add({
+        targets: '.hero-sponsor-item',
+        opacity: [0,1],
+        // scale: [0,1],
+        // translateX: [1000,0],
+        // translateZ: 0,
+        // easing: "linear",
+        duration: 500,
+        delay: anime.stagger(200,{start: 0})
+    })
+}
 
 citticAnimation()
 heroHeadingAnimation()
@@ -92,3 +110,4 @@ heroParaAnimation()
 heroDate()
 ctaanimation()
 heroImageAnimation()
+sponsorsHeroAnimtaion()

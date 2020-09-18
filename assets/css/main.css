@@ -266,6 +266,7 @@ body {
   display: flex !important;
   flex-direction: row;
   justify-content: space-around;
+  overflow: hidden;
 }
 .hero-sponsor-item {
   height: 50px;
@@ -274,6 +275,7 @@ body {
   padding: 10px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  opacity: 0;
 }
 .hero-sponsor-item:hover {
   transform: scale(1.1);
