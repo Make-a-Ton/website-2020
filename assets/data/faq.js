@@ -30,5 +30,13 @@ var faq=[
     {
         "ques": "Will I get any refund?",
         "ans": "No, once registered the amount will not be refunded. Even if the candidate fails in participating, he/she will not be accounted for any refund."
+    },
+    {
+        "ques": "I'm a newbie, is there any point in registering?",
+        "ans": "Hackathons are a great way to learn about new technology and make new friends. We want a diverse audience and beginners are welcome."
+    },
+    {
+        "ques": "I don't know how to code, is this event for me?",
+        "ans": "Designers, marketers and all sorts of skills are required for a successful company. We believe there is something for everyone."
     }
 ]
