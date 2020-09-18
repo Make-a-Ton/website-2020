@@ -806,6 +806,9 @@ h3 {
   color: #56b3ed;
   height: 100%;
 }
+.contact-main a{
+  color: #56b3ed;;
+}
 @media (min-width: 700px) {
   .contact-main {
     margin-bottom: 5%;
@@ -840,6 +843,10 @@ h3 {
   font-size: 18px;
   padding-top: 15px;
 }
+.footer-main a{
+  color: white;
+}
+
 
 @media screen and (min-width: 800px) {
   .code {
