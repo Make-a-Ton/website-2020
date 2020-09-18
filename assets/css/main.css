@@ -791,6 +791,15 @@ h3 {
 }
 .frame {
   margin-bottom: 30px;
+  height:100%;
+  font-size:20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.frame a{
+  color: white;
 }
 
 /* end of team members....................................................... */

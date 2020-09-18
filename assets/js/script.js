@@ -100,6 +100,7 @@ function before_day() {
 // /* Section for Abhinav */
 
 window.onload = () => {
+
   // team
   // team.forEach((ele) => {
   //   console.log(ele.name);
