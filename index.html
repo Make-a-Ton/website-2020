@@ -66,13 +66,13 @@
           <li class="nav-item" id="sponsorsLink">
             <a class="nav-link" href="#sponsors">SPONSORS</a>
           </li>
-          <li class="nav-item" id='faqLink'>
+          <li class="nav-item" id="faqLink">
             <a class="nav-link" href="#faqq">FAQs</a>
           </li>
-          <li class="nav-item" id='contactLink'>
+          <li class="nav-item" id="contactLink">
             <a class="nav-link" href="#contact">CONTACT</a>
           </li>
-          <li class="nav-item" id='teamLink'>
+          <li class="nav-item" id="teamLink">
             <a class="nav-link" href="team.html">TEAM</a>
           </li>
           <button class="cta">REGISTER NOW</button>
@@ -165,9 +165,11 @@
             class="col col-12 col-md-10 hero-sponsors-container order-1 order-sm-1"
             id="hero-sponsors-container"
           >
-          <script>
-            document.getElementById("hero-sponsors-container").innerHTML = generateSponsorsHeroSection(sponsorsList);
-          </script>
+            <script>
+              document.getElementById(
+                "hero-sponsors-container"
+              ).innerHTML = generateSponsorsHeroSection(sponsorsList);
+            </script>
           </div>
         </div>
       </div>
@@ -213,37 +215,37 @@
             <div class="container-fluid eggHolder">
               <img
                 class="img-responsive"
-                src="assets/img/Photo 5.svg"
+                src="assets/img/Photo 5.png"
                 alt=""
                 srcset=""
               />
               <img
                 class="img-responsive"
-                src="assets/img/Photo 4.svg"
+                src="assets/img/Photo 4.png"
                 alt=""
                 srcset=""
               />
               <img
                 class="img-responsive"
-                src="assets/img/Photo 6.svg"
+                src="assets/img/Photo 6.png"
                 alt=""
                 srcset=""
               />
               <img
                 class="img-responsive"
-                src="assets/img/Photo 2.svg"
+                src="assets/img/Photo 2.png"
                 alt=""
                 srcset=""
               />
               <img
                 class="img-responsive"
-                src="assets/img/Photo 1.svg"
+                src="assets/img/Photo 1.png"
                 alt=""
                 srcset=""
               />
               <img
                 class="img-responsive"
-                src="assets/img/Photo 3.svg"
+                src="assets/img/Photo 3.png"
                 alt=""
                 srcset=""
               />
@@ -426,11 +428,24 @@
       <div class="row footer-sub">
         <div class="col-md-6 social-icon foot-social">
           <a href="#" class="fa fa-facebook"></a>
-          <a href="http://www.twitter.com/MakeaTonCusat" class="fa fa-twitter"></a>
-          <a href="https://www.linkedin.com/company/makeaton" class="fa fa-linkedin"></a>
-          <a href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo" class="fa fa-instagram"></a>
+          <a
+            href="http://www.twitter.com/MakeaTonCusat"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/makeaton"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo"
+            class="fa fa-instagram"
+          ></a>
         </div>
-        <div class="col-md-6 code"><a href="./assets/Code of Conduct.pdf" target="_blank">Code of conduct CITTIC © 2020</a></div>
+        <div class="col-md-6 code">
+          <a href="./assets/Code of Conduct.pdf" target="_blank"
+            >Code of conduct CITTIC © 2020</a
+          >
+        </div>
       </div>
     </footer>
     <!-- // /* End of Section for Abhinav */ -->
@@ -480,37 +495,48 @@
           $(".navbar-collapse").collapse("hide");
           return false;
         });
-        $(window).scroll(function() { // Says this function is preformed continuisly while scrolling.
+        $(window).scroll(function () {
+          // Says this function is preformed continuisly while scrolling.
           let Scroll = $(window).scrollTop() + 1;
-          let	AboutSectionOffset = $('#about').offset().top - 400; // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
-          let whySectionOffset = $('#whySection').offset().top  - 400;
-          let scheduleSectionOffset = $('#schedule').offset().top  - 400;
-          let sponsorsSectionOffset = $('#sponsors').offset().top  - 400;
-          let faqSectionOffset = $('#faqq').offset().top  - 400;
-          let contactSectionOffset = $('#contact').offset().top  - 400;
-          if(Scroll<AboutSectionOffset){
-            $('.nav-active').removeClass('nav-active');    
-            $('#homeLink').addClass('nav-active');  
-          }else if (Scroll>AboutSectionOffset && Scroll<scheduleSectionOffset){
-            $('.nav-active').removeClass('nav-active');    
-            $('#aboutLink').addClass('nav-active');        
-          }else if (Scroll>scheduleSectionOffset && Scroll<sponsorsSectionOffset ){
-            $('.nav-active').removeClass('nav-active');    
-            $('#scheduleLink').addClass('nav-active');      
-          }else if (Scroll>sponsorsSectionOffset && Scroll<faqSectionOffset ){
-            $('.nav-active').removeClass('nav-active');    
-            $('#sponsorsLink').addClass('nav-active');      
-          }else if (Scroll>faqSectionOffset && Scroll<contactSectionOffset ){
-            $('.nav-active').removeClass('nav-active');    
-            $('#faqLink').addClass('nav-active');      
-          }else{
-            $('.nav-active').removeClass('nav-active');    
-            $('#contactLink').addClass('nav-active');      
+          let AboutSectionOffset = $("#about").offset().top - 400; // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
+          let whySectionOffset = $("#whySection").offset().top - 400;
+          let scheduleSectionOffset = $("#schedule").offset().top - 400;
+          let sponsorsSectionOffset = $("#sponsors").offset().top - 400;
+          let faqSectionOffset = $("#faqq").offset().top - 400;
+          let contactSectionOffset = $("#contact").offset().top - 400;
+          if (Scroll < AboutSectionOffset) {
+            $(".nav-active").removeClass("nav-active");
+            $("#homeLink").addClass("nav-active");
+          } else if (
+            Scroll > AboutSectionOffset &&
+            Scroll < scheduleSectionOffset
+          ) {
+            $(".nav-active").removeClass("nav-active");
+            $("#aboutLink").addClass("nav-active");
+          } else if (
+            Scroll > scheduleSectionOffset &&
+            Scroll < sponsorsSectionOffset
+          ) {
+            $(".nav-active").removeClass("nav-active");
+            $("#scheduleLink").addClass("nav-active");
+          } else if (
+            Scroll > sponsorsSectionOffset &&
+            Scroll < faqSectionOffset
+          ) {
+            $(".nav-active").removeClass("nav-active");
+            $("#sponsorsLink").addClass("nav-active");
+          } else if (
+            Scroll > faqSectionOffset &&
+            Scroll < contactSectionOffset
+          ) {
+            $(".nav-active").removeClass("nav-active");
+            $("#faqLink").addClass("nav-active");
+          } else {
+            $(".nav-active").removeClass("nav-active");
+            $("#contactLink").addClass("nav-active");
           }
-		    
-		    });
-      });   
-    
+        });
+      });
     </script>
   </body>
 </html>
