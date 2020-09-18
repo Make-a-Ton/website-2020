@@ -46,27 +46,28 @@
             class="nav-item nav-active"
             data-toggle="collapse"
             data-target="#navbarText"
+            id="homeLink"
           >
             <a class="nav-link" href="#"
               >HOME<span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="aboutLink">
             <a class="nav-link" href="#about">ABOUT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sponsors">SPONSORS</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item" id="scheduleLink">
             <a class="nav-link" href="#schedule">SCHEDULE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="sponsorsLink">
+            <a class="nav-link" href="#sponsors">SPONSORS</a>
+          </li>
+          <li class="nav-item" id='faqLink'>
             <a class="nav-link" href="#faqq">FAQs</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id='contactLink'>
             <a class="nav-link" href="#contact">CONTACT</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id='teamLink'>
             <a class="nav-link" href="team.html">TEAM</a>
           </li>
           <button class="cta">REGISTER NOW</button>
@@ -253,7 +254,7 @@
     <!-- End of about section -->
 
     <!-- Why Make-a-ton section -->
-    <section class="whySection">
+    <section class="whySection" id="whySection">
       <div class="container-fluid py-5 px-5 h-100">
         <div class="mainContainer">
           <img
@@ -459,6 +460,35 @@
           $(".navbar-collapse").collapse("hide");
           return false;
         });
+        $(window).scroll(function() { // Says this function is preformed continuisly while scrolling.
+          let Scroll = $(window).scrollTop() + 1;
+          let	AboutSectionOffset = $('#about').offset().top - 400; // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
+          let whySectionOffset = $('#whySection').offset().top  - 400;
+          let scheduleSectionOffset = $('#schedule').offset().top  - 400;
+          let sponsorsSectionOffset = $('#sponsors').offset().top  - 400;
+          let faqSectionOffset = $('#faqq').offset().top  - 400;
+          let contactSectionOffset = $('#contact').offset().top  - 400;
+          if(Scroll<AboutSectionOffset){
+            $('.nav-active').removeClass('nav-active');    
+            $('#homeLink').addClass('nav-active');  
+          }else if (Scroll>AboutSectionOffset && Scroll<scheduleSectionOffset){
+            $('.nav-active').removeClass('nav-active');    
+            $('#aboutLink').addClass('nav-active');        
+          }else if (Scroll>scheduleSectionOffset && Scroll<sponsorsSectionOffset ){
+            $('.nav-active').removeClass('nav-active');    
+            $('#scheduleLink').addClass('nav-active');      
+          }else if (Scroll>sponsorsSectionOffset && Scroll<faqSectionOffset ){
+            $('.nav-active').removeClass('nav-active');    
+            $('#sponsorsLink').addClass('nav-active');      
+          }else if (Scroll>faqSectionOffset && Scroll<contactSectionOffset ){
+            $('.nav-active').removeClass('nav-active');    
+            $('#faqLink').addClass('nav-active');      
+          }else{
+            $('.nav-active').removeClass('nav-active');    
+            $('#contactLink').addClass('nav-active');      
+          }
+		    
+		    });
       });   
     
     </script>
