@@ -39,13 +39,13 @@ function before_day() {
   let html = "";
   before_day_events.forEach((ele) => {
     html += `
-    <div class="containernew leftnew">
+    <div class="containernew leftnew lax" data-lax-preset="fadeIn blurIn-5">
     <div class="contentnew">
       <h2>${ele.Right.Date}</h2>
       <p>${ele.Right.Event}</p>
     </div>
   </div>
-  <div class="containernew rightnew">
+  <div class="containernew rightnew lax" data-lax-preset="fadeIn blurIn-5">
     <div class="contentnew">
     <h2>${ele.left.Date}</h2>
     <p>${ele.left.Event}</p>
