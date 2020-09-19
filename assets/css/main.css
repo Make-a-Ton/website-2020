@@ -54,8 +54,6 @@ body {
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   border-bottom: 0px solid #5bc0eb;
-
-
 }
 .navbar-brand img {
   background-color: #000000;
@@ -286,17 +284,17 @@ body {
   position: relative !important;
   top: 0;
 }
-.smallBoxContainer{
-  justify-content: space-arounda!important;
+.smallBoxContainer {
+  justify-content: space-arounda !important;
 }
 @media only screen and (max-width: 992px) {
   .navbar-collapse {
     height: 100vh;
   }
 
-  .navbar-nav > .cta{
+  .navbar-nav > .cta {
     margin: 30px;
-  } 
+  }
   .navbar-nav {
     height: 100vh !important;
   }
@@ -343,28 +341,28 @@ body {
     top: 0;
     left: 0;
   }
-  .aboutHeading{
+  .aboutHeading {
     font-size: 32px;
   }
-  .aboutText{
-    font-size: 15px!important;
+  .aboutText {
+    font-size: 15px !important;
   }
-  .smallBox{
-    width: 150px!important;
+  .smallBox {
+    width: 150px !important;
     padding: 20px;
     align-items: center;
   }
-  .smallBox h1{
-    font-size: 28px!important;
+  .smallBox h1 {
+    font-size: 28px !important;
   }
-  .smallBox h3{
-    font-size: 20px!important;
+  .smallBox h3 {
+    font-size: 20px !important;
   }
-  .smallBoxContainer{
-    width: 100%!important;
-    padding: 0!important;
-    display:flex!important;
-    justify-content: center!important;
+  .smallBoxContainer {
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
     align-items: center;
   }
 }
@@ -416,27 +414,27 @@ body {
     padding: 5px 10px 5px 10px;
     font-size: 15px !important;
   }
-  .aboutText{
-    font-size: 15px!important;
+  .aboutText {
+    font-size: 15px !important;
   }
-  .aboutHeading{
-    font-size: 28px!important;
+  .aboutHeading {
+    font-size: 28px !important;
     word-wrap: normal;
   }
 
-  .smallBox h1{
-    font-size: 28px!important;
-    padding: 0!important;
-    margin: 0!important;
+  .smallBox h1 {
+    font-size: 28px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
-  .smallBox h3{
-    font-size: 20px!important;
-    padding: 0!important;
-    margin: 0!important;
+  .smallBox h3 {
+    font-size: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
-  .smallBoxContainer{
-    margin: 0!important;
-    padding: 0!important;
+  .smallBoxContainer {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 /* End of Section for Naseem */
@@ -608,7 +606,7 @@ body {
 
 .Schedulenew {
   padding: 4%;
-  background: linear-gradient(#101010,#222222);
+  background: linear-gradient(#101010, #222222);
 }
 .Schedulenew h2,
 h3 {
@@ -847,17 +845,16 @@ h3 {
 }
 .frame {
   margin-bottom: 30px;
-  height:100%;
-  font-size:20px;
+  height: 100%;
+  font-size: 20px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.frame a{
+.frame a {
   color: white;
 }
-
 
 /* end of team members....................................................... */
 
@@ -867,8 +864,8 @@ h3 {
   color: #56b3ed;
   height: 100%;
 }
-.contact-main a{
-  color: #56b3ed;;
+.contact-main a {
+  color: #56b3ed;
 }
 @media (min-width: 700px) {
   .contact-main {
@@ -904,10 +901,9 @@ h3 {
   font-size: 18px;
   padding-top: 15px;
 }
-.footer-main a{
+.footer-main a {
   color: white;
 }
-
 
 @media screen and (min-width: 800px) {
   .code {
@@ -956,7 +952,7 @@ h3 {
   background-color: white;
   border-radius: 20px;
 }
-.mainContainer{
+.mainContainer {
   overflow: hidden;
 }
 
@@ -1003,20 +999,42 @@ h3 {
 .imgContainer {
   position: relative;
   margin: 2%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.imgContainer:hover {
+  cursor: pointer;
 }
 
 .imgFilter {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(to top, #0e76bc, #56b3ed1f);
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #56B3ED 68.23%); */
+  /* background-image: linear-gradient(to top, #0e76bc, #56b3ed1f); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #56b3ed 68.23%);
   width: 100%;
   height: 35%;
 }
 
 .customImage {
   filter: saturate(0%);
+  width: 450px;
+  height: 250px;
+}
+
+.imgContainer:hover .customImage {
+  filter: saturate(100%);
+}
+
+.whyDesc {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .customImage {
+    width: 310px;
+    height: 200px;
+  }
 }
 
 .imgText {
@@ -1047,17 +1065,17 @@ h3 {
   border-radius: 18px;
   display: flex;
   align-items: center;
-  justify-content: center!important;
+  justify-content: center !important;
   flex-direction: column;
   color: white;
   text-align: center;
   margin-bottom: 40px;
-  padding: 10px!important;
+  padding: 10px !important;
 }
 
 .aboutHeading {
   color: white;
-  margin-bottom: 20px!important;
+  margin-bottom: 20px !important;
 }
 
 .citticContainer {
@@ -1085,7 +1103,7 @@ h3 {
   font-size: 18px;
   line-height: 30px;
 }
-.citticLogoAbout{
+.citticLogoAbout {
   padding: 0;
   margin: 0 0 0 -20px;
 }
@@ -1206,7 +1224,7 @@ h3 {
     top: 64%;
     right: 4%;
   }
-  .citticContainer{
+  .citticContainer {
     width: 800px;
   }
 }
