@@ -1,3 +1,60 @@
+$( document ).ready(function() {
+  console.log( "ready!" );
+  faq.forEach((ele) => {
+    var card = `
+
+
+    
+    <div class="toggle-title ">
+        <h3 class="title-name accordion">
+            ${ele.ques}
+        </h3>
+    </div>
+    <div class=" panel" id="panel">
+        <p>${ele.ans}</p>
+    </div>
+    
+
+`;
+    let div = document.createElement("div");
+    div.className = "toggle";
+    let ref = document.getElementById("faqq");
+    div.innerHTML = card;
+    ref.appendChild(div);
+  });
+
+  // accordian start
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      hideAll(this)
+      
+      // this.classList.toggle("active");
+
+      var panel = this.parentElement.nextElementSibling;
+      hideAll(this)
+      if (panel.style.maxHeight === "100%") {
+        panel.style.maxHeight = 0;
+      } else {
+        panel.style.maxHeight = "100%";
+      }
+      hideAll(this)
+    });
+  }
+  
+  function hideAll(exceptThis) {
+    for (var i = 0; i < acc.length; i++) {
+      if (acc[i] !== exceptThis) {
+        acc[i].classList.remove("active");
+        acc[i].parentElement.nextElementSibling.style.maxHeight=0
+      }
+    }
+  }
+});
+
+
 // /* Section for Naseem */
 
 // /* End of Section for Naseem */
@@ -109,14 +166,6 @@ window.onload = () => {
     });
   }
   
-  function hideAll(exceptThis) {
-    for (var i = 0; i < acc.length; i++) {
-      if (acc[i] !== exceptThis) {
-        acc[i].classList.remove("active");
-        acc[i].parentElement.nextElementSibling.style.maxHeight=0
-      }
-    }
-  }
 
   // accordian end
 
@@ -124,6 +173,15 @@ window.onload = () => {
 
   // faq end
 };
+
+function hideAll(exceptThis) {
+  for (var i = 0; i < acc.length; i++) {
+    if (acc[i] !== exceptThis) {
+      acc[i].classList.remove("active");
+      acc[i].parentElement.nextElementSibling.style.maxHeight=0
+    }
+  }
+}
 
 // /* End of Section for Abhinav */
 
