@@ -103,6 +103,11 @@ function sponsorsHeroAnimtaion(){
         // easing: "linear",
         duration: 500,
         delay: anime.stagger(200,{start: 0})
+    }).add({
+        targets: '.learnmoreContainer',
+        opacity: [0,1],
+        duration: 500,
+        delay: 200
     })
 }
 
