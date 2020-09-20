@@ -26,31 +26,29 @@ $(document ).ready(function() {
   // accordian start
   var acc = document.getElementsByClassName("accordion");
   var i;
-
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-      hideAll(this)
-      
-      // this.classList.toggle("active");
+      let ActivePanels = document.getElementsByClassName('panel-active');
 
       var panel = this.parentElement.nextElementSibling;
-      hideAll(this)
-      if (panel.style.maxHeight === "100%") {
-        panel.style.maxHeight = 0;
-      } else {
-        panel.style.maxHeight = "100%";
-      }
-      hideAll(this)
+      panel.style = "";
+      console.log(panel.classList);
+      panel.classList.toggle('panel-active');
+      panel.classList.toggle('panel');
+      hideAll(ActivePanels,panel)
+      
     });
   }
-  
-  function hideAll(exceptThis) {
-    for (var i = 0; i < acc.length; i++) {
-      if (acc[i] !== exceptThis) {
-        acc[i].classList.remove("active");
-        acc[i].parentElement.nextElementSibling.style.maxHeight=0
-      }
-    }
+  function hideAll(ActivePanels,exceptThis) {
+    var arr = Array.from(ActivePanels);
+    arr.forEach(panel => {
+        if(panel!=exceptThis){
+          panel.classList.toggle('panel-active')
+          panel.classList.toggle('panel')
+
+        }
+
+    });
   }
 });
 
