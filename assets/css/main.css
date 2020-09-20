@@ -628,7 +628,7 @@ h3 {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background: linear-gradient(#101010,white, #222222);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -641,6 +641,7 @@ h3 {
   position: relative;
   background-color: inherit;
   width: 50%;
+  z-index: 1;
 }
 
 /* The circles on the timeline */
