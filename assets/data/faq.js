@@ -28,6 +28,14 @@ var faq=[
         "ans": "Yes, digital certificates will be provided to all participants on completion."
     },
     {
+        "ques": "When will prizes and other details be announced?",
+        "ans": "Currently the cash prize alone stands worth 30K.More details regarding the schedule, sponsors, main prizes and other category awards will be informed in a mail to the registered candidates."
+    },
+    {
+        "ques": "Do we get any complementaries ?",
+        "ans": "Yes, of course. T-shirts and other amazing swags worth Rs 500 are awaiting all the registered participants."
+    },
+    {
         "ques": "Will I get any refund?",
         "ans": "No, once registered the amount will not be refunded. Even if the candidate fails in participating, he/she will not be accounted for any refund."
     },
