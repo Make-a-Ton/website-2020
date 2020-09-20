@@ -962,7 +962,7 @@ h3 {
 
 .mainContainer img:nth-child(1) {
   position: absolute;
-  top: -50px;
+  top: 100px;
   right: -80px;
   width: 250px;
   height: 250px;
