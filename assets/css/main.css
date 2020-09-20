@@ -1055,7 +1055,8 @@ h3 {
   height: 0!important;
   opacity: 0!important;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
+  text-overflow: clip!important;
+  pointer-events: none;
 }
 .imgContainer:hover .whyDesc {
   /* display: none!important; */
