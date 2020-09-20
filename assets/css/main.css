@@ -1001,7 +1001,6 @@ h3 {
   margin: 2%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 
 .imgContainer:hover {
@@ -1032,9 +1031,9 @@ h3 {
     font-size: 30px;
   }
   .imgContainer:hover .whyDesc p {
-    font-size: 12px!important;
-    height: 20px!important;
-    font-weight: 400!important;
+    font-size: 12px !important;
+    height: 20px !important;
+    font-weight: 400 !important;
   }
 }
 
@@ -1047,35 +1046,30 @@ h3 {
 .imgContainer:hover .customImage {
   filter: saturate(100%);
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 
 .whyDesc {
   font-weight: bold;
-  height: 0!important;
-  opacity: 0!important;
+  height: 0 !important;
+  opacity: 0 !important;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 .imgContainer:hover .whyDesc {
   /* display: none!important; */
-  opacity: 1!important;
-  height: 60px!important;
+  opacity: 1 !important;
+  height: 60px !important;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  font-size: 17px!important;
-  line-height: 20px!important;
-  font-weight: 400!important;
+  font-size: 17px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
 }
 
 .imgContainer:hover .imgFilter {
   /* display: none!important; */
-  height: 150px!important;
-  background: linear-gradient(180deg, #56b3ed00 0%, #56b3ed 20.23%)!important;
+  height: 150px !important;
+  background: linear-gradient(180deg, #56b3ed00 0%, #56b3ed 20.23%) !important;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
-
-
 
 @media screen and (max-width: 480px) {
   .customImage {
@@ -1090,6 +1084,7 @@ h3 {
   color: black;
   padding: 10px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .imgBox {
