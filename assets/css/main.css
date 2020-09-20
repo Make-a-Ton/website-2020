@@ -1000,6 +1000,8 @@ h3 {
   position: relative;
   margin: 2%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 .imgContainer:hover {
@@ -1011,7 +1013,8 @@ h3 {
   bottom: 0;
   right: 0;
   /* background-image: linear-gradient(to top, #0e76bc, #56b3ed1f); */
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #56b3ed 68.23%);
+  background: linear-gradient(180deg, #56b3ed00 0%, #56b3ed 68.23%);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
   height: 45%;
 }
@@ -1028,6 +1031,11 @@ h3 {
   .whyHead {
     font-size: 30px;
   }
+  .imgContainer:hover .whyDesc p {
+    font-size: 12px!important;
+    height: 20px!important;
+    font-weight: 400!important;
+  }
 }
 
 .customImage {
@@ -1038,11 +1046,36 @@ h3 {
 
 .imgContainer:hover .customImage {
   filter: saturate(100%);
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 .whyDesc {
   font-weight: bold;
+  height: 0!important;
+  opacity: 0!important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
+.imgContainer:hover .whyDesc {
+  /* display: none!important; */
+  opacity: 1!important;
+  height: 60px!important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 17px!important;
+  line-height: 20px!important;
+  font-weight: 400!important;
+}
+
+.imgContainer:hover .imgFilter {
+  /* display: none!important; */
+  height: 150px!important;
+  background: linear-gradient(180deg, #56b3ed00 0%, #56b3ed 20.23%)!important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+
 
 @media screen and (max-width: 480px) {
   .customImage {
