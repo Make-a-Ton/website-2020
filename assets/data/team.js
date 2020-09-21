@@ -18,7 +18,7 @@ var team= [
     {
         "name": "Abhinav T B",
         "linkedin": "https://www.linkedin.com/in/abhinav-t-b-226172190/",
-        "photo":"assets/img/martin.jpeg"
+        "photo":"assets/img/abhinav.jpeg"
     },
     {
         "name": "Ajal P",
