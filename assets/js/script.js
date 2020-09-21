@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+  document.getElementById("hero-sponsors-container").innerHTML = generateSponsorsHeroSection(sponsorsList);
+  sponsorsHeroAnimtaion();
+  
+  document.getElementById("timelinenew").innerHTML = before_day(before_day_events);
+
+  document.getElementById("sponsorsRoot").innerHTML = generateSponsors(sponsorsList);
+
+
   faq.forEach((ele) => {
     var card = `
 

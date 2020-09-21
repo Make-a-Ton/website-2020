@@ -133,4 +133,3 @@ heroParaAnimation();
 heroDate();
 ctaanimation();
 heroImageAnimation();
-sponsorsHeroAnimtaion();

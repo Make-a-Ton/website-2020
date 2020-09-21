@@ -1,6 +1,6 @@
 let style1 = [
-    'background-color: black',
-    'color: white',
+    // 'background-color: black',
+    'color: #56b3ed',
     'padding: 5px 50px 5px 50px;',
     'font-size: 20px',
     'width: 100px'
