@@ -43,7 +43,7 @@ var team= [
     {
         "name": "Fahla Parappan",
         "linkedin": "www.linkedin.com/in/fahla-parappan-9040741a0",
-        "photo":"assets/img/martin.jpeg"
+        "photo":"assets/img/fahla.jpeg"
     },
     {
         "name": "Vaishnav Valsaraj",
