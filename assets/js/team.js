@@ -11,9 +11,8 @@ window.onload = () => {
       
           <!-- Grid column -->
         
-            <div class="avatar mx-auto">
-              <img src="${ele.photo}" class="rounded-circle z-depth-1"
-                alt="Sample avatar">
+            <div class="avatar mx-auto" style=" width:120px; height:120px; background-image: url('${ele.photo}'); background-repeat: no-repeat; background-size: cover; border-radius: 50%;">
+            
             </div>
             <a href="${ele.linkedin}"<h5 class="font-weight-bold mt-4 mb-3">${ele.name}</h5>
         
