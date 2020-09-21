@@ -20,4 +20,4 @@ let style2 = [
 
 ].join(';');
 
-console.log("%cHey!! Looks like you are an Hacker!!\nWe are excited to bring you Make-a-Ton 2020 with exciting challenges, prizes and surpises!!\nwhat are you waiting for?\n\n\n%cRegister Now!!%c\n\n\nIf you find any bugs, feel free to contribute to\nhttps://github.com/Make-a-Ton/website-2020\nIf you have any questions please E-mail us at\n\tamal@2020.makeaton.org\n\tfahla@2020.makeaton.org\n\tjyothis@2020.makeaton.org\nRegards,\n-Developers @ Make-a-ton ",style1,style2,style1)
+console.log("%cHey!! Looks like you are an Hacker!!\nWe are excited to bring you Make-a-Ton 2020 with exciting challenges, prizes and surprises!!\nwhat are you waiting for?\n\n\n%cRegister Now!!%c\n\n\nIf you find any bugs, feel free to contribute to\nhttps://github.com/Make-a-Ton/website-2020\nIf you have any questions please E-mail us at\n\tamal@2020.makeaton.org\n\tfahla@2020.makeaton.org\n\tjyothis@2020.makeaton.org\nRegards,\n-Developers @ Make-a-ton ",style1,style2,style1)
