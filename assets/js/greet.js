@@ -1,20 +1,22 @@
 let style1 = [
     // 'background-color: black',
-    'color: #56b3ed',
+    'color: #0E76BC',
     'padding: 5px 50px 5px 50px;',
     'font-size: 20px',
-    'width: 100px'
+    'width: 100px',
+    // 'text-shadow: 0px 0px 20px black'
+
 
 ].join(';');
 let style2 = [
-    'background-color: #56b3ed',
+    'background-color: #0E76BC',
     'color: white',
     'padding: 20px 20px 20px 20px;',
     'font-size: 20px',
     'width: 100px',
     'border-radius: 20px',
     'font-weight: bold',
-    'text-shadow: 0px 0px 20px black'
+    // 'box-shadow: 0px 0px 20px black'
 
 ].join(';');
 
