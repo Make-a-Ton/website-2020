@@ -1074,6 +1074,9 @@ h3 {
     height: 20px !important;
     font-weight: 400 !important;
   }
+  .whyText {
+    font-size: 21px;
+  }
 }
 
 .customImage {
