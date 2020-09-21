@@ -32,9 +32,10 @@ $(document ).ready(function() {
 
       var panel = this.parentElement.nextElementSibling;
       panel.style = "";
-      console.log(panel.classList);
+    
+        panel.classList.toggle('panel');
       panel.classList.toggle('panel-active');
-      panel.classList.toggle('panel');
+    
       hideAll(ActivePanels,panel)
       
     });
@@ -43,8 +44,8 @@ $(document ).ready(function() {
     var arr = Array.from(ActivePanels);
     arr.forEach(panel => {
         if(panel!=exceptThis){
-          panel.classList.toggle('panel-active')
           panel.classList.toggle('panel')
+          panel.classList.toggle('panel-active')
 
         }
 

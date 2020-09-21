@@ -752,18 +752,16 @@ h3 {
 
 /* faq starts ..................................................... */
 
-.toggle:last-child {
-  border-bottom: 1px solid #f5f0f0;
-}
 
-.toggle .toggle-title {
+
+.toggle-title {
   position: relative;
   display: block;
   border-top: 1px solid #f5f0f0;
   margin-bottom: 6px;
 }
 
-.toggle .toggle-title h3 {
+.toggle-title h3 {
   font-size: 20px;
   margin: 0px;
   line-height: 1;
@@ -771,27 +769,26 @@ h3 {
   font-weight: 200;
 }
 
-.toggle .toggle-inner div {
+.toggle-inner div {
   max-width: 100%;
 }
 
-.toggle .toggle-title .title-name {
+.toggle-title .title-name {
   display: block;
   padding: 25px 25px 14px;
   color: #56b3ed;
 }
 
-.toggle .toggle-title a i {
+.toggle-title a i {
   font-size: 22px;
   margin-right: 5px;
 }
 
-.toggle .toggle-title i {
+.toggle-title i {
   position: absolute;
 
   width: 24px;
   height: 24px;
-  transition: all 0.3s ease;
   margin: 20px;
   right: 0;
 }
@@ -804,14 +801,16 @@ h3 {
 
 .panel {
   /* display: none; */
+  
   max-height: 0!important;
+   transition: max-height 1s ease-out;
   /* color: white; */
   overflow: hidden;
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
-  /* transition: all 0.5s ease  -in-out; */
-  /* transition-delay: .2s; */
+  transition-delay: -.55s!important;
+
   /* transition-duration: .1s; */
   overflow: hidden!important;
 }
@@ -822,8 +821,9 @@ h3 {
 
 .panel-active{
   max-height: 1000px!important;
-  /* background-color: red!important; */
-  transition: all 1s ease-in-out;
+  
+  transition: max-height 1s ease-in;
+ 
   padding-right: 10px;
   padding-left: 25px;
   margin: -7px 0 6px;
@@ -835,7 +835,7 @@ h3 {
 
   outline: none;
 
-  transition: 0.4s;
+  
 }
 
 /* faq ends */
