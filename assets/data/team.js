@@ -2,7 +2,7 @@
 var team= [
     {
         "name": "Martin George",
-        "linkedin": "linkedin.com/in/martin-george-83381b157",
+        "linkedin": "https://www.linkedin.com/in/martin-george-83381b157",
         "photo":"assets/img/martin.jpeg"
     },
     {
@@ -42,7 +42,7 @@ var team= [
     },
     {
         "name": "Fahla Parappan",
-        "linkedin": "www.linkedin.com/in/fahla-parappan-9040741a0",
+        "linkedin": "https://www.linkedin.com/in/fahla-parappan-9040741a0",
         "photo":"assets/img/fahla.jpeg"
     },
     {
