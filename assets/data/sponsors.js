@@ -1,18 +1,11 @@
 let sponsorsList = [
   {
     name: "AWS",
-    photo: "https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg",
+    photo: "https://make-a-ton.github.io/website-2020//assets/img/aws.png",
   },
   {
-    name: "AWS",
-    photo: "https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg",
-  },
-  {
-    name: "AWS",
-    photo: "https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg",
-  },
-  {
-    name: "AWS",
-    photo: "https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg",
-  },
+    name: "AWS UG Kochi ",
+    photo: "https://make-a-ton.github.io/website-2020/assets/img/awsug.png",
+  }
+
 ];

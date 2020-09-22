@@ -1022,7 +1022,21 @@ h3 {
 .sponsorsText {
   color: black;
 }
+.sponsorsImage{
+  width: 120px!important;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
+}
+
+.sponsorsImage:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+#sponsorsRoot{
+  display: flex!important;
+  align-items: center!important;
+}
 .whySection {
   background: #101010;
   position: relative;
@@ -1073,6 +1087,9 @@ h3 {
     font-size: 12px !important;
     height: 20px !important;
     font-weight: 400 !important;
+  }
+  .whyText {
+    font-size: 21px;
   }
 }
 

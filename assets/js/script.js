@@ -198,9 +198,9 @@ function generateSponsors() {
   let html = "";
   sponsorsList.forEach((doc) => {
     html += `
-      <div class="avatar mx-auto my-3 col-lg-4 col-md-6 col-xl-3">
-           <img src="${doc.photo}" class="img-fluid rounded-circle z-depth-1 sponsorsImage"
-               alt="Sample avatar">
+      <div class="mx-auto my-3 col-lg-4 col-md-6 col-xl-3 align-content-center">
+           <img src="${doc.photo}" class="img-fluid z-depth-1 sponsorsImage"
+               alt="${doc.name}">
            </div>
       `;
   });
