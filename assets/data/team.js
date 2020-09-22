@@ -13,7 +13,7 @@ var team= [
     {
         "name": "Amal N S",
         "linkedin": "https://www.linkedin.com/in/amal-n-451a6b87/",
-        "photo":"assets/img/amaln.jpeg"
+        "photo":"assets/img/amaln.jpg"
     },
     {
         "name": "Abhinav T B",
@@ -59,5 +59,10 @@ var team= [
         "name": "Ebin Santy",
         "linkedin": "https://www.linkedin.com/in/ebinsanty/",
         "photo":"assets/img/ebin.jpeg"
+    },
+    {
+        "name": "Hareesh KN",
+        "linkedin": "https://www.linkedin.com/in/hareesh-kn-a6a841193",
+        "photo":"assets/img/hareesh.jpg"
     }
 ]
