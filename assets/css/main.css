@@ -1024,6 +1024,14 @@ h3 {
 }
 .sponsorsImage{
   width: 120px!important;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.sponsorsImage:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
 }
 #sponsorsRoot{
   display: flex!important;
