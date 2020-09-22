@@ -8,7 +8,8 @@ const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 
-let jsPaths = 'assets/**/*.js';
+let jsPaths = 'assets/js/*.js';
+let datajsPaths = 'assets/data/*.js';
 let cssPath = 'assets/css/**/*.css'
 
 function copyHtml() {
@@ -28,6 +29,15 @@ function jsTask() {
         .pipe(dest('build/assets/js'));
 }
 
+function datajsTask(){
+    return src(jsPaths)
+    .pipe(sourcemaps.init())
+    .pipe(concat('data.js'))
+    .pipe(terser())
+    .pipe(sourcemaps.write('.'))
+    .pipe(dest('build/assets/js'));
+}
+
 function cssTask() {
     return src(cssPath)
         .pipe(sourcemaps.init())
@@ -42,5 +52,6 @@ exports.copyHtml = copyHtml;
 exports.imgTask = imgTask;
 exports.jsTask = jsTask;
 exports.cssTask = cssTask;
+exports.datajsTask = datajsTask;
 
-exports.default = parallel(copyHtml,imgTask,jsTask,cssTask);
+exports.default = parallel(copyHtml,imgTask,datajsTask,jsTask,cssTask);

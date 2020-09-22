@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make-a-Ton 2020</title>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/data/sponsors.js"></script>
+    <script src="./assets/data/schedule.js"></script>
+    <script src="./assets/js/anime.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body style="background-color: black ; height:100%;">
+    <!-- /* Section for Naseem */ -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" width="80" height="80" alt="" />
+        <p>MAKE-A-TON</p>
+      </a>
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target="#navbarText"
+          >
+            <a class="nav-link" href="./index.html"
+              >HOME<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#schedule">SCHEDULE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#sponsors">SPONSORS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#faq">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#contact">CONTACT</a>
+          </li>
+          <li class="nav-item nav-active">
+            <a class="nav-link" href="./team.html">TEAM</a>
+          </li>
+          <button class="cta">REGISTER NOW</button>
+        </ul>
+      </div>
+    </nav>
+   
+    <!-- ........................ -->
+    <!-- Section: Team v.1 -->
+    <section class="container-fluid team-section text-center my-5">
+      <h2 class="h1-responsive font-weight-bold team-title">MEET THE TEAM</h2>
+
+      <div class="row card-wrap" id="team">
+          <div class="masthead loadingFadeOut">
+            <div class="container-fluid h-100">
+              <img width="100" height="100" src="./assets/img/loading.svg" alt="">
+              <p>Loading</p>
+            </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- Section: Team v.1 -->
+
+    
+
+  
+        
+    <footer class="container-fluid footer-main ">
+        
+            <div class="row footer-sub" >
+                <div class="col-md-6 social-icon foot-social">
+                   <a href="#" class="fa fa-facebook"></a>
+                   <a href="http://www.twitter.com/MakeaTonCusat" class="fa fa-twitter"></a>
+                   <a href="https://www.linkedin.com/company/makeaton" class="fa fa-linkedin"></a>
+                   <a href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo" class="fa fa-instagram"></a>
+                </div>
+                <div class="col-md-6 code">
+                  <a href="./assets/Code of Conduct.pdf" target="_blank"
+                    >Code of conduct </a>| <a href="http://cittic.cusat.ac.in/">CITTIC © 2020</a>
+                </div>
+            </div>
+       
+    </footer>
+    <!-- // /* End of Section for Abhinav */ -->
+
+    <!-- Bootstrap stuff -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/data/contact.js"></script>
+    <script src="./assets//data/team.js"></script>
+    <script src="./assets/js/team.js"></script>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script defer>
+      $(document).ready(function () {
+        $(".nav-link").on("click", function () {
+          var page = $(this).attr("href");
+          var speed = 750;
+          var offset = 120;
+          $("html, body").animate(
+            {
+              scrollTop: $(page).offset().top - offset,
+            },
+            speed
+          );
+          $(".navbar-collapse").collapse("hide");
+          return false;
+        });
+        $("#LearnMoreLink").on("click", function () {
+          var page = $(this).attr("href");
+          var speed = 750;
+          var offset = 120;
+          $("html, body").animate(
+            {
+              scrollTop: $(page).offset().top - offset,
+            },
+            speed
+          );
+          $(".navbar-collapse").collapse("hide");
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
