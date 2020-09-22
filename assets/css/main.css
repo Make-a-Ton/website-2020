@@ -1022,7 +1022,13 @@ h3 {
 .sponsorsText {
   color: black;
 }
-
+.sponsorsImage{
+  width: 120px!important;
+}
+#sponsorsRoot{
+  display: flex!important;
+  align-items: center!important;
+}
 .whySection {
   background: #101010;
   position: relative;

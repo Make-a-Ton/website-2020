@@ -1,11 +1,11 @@
 let sponsorsList = [
   {
     name: "AWS",
-    photo: "https://makeaton.org/assets/img/aws.png",
+    photo: "https://make-a-ton.github.io/website-2020//assets/img/aws.png",
   },
   {
     name: "AWS UG Kochi ",
-    photo: "https://makeaton.org/assets/img/awsug.png",
+    photo: "https://make-a-ton.github.io/website-2020/assets/img/awsug.png",
   }
 
 ];
