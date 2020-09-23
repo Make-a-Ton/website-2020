@@ -64,5 +64,9 @@ var team= [
         "name": "Hareesh KN",
         "linkedin": "https://www.linkedin.com/in/hareesh-kn-a6a841193",
         "photo":"assets/img/hareesh.jpg"
+    },
+    {   "name": "Anand M A",
+        "linkedin": "https://www.linkedin.com/in/anand-m-a-a060861a0/",
+        "photo":"assets/img/Anand.jpg"
     }
 ]
