@@ -6,9 +6,9 @@ var team= [
         "photo":"assets/img/martin.jpeg"
     },
     {
-        "name": "Kiran PK",
-        "linkedin": "https://www.linkedin.com/in/kiran-p-k/",
-        "photo":"assets/img/kiran.jpeg"
+        "name": "Jyothis P",
+        "linkedin": "https://www.linkedin.com/in/jyothis-p/",
+        "photo":"assets/img/jyothis.jpeg"
     },
     {
         "name": "Amal N S",
@@ -16,14 +16,19 @@ var team= [
         "photo":"assets/img/amaln.jpg"
     },
     {
-        "name": "Abhinav T B",
-        "linkedin": "https://www.linkedin.com/in/abhinav-t-b-226172190/",
-        "photo":"assets/img/abhinav.jpeg"
+        "name": "Ebin Santy",
+        "linkedin": "https://www.linkedin.com/in/ebinsanty/",
+        "photo":"assets/img/ebin.jpeg"
     },
     {
-        "name": "Ajal P",
-        "linkedin": "https://www.linkedin.com/in/ajal-p-95537a191/",
-        "photo":"assets/img/ajal.jpeg"
+        "name": "Jithin K Satheesh",
+        "linkedin": "https://www.linkedin.com/in/jithinksatheesh/",
+        "photo":"assets/img/jithin.jpeg"
+    },
+    {
+        "name": "Amal Madhavan",
+        "linkedin": "https://www.linkedin.com/in/amal-madhavan",
+        "photo":"assets/img/amalm.jpeg"
     },
     {
         "name": "Naseem Shah",
@@ -31,19 +36,24 @@ var team= [
         "photo":"assets/img/naseem.jpeg"
     },
     {
-        "name": "Jyothis P",
-        "linkedin": "https://www.linkedin.com/in/jyothis-p/",
-        "photo":"assets/img/jyothis.jpeg"
-    },
-    {
-        "name": "Neeraj Jayaraj",
-        "linkedin": "https://www.linkedin.com/in/neeraj-jayaraj-a08367191",
-        "photo":"assets/img/neeraj.jpeg"
+        "name": "Kiran PK",
+        "linkedin": "https://www.linkedin.com/in/kiran-p-k/",
+        "photo":"assets/img/kiran.jpeg"
     },
     {
         "name": "Fahla Parappan",
         "linkedin": "https://www.linkedin.com/in/fahla-parappan-9040741a0",
         "photo":"assets/img/fahla.jpeg"
+    },
+    {
+        "name": "Hareesh KN",
+        "linkedin": "https://www.linkedin.com/in/hareesh-kn-a6a841193",
+        "photo":"assets/img/hareesh.jpg"
+    },
+    {
+        "name": "Neeraj Jayaraj",
+        "linkedin": "https://www.linkedin.com/in/neeraj-jayaraj-a08367191",
+        "photo":"assets/img/neeraj.jpeg"
     },
     {
         "name": "Vaishnav Valsaraj",
@@ -55,16 +65,19 @@ var team= [
         "linkedin": "https://www.linkedin.com/in/alan-john-751539194",
         "photo":"assets/img/alan.jpeg"
     },
+  
     {
-        "name": "Ebin Santy",
-        "linkedin": "https://www.linkedin.com/in/ebinsanty/",
-        "photo":"assets/img/ebin.jpeg"
+        "name": "Abhinav T B",
+        "linkedin": "https://www.linkedin.com/in/abhinav-t-b-226172190/",
+        "photo":"assets/img/abhinav.jpeg"
     },
     {
-        "name": "Hareesh KN",
-        "linkedin": "https://www.linkedin.com/in/hareesh-kn-a6a841193",
-        "photo":"assets/img/hareesh.jpg"
+        "name": "Ajal P",
+        "linkedin": "https://www.linkedin.com/in/ajal-p-95537a191/",
+        "photo":"assets/img/ajal.jpeg"
     },
+   
+  
     {   "name": "Anand M A",
         "linkedin": "https://www.linkedin.com/in/anand-m-a-a060861a0/",
         "photo":"assets/img/Anand.jpg"
