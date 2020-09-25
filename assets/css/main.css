@@ -769,7 +769,26 @@ h3 {
     left: 1%;
   }
 }
+/*-------------Registration-----------------*/
+.formdiv{
+  background: white;
+  max-width: 50vw;
+  max-height: 300vh;
+  margin: 180px;
+  margin-top: 150px;
+  border-radius: 9px;
+  padding: 50px;
+  text-align: center ;
+}
+.formdiv h2{
+  color: black;
+}
+.formdiv_contentdiv{
+    align-content: center;
+}
 
+
+/*-------------Registration end-----------------*/
 /* End of Section for Kiran */
 
 /* Section for Abhinav */

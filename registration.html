@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make-a-Ton 2020</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178661102-1"></script>
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/data/sponsors.js"></script>
+    <script src="./assets/data/schedule.js"></script>
+    <script src="./assets/js/anime.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body style="background-color: black">
+    <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.png" width="80" height="80" alt="" />
+            <p>MAKE-A-TON</p>
+            </a>
+            <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li
+                class="nav-item"
+                data-toggle="collapse"
+                data-target="#navbarText"
+                >
+                <a class="nav-link" href="./index.html"
+                    >HOME<span class="sr-only">(current)</span></a
+                >
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html#schedule">SCHEDULE</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html#sponsors">SPONSORS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html#faq">FAQs</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html#contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./team.html">TEAM</a>
+                </li>
+                <button class="cta">REGISTRATION COMING SOON</button>
+            </ul>
+            </div>
+        </nav>
+    <!-- ---------------------Nav-bar ends---------------------------------->
+    <!------------------------Form section Start------------------------->
+
+    
+    <div class="formdiv">
+        <div class="formdiv_contentdiv ">
+            <h2>Registration</h2>
+            <br>
+            <form action="https://send.pageclip.co/sEtpCdmwuWmTpOfEf55sUBKpKf8B0djF/Registraion" class="pageclip-form" method="post">
+                <div class="form-group">
+                    <label >First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label >Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label >Phone</label>
+                    <input type="tel" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label >Email address</label>
+                    <input type="email" class="form-control" placeholder="Email Id">
+                </div>
+                <div class="form-group">
+                    <label >Institution</label>
+                    <input type="text" class="form-control" placeholder="Instution">
+                </div>
+                
+                <p>T-shirt Size</p>
+                <div class="form-group form-check">
+                    <label class="radio-inline "><input type="radio" name="optradio" checked>S</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">M</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">L</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">XL</label>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+    
+    <!------------------------Form section End------------------------->
+
+</body>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+<script>
+    submitForm = () => {
+
+    window.location.href = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
+
+    }
+
+    var form = document.querySelector('.pageclip-form')
+    Pageclip.form(form, {
+    onSubmit: function (event) { console.log('iuadiu')},
+    onResponse: function (error, response) {
+        console.log('resodjsd');
+        
+        console.log(response);
+        if(response.data == 'ok'){
+            window.location.href = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
+        }
+
+    },
+        successTemplate: '<span>Thank you!</span>'
+    })
+    </script>
+</html>
