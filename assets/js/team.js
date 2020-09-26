@@ -8,7 +8,7 @@ window.onload = () => {
       team.forEach((ele) => {
         var card = `
       
-      
+           
           <!-- Grid column -->
         
             <div class="avatar mx-auto" style=" width:120px; height:120px; background-image: url('${ele.photo}'); background-repeat: no-repeat; background-size: cover; border-radius: 50%;">

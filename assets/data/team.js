@@ -81,5 +81,9 @@ var team= [
     {   "name": "Anand M A",
         "linkedin": "https://www.linkedin.com/in/anand-m-a-a060861a0/",
         "photo":"assets/img/Anand.jpg"
+    },
+    {   "name": "Aswin Subhash",
+        "linkedin": "https://www.linkedin.com/in/aswin-subhash-b93b161a1/",
+        "photo":"assets/img/Ashwin.jpeg"
     }
 ]
