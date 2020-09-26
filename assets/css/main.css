@@ -767,7 +767,7 @@ h3 {
   }
 }
 /*-------------Registration-----------------*/
-.registration_form_div{
+.registration_form_div {
   margin-top: 120px;
   background-color: rgb(31, 31, 31);
   text-align: center;
@@ -775,54 +775,55 @@ h3 {
   max-width: 40vw !important;
   border-radius: 5px;
 }
-.registration_form_div h4,p{
+.registration_form_div h4,
+p {
   color: #ffffff;
 }
-.form-group label{
+.form-group label {
   color: white;
 }
 
-input[type=text]{
+input[type="text"] {
   background-color: rgb(31, 31, 31);
   border: none;
-  border-bottom: 3px solid #0E76BB;
+  border-bottom: 3px solid #0e76bb;
 }
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: rgb(31, 31, 31) !important;
-  color: white ;
+  color: white;
 }
-input[type=tel]{
+input[type="tel"] {
   background-color: rgb(31, 31, 31);
   border: none;
-  border-bottom: 3px solid #0E76BB;
+  border-bottom: 3px solid #0e76bb;
 }
-input[type=tel]:focus{
+input[type="tel"]:focus {
   background-color: rgb(31, 31, 31);
   color: white;
 }
-input[type=email]{
+input[type="email"] {
   background-color: rgb(31, 31, 31);
   border: none;
-  border-bottom: 3px solid #0E76BB;
+  border-bottom: 3px solid #0e76bb;
 }
-input[type=email]:focus{
+input[type="email"]:focus {
   background-color: rgb(31, 31, 31);
   color: white;
 }
-input[type=radio]{
+input[type="radio"] {
   background-color: rgb(31, 31, 31);
   border: none;
-  border-bottom: 3px solid #0E76BB;
+  border-bottom: 3px solid #0e76bb;
 }
-input[type=radio]:focus{
+input[type="radio"]:focus {
   background-color: rgb(31, 31, 31);
   color: white;
 }
-.form-check-label{
+.form-check-label {
   color: white;
 }
-@media screen and (max-width: 600px){
-  .registration_form_div{
+@media screen and (max-width: 600px) {
+  .registration_form_div {
     max-width: 150vw !important;
   }
 }
