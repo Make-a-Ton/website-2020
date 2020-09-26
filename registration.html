@@ -88,31 +88,31 @@
             <form action="https://send.pageclip.co/sEtpCdmwuWmTpOfEf55sUBKpKf8B0djF/Registraion" class="pageclip-form" method="post">
                 <div class="form-group">
                     <label >First Name</label>
-                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
                 </div>
                 <div class="form-group">
                     <label >Last Name</label>
-                    <input type="text" class="form-control" placeholder="Last Name">
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
                 </div>
                 <div class="form-group">
                     <label >Phone</label>
-                    <input type="tel" class="form-control" placeholder="Phone Number">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" >
                 </div>
                 <div class="form-group">
                     <label >Email address</label>
-                    <input type="email" class="form-control" placeholder="Email Id">
+                    <input type="email" class="form-control" id="email" placeholder="Email Id">
                 </div>
                 <div class="form-group">
                     <label >Institution</label>
-                    <input type="text" class="form-control" placeholder="Instution">
+                    <input type="text" class="form-control" id="institution" placeholder="Instution">
                 </div>
                 
                 <p>T-shirt Size</p>
                 <div class="form-group form-check">
                     <label class="radio-inline "><input type="radio" name="optradio" checked>S</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">M</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">L</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">XL</label>
+                    <label class="radio-inline"><input type="radio" name="optradio" >M</label>
+                    <label class="radio-inline"><input type="radio" name="optradio" >L</label>
+                    <label class="radio-inline"><input type="radio" name="optradio" >XL</label>
                 </div>
                 <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
             </form>
@@ -125,10 +125,16 @@
 </body>
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 <script>
+
     submitForm = () => {
-
-    window.location.href = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
-
+        var firstName = document.getElementById('firstname').value;
+        var lastName = document.getElementById("lastname").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var institution = document.getElementById("institution").value;
+        var link = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b"+"?data_name="+ firstName+'+'+ lastName+"&data_email="+email+"&data_phone="+ phone
+        console.log(link)
+    window.location.href = link;
     }
 
     var form = document.querySelector('.pageclip-form')
