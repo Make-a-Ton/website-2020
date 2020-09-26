@@ -349,6 +349,12 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     max-height: 100px;
   }
+  .smallBox h2 {
+    font-size: 25px !important;
+  }
+  .smallBox p {
+    font-size: 12px !important;
+  }
 }
 @media only screen and (max-width: 770px) {
   .custom-space-1 {
@@ -372,7 +378,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 15px !important;
   }
   .smallBox {
-    /* width: 150px !important; */
+    width: 310px !important;
     padding: 20px;
     align-items: center;
   }
@@ -1215,11 +1221,12 @@ input[type="radio"]:focus {
 }
 
 .smallBox {
-  /* max-width: 275px !important; */
-  width: auto !important;
-  height: 175px !important;
-  background: linear-gradient(172.06deg, #0e76bc 22.18%, #56b3ed 106.1%);
-  box-shadow: 0px 20px 84px rgba(14, 118, 188, 0.3);
+  max-width: 400px !important;
+  width: auto;
+  height: 220px !important;
+  /* background: linear-gradient(172.06deg, #0e76bc 22.18%, #56b3ed 106.1%); */
+  /* box-shadow: 0px 20px 84px rgba(14, 118, 188, 0.3); */
+  background: linear-gradient(0deg, #474747 0%, #2e2e2e 100%);
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -1228,7 +1235,7 @@ input[type="radio"]:focus {
   color: white;
   text-align: center;
   margin-bottom: 40px;
-  padding: 10px !important;
+  padding: 20px !important;
 }
 
 .aboutHeading {
@@ -1245,6 +1252,23 @@ input[type="radio"]:focus {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+
+.tracksSection {
+  min-height: 300px;
+  max-width: 600px;
+  display: flex;
+  background: rgb(121, 121, 121);
+  background: linear-gradient(0deg, #474747 0%, #2e2e2e 100%);
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.tracksSection p {
+  font-size: 18px;
+  line-height: 35px;
 }
 
 .rightContainer {
@@ -1539,5 +1563,42 @@ input[type="radio"]:focus {
   }
 }
 /* End of about section */
+
+/* Tracks */
+
+.tracks {
+  background: #101010;
+  height: auto;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.tracks .topSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tracksRight {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tracksLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.extraHeading {
+  color: white;
+}
+
+/* End of tracks */
 
 /* End of Section for Ajal */
