@@ -1,12 +1,16 @@
-$(document).ready(function() {
-
-  document.getElementById("hero-sponsors-container").innerHTML = generateSponsorsHeroSection(sponsorsList);
+$(document).ready(function () {
+  document.getElementById(
+    "hero-sponsors-container"
+  ).innerHTML = generateSponsorsHeroSection(sponsorsList);
   sponsorsHeroAnimtaion();
-  
-  document.getElementById("timelinenew").innerHTML = before_day(before_day_events);
 
-  document.getElementById("sponsorsRoot").innerHTML = generateSponsors(sponsorsList);
+  document.getElementById("timelinenew").innerHTML = before_day(
+    before_day_events
+  );
 
+  document.getElementById("sponsorsRoot").innerHTML = generateSponsors(
+    sponsorsList
+  );
 
   faq.forEach((ele) => {
     var card = `
@@ -36,31 +40,27 @@ $(document).ready(function() {
   var i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-      let ActivePanels = document.getElementsByClassName('panel-active');
+      let ActivePanels = document.getElementsByClassName("panel-active");
 
       var panel = this.parentElement.nextElementSibling;
       panel.style = "";
-    
-        panel.classList.toggle('panel');
-      panel.classList.toggle('panel-active');
-    
-      hideAll(ActivePanels,panel)
-      
+
+      panel.classList.toggle("panel");
+      panel.classList.toggle("panel-active");
+
+      hideAll(ActivePanels, panel);
     });
   }
-  function hideAll(ActivePanels,exceptThis) {
+  function hideAll(ActivePanels, exceptThis) {
     var arr = Array.from(ActivePanels);
-    arr.forEach(panel => {
-        if(panel!=exceptThis){
-          panel.classList.toggle('panel')
-          panel.classList.toggle('panel-active')
-
-        }
-
+    arr.forEach((panel) => {
+      if (panel != exceptThis) {
+        panel.classList.toggle("panel");
+        panel.classList.toggle("panel-active");
+      }
     });
   }
 });
-
 
 // /* Section for Naseem */
 
@@ -120,14 +120,11 @@ function before_day() {
   return html;
 }
 
-
 // /* End of Section for Kiran */
 
 // /* Section for Abhinav */
 
 window.onload = () => {
-
-
   // for faq
   faq.forEach((ele) => {
     var card = `
@@ -158,21 +155,20 @@ window.onload = () => {
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-      hideAll(this)
-      
+      hideAll(this);
+
       // this.classList.toggle("active");
 
       var panel = this.parentElement.nextElementSibling;
-      hideAll(this)
+      hideAll(this);
       if (panel.style.maxHeight === "100%") {
         panel.style.maxHeight = 0;
       } else {
         panel.style.maxHeight = "100%";
       }
-      hideAll(this)
+      hideAll(this);
     });
   }
-  
 
   // accordian end
 
@@ -185,7 +181,7 @@ function hideAll(exceptThis) {
   for (var i = 0; i < acc.length; i++) {
     if (acc[i] !== exceptThis) {
       acc[i].classList.remove("active");
-      acc[i].parentElement.nextElementSibling.style.maxHeight=0
+      acc[i].parentElement.nextElementSibling.style.maxHeight = 0;
     }
   }
 }
@@ -198,7 +194,7 @@ function generateSponsors() {
   let html = "";
   sponsorsList.forEach((doc) => {
     html += `
-      <div class="mx-auto my-3 col-lg-4 col-md-6 col-xl-3 align-content-center">
+      <div class="my-3 col-lg-4 col-md-6 col-xl-3 align-content-center">
            <img src="${doc.photo}" class="img-fluid z-depth-1 sponsorsImage"
                alt="${doc.name}">
            </div>
