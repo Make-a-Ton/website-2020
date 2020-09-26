@@ -88,33 +88,39 @@
             <form action="https://send.pageclip.co/sEtpCdmwuWmTpOfEf55sUBKpKf8B0djF/Registraion" class="pageclip-form" method="post">
                 <div class="form-group">
                     <label >First Name</label>
-                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">
                 </div>
                 <div class="form-group">
                     <label >Last Name</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname">
                 </div>
                 <div class="form-group">
                     <label >Phone</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" >
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone_no">
                 </div>
                 <div class="form-group">
                     <label >Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Id">
+                    <input type="email" class="form-control" id="email" placeholder="Email Id" name="emailid">
                 </div>
                 <div class="form-group">
                     <label >Institution</label>
-                    <input type="text" class="form-control" id="institution" placeholder="Instution">
+                    <input type="text" class="form-control" id="institution" placeholder="institution" name="institution">
+                </div>
+
+                <div class="form-group">
+                    <label >Address</label>
+                    <input type="text" class="form-control" id="Address" placeholder="Address" name="Address">
                 </div>
                 
                 <p>T-shirt Size</p>
                 <div class="form-group form-check">
-                    <label class="radio-inline "><input type="radio" name="optradio" checked>S</label>
-                    <label class="radio-inline"><input type="radio" name="optradio" >M</label>
-                    <label class="radio-inline"><input type="radio" name="optradio" >L</label>
-                    <label class="radio-inline"><input type="radio" name="optradio" >XL</label>
+                    <label class="radio-inline "><input type="radio" name="tshirtsize[S]" checked>S</label>
+                    <label class="radio-inline"><input type="radio" name="tshirtsize[M]" >M</label>
+                    <label class="radio-inline"><input type="radio" name="tshirtsize[L]" >L</label>
+                    <label class="radio-inline"><input type="radio" name="tshirtsize[XL]" >XL</label>
                 </div>
-                <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                <a href="https://test.instamojo.com/@martingeo15/" rel="im-checkout" data-text="Pay" data-css-style="color:#ffffff; background:#75c26a; width:300px; border-radius:4px"   data-layout="vertical"></a>
+<script src="https://js.instamojo.com/v1/button.js"></script>
             </form>
         </div>
         
@@ -122,17 +128,15 @@
     
     <!------------------------Form section End------------------------->
 
+
+
+
 </body>
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 <script>
 
     submitForm = () => {
-        var firstName = document.getElementById('firstname').value;
-        var lastName = document.getElementById("lastname").value;
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("phone").value;
-        var institution = document.getElementById("institution").value;
-        var link = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b"+"?data_name="+ firstName+'+'+ lastName+"&data_email="+email+"&data_phone="+ phone
+        var link = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b"
         console.log(link)
     window.location.href = link;
     }
