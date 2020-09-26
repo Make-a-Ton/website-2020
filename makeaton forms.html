@@ -86,6 +86,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+<<<<<<< HEAD
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -221,6 +222,142 @@
         },
         successTemplate: "<span>Thank you!</span>",
       });
+=======
+        <a class="nav-link" href="./index.html"
+          >HOME<span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html#schedule">SCHEDULE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html#sponsors">SPONSORS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html#faq">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html#contact">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./team.html">TEAM</a>
+      </li>
+      <button class="cta">REGISTRATION COMING SOON</button>
+    </ul>
+  </div>
+</nav>
+
+
+<!--Nav bar ends-->
+
+
+
+
+  <form action="https://send.pageclip.co/sEtpCdmwuWmTpOfEf55sUBKpKf8B0djF/Registraion" class="pageclip-form"
+    method="post">
+
+    <div class="container registration_form_div">
+      <h4>Registration</h4>
+      <br>
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" class="form-control" name="first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" name="last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="Phone">Phone</label>
+      <input type="tel" class="form-control" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="Institution">Institution</label>
+      <input type="text" class="form-control" name="institution">
+    </div>
+    <div class="form-group">
+      <label for="Address">Address</label>
+      <input type="text" class="form-control" name="address">
+    </div>
+    <p>T-shirt Size</p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="tshirt" value="S">
+      <label class="form-check-label">S</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="tshirt"  value="M">
+      <label class="form-check-label">M</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="tshirt"  value="L">
+      <label class="form-check-label">L</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="tshirt"  value="XL">
+      <label class="form-check-label">XL</label>
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+    <button type="submit" class="pageclip-form__submit btn-light btn" >
+      <span>Send</span>
+    </button>
+  </div>
+  </div>
+
+  </form>
+<br>
+<br>
+<br>
+  <!---footer section-->
+  <footer class="container-fluid footer-main ">
+        
+    <div class="row footer-sub" >
+        <div class="col-md-6 social-icon foot-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="http://www.twitter.com/MakeaTonCusat" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/company/makeaton" class="fa fa-linkedin"></a>
+          <a href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo" class="fa fa-instagram"></a>
+        </div>
+        <div class="col-md-6 code">
+          <a href="./assets/Code of Conduct.pdf" target="_blank"
+            >Code of conduct </a>| <a href="http://cittic.cusat.ac.in/">CITTIC © 2020</a>
+        </div>
+    </div>
+
+</footer>
+  <!---footer section end-->
+
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8">
+
+
+  </script>
+  <script>
+
+var form = document.querySelector('.pageclip-form')
+    Pageclip.form(form, {
+      onSubmit: function (event) { console.log('iuadiu')},
+      onResponse: function (error, response) {
+        console.log('resodjsd');
+        console.log(response);
+        if(response.data == 'ok'){
+          window.location.href = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
+        }
+
+       },
+      successTemplate: '<span>Thank you!</span>'
+    })
+>>>>>>> 2f6674e70f846c983696a5b0ed35418099b63545
     </script>
 
     <!-- Bootstrap stuff -->
