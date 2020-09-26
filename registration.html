@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Make-a-Ton 2020</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178661102-1"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Make-a-Ton 2020</title>
+        <link rel = "icon" href ="favicon.ico"  type = "image/x-icon">
+        <!-- SOE stuff.-->
+        <!-- Primary Meta Tags -->
     
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/data/sponsors.js"></script>
-    <script src="./assets/data/schedule.js"></script>
-    <script src="./assets/js/anime.min.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-    crossorigin="anonymous"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+        <meta name="title" content="Make-a-Ton 2020" />
+        <meta
+          name="description"
+          content="Guess what? Make-a-Ton is Back! A 48-hour flagship hackathon from CUSAT for University students to embrace the spirit of innovation."
+        />
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://makeaton.org/" />
+        <meta property="og:title" content="Make-a-Ton 2020" />
+        <meta
+          property="og:description"
+          content="Guess what? Make-a-Ton is Back! A 48-hour flagship hackathon from CUSAT for University students to embrace the spirit of innovation."
+        />
+        <meta
+          property="og:image"
+          content="https://make-a-ton.github.io/website-2020/assets/img/metatag.png"
+        />
+    
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://makeaton.org/" />
+        <meta property="twitter:title" content="Make-a-Ton 2020" />
+        <meta
+          property="twitter:description"
+          content="Guess what? Make-a-Ton is Back! A 48-hour flagship hackathon from CUSAT for University students to embrace the spirit of innovation."
+        />
+        <meta
+          property="twitter:image"
+          content="https://make-a-ton.github.io/website-2020/assets/img/metatag.png"
+        />
+    
+        <!--END OF SEO  -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-178661102-1"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+    
+          gtag("config", "UA-178661102-1");
+        </script>
+        <!-- <script src="./assets/js/script.js"></script> -->
+        <script src="./assets/data/sponsors.js"></script>
+        <script src="./assets/data/schedule.js"></script>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 </head>
 <body style="background-color: black">
     <!--Nav bar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo.png" width="80" height="80" alt="" />
-            <p>MAKE-A-TON</p>
-            </a>
-            <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/img/logo.png"
+            width="80"
+            height="80"
+            alt="Make-a-Ton Logo"
+          />
+          <p>MAKE-A-TON</p>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li
+              class="nav-item nav-active"
+              data-toggle="collapse"
+              data-target="#navbarText"
+              id="homeLink"
             >
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ml-auto">
-                <li
-                class="nav-item"
-                data-toggle="collapse"
-                data-target="#navbarText"
-                >
-                <a class="nav-link" href="./index.html"
-                    >HOME<span class="sr-only">(current)</span></a
-                >
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./index.html#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./index.html#schedule">SCHEDULE</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./index.html#sponsors">SPONSORS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./index.html#faq">FAQs</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./index.html#contact">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./team.html">TEAM</a>
-                </li>
-                <button class="cta">REGISTRATION COMING SOON</button>
-            </ul>
-            </div>
-        </nav>
+              <a class="nav-link" href="#"
+                >HOME<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item" id="aboutLink">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item" id="scheduleLink">
+              <a class="nav-link" href="#schedule">SCHEDULE</a>
+            </li>
+            <li class="nav-item" id="sponsorsLink">
+              <a class="nav-link" href="#sponsors">SPONSORS</a>
+            </li>
+            <li class="nav-item" id="faqLink">
+              <a class="nav-link" href="#faqq">FAQs</a>
+            </li>
+            <li class="nav-item" id="contactLink">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+            <li class="nav-item" id="teamLink">
+              <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <button class="cta">REGISTRATION COMING SOON</button>
+          </ul>
+        </div>
+      </nav>
     <!-- ---------------------Nav-bar ends---------------------------------->
     <!------------------------Form section Start------------------------->
 
