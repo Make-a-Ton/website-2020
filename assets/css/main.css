@@ -767,30 +767,63 @@ h3 {
   }
 }
 /*-------------Registration-----------------*/
-.formdiv {
-  background: white;
-  max-width: 50vw;
-  max-height: 300vh;
-  margin: 310px;
-  margin-top: 150px;
-  border-radius: 9px;
-  padding: 50px;
+.registration_form_div{
+  margin-top: 120px;
+  background-color: rgb(31, 31, 31);
   text-align: center;
+  padding: 40px;
+  max-width: 40vw !important;
+  border-radius: 5px;
 }
-.formdiv h2 {
-  color: black;
+.registration_form_div h4,p{
+  color: #ffffff;
 }
-.formdiv_contentdiv {
-  align-content: center;
+.form-group label{
+  color: white;
 }
 
-@media screen and (max-width: 700px) {
-  .formdiv {
-    margin: 10px;
-    max-width: 800px;
-    margin-top: 100px;
-    padding: 5px;
-    font-size: small !important;
+input[type=text]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=text]:focus {
+  background-color: rgb(31, 31, 31) !important;
+  color: white ;
+}
+input[type=tel]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=tel]:focus{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+input[type=email]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=email]:focus{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+input[type=radio]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=radio]:focus{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+.form-check-label{
+  color: white;
+}
+@media screen and (max-width: 600px){
+  .registration_form_div{
+    max-width: 150vw !important;
   }
 }
 
