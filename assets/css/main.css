@@ -767,60 +767,65 @@ h3 {
   }
 }
 /*-------------Registration-----------------*/
-.formdiv {
-  background: white;
-  max-width: 50vw;
-  max-height: 300vh;
-  margin: 310px;
-  margin-top: 150px;
-  border-radius: 9px;
-  padding: 50px;
+.registration_form_div{
+  margin-top: 120px;
+  background-color: rgb(31, 31, 31);
   text-align: center;
+  padding: 40px;
+  max-width: 40vw !important;
+  border-radius: 5px;
 }
-.formdiv h2 {
-  color: black;
+.registration_form_div h4,p{
+  color: #ffffff;
 }
-.formdiv_contentdiv {
-  align-content: center;
-}
-@media screen and (max-width: 990px){
-  .formdiv{
-    width: 900px;
-    margin-top: 100px !important;
-    margin: auto;
-    padding: 5px;
-    font-size: small !important;
-  }
+.form-group label{
+  color: white;
 }
 
-@media screen and (max-width: 700px) {
-  .formdiv {
-    margin: 10px;
-    max-width: 500px !important;
-    margin-top: 100px;
-    margin-left: 10%;
-    padding: 5px;
-    font-size: small !important;
+input[type=text]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=text]:focus {
+  background-color: rgb(31, 31, 31) !important;
+  color: white ;
+}
+input[type=tel]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=tel]:focus{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+input[type=email]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=email]:focus{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+input[type=radio]{
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0E76BB;
+}
+input[type=radio]:focus{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+.form-check-label{
+  color: white;
+}
+@media screen and (max-width: 600px){
+  .registration_form_div{
+    max-width: 150vw !important;
   }
 }
-@media screen and (max-width: 590px){
-  .formdiv{
-    max-width: 350px !important;
-    margin-top: 100px !important;
-    margin-left: auto;
-    padding: 5px;
-    font-size: small !important;
-  }
-}
-@media screen and (max-width: 370px){
-  .formdiv{
-    margin-left: auto;
-    max-width: 300px !important;
-    margin-top: 100px !important;
-    font-size: small !important;
-  }
-}
-
 
 /*-------------Registration end-----------------*/
 /* End of Section for Kiran */
