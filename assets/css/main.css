@@ -355,6 +355,9 @@ body::-webkit-scrollbar-thumb:hover {
   .smallBox p {
     font-size: 12px !important;
   }
+  .smallBox {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 770px) {
   .custom-space-1 {
@@ -454,7 +457,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .smallBox h2 {
     font-size: 22px !important;
-    padding: 0 !important;
+    padding: 10px !important;
     margin: 0 !important;
   }
   .smallBox p {
