@@ -838,6 +838,25 @@ input[type="radio"]:focus {
 }
 
 /*-------------Registration end-----------------*/
+/*-------------success page----------------*/
+.body{
+  height: 100vh;
+}
+.success-page-div{
+  width: 100% !important;
+  min-height: 500px;
+  max-height: 80vh;
+}
+.success-msg-div{
+  align-items: center;
+  text-align: center;
+  padding-top: 170px;
+  
+}
+.success-msg-div h2{
+  color: #0E76BB;
+}
+
 /* End of Section for Kiran */
 
 /* Section for Abhinav */
