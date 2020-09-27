@@ -353,10 +353,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 25px !important;
   }
   .smallBox p {
-    font-size: 12px !important;
+    font-size: 15px !important;
   }
   .smallBox {
     width: 300px;
+    height: 180px !important;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -384,6 +385,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 310px !important;
     padding: 20px;
     align-items: center;
+    height: 200px !important;
   }
   .smallBox h2 {
     font-size: 28px !important;
@@ -461,7 +463,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 !important;
   }
   .smallBox p {
-    font-size: 13px !important;
+    font-size: 15px !important;
     padding: 0 !important;
     margin: 0 !important;
   }
@@ -839,22 +841,21 @@ input[type="radio"]:focus {
 
 /*-------------Registration end-----------------*/
 /*-------------success page----------------*/
-.body{
+.body {
   height: 100vh;
 }
-.success-page-div{
+.success-page-div {
   width: 100% !important;
   min-height: 500px;
   max-height: 80vh;
 }
-.success-msg-div{
+.success-msg-div {
   align-items: center;
   text-align: center;
   padding-top: 170px;
-  
 }
-.success-msg-div h2{
-  color: #0E76BB;
+.success-msg-div h2 {
+  color: #0e76bb;
 }
 
 /* End of Section for Kiran */
@@ -1245,19 +1246,23 @@ input[type="radio"]:focus {
 .smallBox {
   max-width: 400px !important;
   width: auto;
-  height: 220px !important;
+  height: 220px;
   /* background: linear-gradient(172.06deg, #0e76bc 22.18%, #56b3ed 106.1%); */
   /* box-shadow: 0px 20px 84px rgba(14, 118, 188, 0.3); */
   background: linear-gradient(0deg, #474747 0%, #2e2e2e 100%);
   border-radius: 18px;
   display: flex;
   align-items: center;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   flex-direction: column;
   color: white;
   text-align: center;
   margin-bottom: 40px;
   padding: 20px !important;
+}
+
+.smallBox p {
+  font-size: 19px;
 }
 
 .aboutHeading {
