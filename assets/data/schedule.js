@@ -27,18 +27,18 @@ var before_day_events = [
       Event: "Registration start",
     },
     left: {
-      Date: "2 October 2020",
+      Date: "15 October 2020",
       Event: "Registration end",
     },
   },
   {
     Right: {
-      Date: "8 October 2020",
-      Event: "Team Formation",
+      Date: "31 October 2020",
+      Event: "Event begins",
     },
     left: {
-      Date: "15 October 2020",
-      Event: "Domain Release",
+      Date: "2 November 2020",
+      Event: "Event Ends",
     },
   },
 ];
