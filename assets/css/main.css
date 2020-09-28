@@ -1179,10 +1179,10 @@ input[type="number"]:focus {
 
 @media screen and (max-width: 480px) {
   .whyHead {
-    font-size: 30px;
+    font-size: 25px;
   }
   .imgContainer:hover .whyDesc p {
-    font-size: 12px !important;
+    font-size: 11px !important;
     height: 20px !important;
     font-weight: 400 !important;
   }
@@ -1213,7 +1213,7 @@ input[type="number"]:focus {
   opacity: 1 !important;
   height: 60px !important;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  font-size: 17px !important;
+  font-size: 15px !important;
   line-height: 20px !important;
   font-weight: 400 !important;
 }
