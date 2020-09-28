@@ -23,7 +23,7 @@ var schedule_day2 = [
 var before_day_events = [
   {
     Right: {
-      Date: "26 September 2020",
+      Date: "28 September 2020",
       Event: "Registration start",
     },
     left: {
