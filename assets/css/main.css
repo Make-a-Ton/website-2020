@@ -830,6 +830,15 @@ input[type="radio"]:focus {
   background-color: rgb(31, 31, 31);
   color: white;
 }
+input[type="number"] {
+  background-color: rgb(31, 31, 31);
+  border: none;
+  border-bottom: 3px solid #0e76bb;
+}
+input[type="number"]:focus {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
 .form-check-label {
   color: white;
 }
