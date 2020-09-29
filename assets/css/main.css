@@ -849,6 +849,33 @@ input[type="number"]:focus {
 }
 
 /*-------------Registration end-----------------*/
+/*  -----------------reg test-------------*/
+.regtest_form_div{
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+.form_element{
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+input[type="test"] {
+
+  margin-top: 39px;
+  align-content: center;
+  
+  
+}
+
+
+
+
+
+
+
+
+/*  -----------------reg testend-------------*/
 /*-------------success page----------------*/
 .body {
   height: 100vh;
