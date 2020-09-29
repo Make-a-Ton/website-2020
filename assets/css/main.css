@@ -795,30 +795,28 @@ p {
 }
 
 input[type="text"] {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(2, 2, 2);
   border: none;
+  margin-top: 8vh;
+  border-color: transparent;
   border-bottom: 3px solid #0e76bb;
 }
 input[type="text"]:focus {
-  background-color: rgb(31, 31, 31) !important;
+  background-color: rgb(0, 0, 0) !important;
+  border-color: transparent;
   color: white;
 }
-input[type="tel"] {
-  background-color: rgb(31, 31, 31);
-  border: none;
-  border-bottom: 3px solid #0e76bb;
-}
-input[type="tel"]:focus {
-  background-color: rgb(31, 31, 31);
-  color: white;
-}
+
 input[type="email"] {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(2, 2, 2);
   border: none;
+  margin-top: 8vh;
+  border-color: transparent;
   border-bottom: 3px solid #0e76bb;
 }
 input[type="email"]:focus {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(0, 0, 0) !important;
+  border-color: transparent;
   color: white;
 }
 input[type="radio"] {
@@ -851,12 +849,12 @@ input[type="number"]:focus {
 /*-------------Registration end-----------------*/
 /*  -----------------reg test-------------*/
 .regtest_form_div{
-  margin-top: 100px;
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
+  margin-top: 100px;
 }
 .form_element{
-  height: 100vh;
+  height: 120vh;
   padding-top: 10vh;
 }
 
@@ -867,9 +865,19 @@ input[type="test"] {
   
   
 }
+.welcometoreg{
+  margin-top: 100px;
+  padding-top: 9vh;
+  height: 100vh;
+  color: #0e76bb;
+  text-align: center;
+}
 
-
-
+@media screen and (min-width: 1024px){
+  .regspace-div{
+    height: 8vh;
+  }
+}
 
 
 
