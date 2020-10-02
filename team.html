@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make-a-Ton 2020</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178661102-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-178661102-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-178661102-1');
+      gtag("config", "UA-178661102-1");
     </script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/data/sponsors.js"></script>
@@ -29,7 +34,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body style="background-color: black ; height:100%;">
+  <body style="background-color: black; height: 100%">
     <!-- /* Section for Naseem */ -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a class="navbar-brand" href="index.html">
@@ -51,11 +56,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
-          <li
-            class="nav-item"
-            data-toggle="collapse"
-            data-target="#navbarText"
-          >
+          <li class="nav-item" data-toggle="collapse" data-target="#navbarText">
             <a class="nav-link" href="./index.html"
               >HOME<span class="sr-only">(current)</span></a
             >
@@ -78,47 +79,63 @@
           <li class="nav-item nav-active">
             <a class="nav-link" href="./team.html">TEAM</a>
           </li>
-          <button class="cta" onclick="window.location.href='./registration.html';">REGISTER NOW</button>
+          <li class="nav-item" id="blogLink">
+            <a class="nav-link" href="https://medium.com/writeabyte">BLOG</a>
+          </li>
+          <button
+            class="cta"
+            onclick="window.location.href='./registration.html';"
+          >
+            REGISTER NOW
+          </button>
         </ul>
       </div>
     </nav>
-   
+
     <!-- ........................ -->
     <!-- Section: Team v.1 -->
     <section class="container-fluid team-section text-center my-5">
       <h2 class="h1-responsive font-weight-bold team-title">MEET THE TEAM</h2>
 
       <div class="row card-wrap" id="team">
-          <div class="masthead loadingFadeOut">
-            <div class="container-fluid h-100">
-              <img width="100" height="100" src="./assets/img/loading.svg" alt="">
-              <p>Loading</p>
-            </div>
+        <div class="masthead loadingFadeOut">
+          <div class="container-fluid h-100">
+            <img
+              width="100"
+              height="100"
+              src="./assets/img/loading.svg"
+              alt=""
+            />
+            <p>Loading</p>
           </div>
-
+        </div>
       </div>
     </section>
     <!-- Section: Team v.1 -->
 
-    
-
-  
-        
-    <footer class="container-fluid footer-main ">
-        
-            <div class="row footer-sub" >
-                <div class="col-md-6 social-icon foot-social">
-                   <a href="#" class="fa fa-facebook"></a>
-                   <a href="http://www.twitter.com/MakeaTonCusat" class="fa fa-twitter"></a>
-                   <a href="https://www.linkedin.com/company/makeaton" class="fa fa-linkedin"></a>
-                   <a href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo" class="fa fa-instagram"></a>
-                </div>
-                <div class="col-md-6 code">
-                  <a href="./assets/Code of Conduct.pdf" target="_blank"
-                    >Code of conduct </a>| <a href="http://cittic.cusat.ac.in/">CITTIC © 2020</a>
-                </div>
-            </div>
-       
+    <footer class="container-fluid footer-main">
+      <div class="row footer-sub">
+        <div class="col-md-6 social-icon foot-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a
+            href="http://www.twitter.com/MakeaTonCusat"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/makeaton"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://instagram.com/makeaton.cusat?igshid=183k7nv268zfo"
+            class="fa fa-instagram"
+          ></a>
+        </div>
+        <div class="col-md-6 code">
+          <a href="./assets/Code of Conduct.pdf" target="_blank"
+            >Code of conduct </a
+          >| <a href="http://cittic.cusat.ac.in/">CITTIC © 2020</a>
+        </div>
+      </div>
     </footer>
     <!-- // /* End of Section for Abhinav */ -->
 
@@ -127,7 +144,7 @@
     <script src="./assets/data/contact.js"></script>
     <script src="./assets//data/team.js"></script>
     <script src="./assets/js/team.js"></script>
-   
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
