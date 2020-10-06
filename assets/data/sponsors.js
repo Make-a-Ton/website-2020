@@ -15,4 +15,8 @@ let sponsorsList = [
     name: "Developer Student Clubs, CUSAT",
     photo: "https://make-a-ton.github.io/website-2020/assets/img/dsc-light.png",
   },
+  {
+    name: "BALSAMIQ",
+    photo: "https://2019.makeaton.org/images/balsamiq.svg",
+  },
 ];
