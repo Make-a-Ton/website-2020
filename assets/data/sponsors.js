@@ -17,6 +17,6 @@ let sponsorsList = [
   },
   {
     name: "BALSAMIQ",
-    photo: "https://2019.makeaton.org/images/balsamiq.svg",
+    photo: "https://make-a-ton.github.io/website-2020/assets/img/balsamiq.svg",
   },
 ];
