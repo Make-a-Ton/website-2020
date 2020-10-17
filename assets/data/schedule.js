@@ -27,7 +27,7 @@ var before_day_events = [
       Event: "Registration start",
     },
     left: {
-      Date: "15 October 2020",
+      Date: "18 October 2020",
       Event: "Registration end",
     },
   },

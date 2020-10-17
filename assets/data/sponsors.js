@@ -19,4 +19,13 @@ let sponsorsList = [
     name: "BALSAMIQ",
     photo: "https://make-a-ton.github.io/website-2020/assets/img/balsamiq.svg",
   },
+  {
+    name: "Word Press Kochi",
+    photo: "https://make-a-ton.github.io/website-2020/assets/img/wpkochi.png",
+  },
+  {
+    name: "Voiceflow",
+    photo:
+      "https://make-a-ton.github.io/website-2020/assets/img/voiceflow-logo.svg",
+  },
 ];
