@@ -901,6 +901,55 @@ input[type="test"] {
 .success-msg-div h2 {
   color: #0e76bb;
 }
+/*------------------ Meet the team--------------------*/
+.mentor_image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.mentor:hover .mentor_image {
+  opacity: 0.3;
+}
+
+.mentor:hover .mentor_middle {
+  opacity: 1;
+}
+
+.mentor_text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.mentor_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 770px){
+.mentor{
+  margin-top: 20px;
+}
+}
+@media screen and (min-width: 1200px){
+.mentor{
+  height: 50vh;
+}
+}
+@media screen and (min-width: 768px){
+.mentor{
+  height: 95%;
+}
+}
 
 /* End of Section for Kiran */
 
