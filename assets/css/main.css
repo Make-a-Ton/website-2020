@@ -848,24 +848,21 @@ input[type="number"]:focus {
 
 /*-------------Registration end-----------------*/
 /*  -----------------reg test-------------*/
-.regtest_form_div{
+.regtest_form_div {
   text-align: left;
   border-radius: 5px;
   margin-top: 100px;
 }
-.form_element{
+.form_element {
   height: 120vh;
   padding-top: 10vh;
 }
 
 input[type="test"] {
-
   margin-top: 39px;
   align-content: center;
-  
-  
 }
-.welcometoreg{
+.welcometoreg {
   margin-top: 100px;
   padding-top: 9vh;
   height: 100vh;
@@ -873,15 +870,11 @@ input[type="test"] {
   text-align: center;
 }
 
-@media screen and (min-width: 1024px){
-  .regspace-div{
+@media screen and (min-width: 1024px) {
+  .regspace-div {
     height: 8vh;
   }
 }
-
-
-
-
 
 /*  -----------------reg testend-------------*/
 /*-------------success page----------------*/
@@ -902,12 +895,12 @@ input[type="test"] {
   color: #0e76bb;
 }
 /*------------------ Meet the team--------------------*/
-.mentor_image{
+.mentor_image {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 .mentor:hover .mentor_image {
@@ -925,7 +918,7 @@ input[type="test"] {
 }
 
 .mentor_middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -935,20 +928,20 @@ input[type="test"] {
   text-align: center;
 }
 
-@media screen and (max-width: 770px){
-.mentor{
-  margin-top: 20px;
+@media screen and (max-width: 770px) {
+  .mentor {
+    margin-top: 20px;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .mentor {
+    height: 50vh;
+  }
 }
-@media screen and (min-width: 1200px){
-.mentor{
-  height: 50vh;
-}
-}
-@media screen and (min-width: 768px){
-.mentor{
-  height: 95%;
-}
+@media screen and (min-width: 768px) {
+  .mentor {
+    height: 95%;
+  }
 }
 
 /* End of Section for Kiran */
@@ -1722,4 +1715,19 @@ input[type="test"] {
 
 /* End of tracks */
 
+/* Orientation Page */
+.orientation-page-div {
+  width: 100% !important;
+  min-height: 500px;
+  max-height: 80vh;
+}
+.orientation-msg-div {
+  align-items: center;
+  text-align: center;
+  padding-top: 170px;
+}
+.orientation-msg-div h2 {
+  color: #0e76bb;
+}
+/* Orientation page ends */
 /* End of Section for Ajal */
