@@ -56,20 +56,7 @@ var before_day_events = [
       time: "10:00 am - 10:30 am"
     },
   },
-  {
-    Right: {
-      Date: "31 October 2020",
-      Event: "Milestone check 1",
-      by: "",
-      time: "05:00 pm"
-    },
-    left: {
-      Date: "01 November 2020",
-      Event: "Speaker Session",
-      by: "Mr. Hari Shanker R<br>WordPress Community Manager at Automattic",
-      time: "10:00 am - 10:30 am"
-    },
-  },
+  
   {
     Right: {
       Date: "01 November 2020",
@@ -92,7 +79,7 @@ var before_day_events = [
       time: "10:00 pm"
     },
     left: {
-      Date: "01 November 2020",
+      Date: "02 November 2020",
       Event: "Event Ends & Upload code",
       by: "",
       time: "10:00 am"
