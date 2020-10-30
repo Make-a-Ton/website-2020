@@ -118,6 +118,9 @@
           <li class="nav-item" id="blogLink">
             <a class="nav-link" href="https://medium.com/writeabyte">BLOG</a>
           </li>
+          <li class="nav-item" id="events">
+            <a class="nav-link" href="https://live.makeaton.org/">EVENTS</a>
+          </li>
           <button
             class="cta"
             onclick="window.location.href='./registration.html';"
@@ -419,15 +422,15 @@
         // console.log("iuadiu");
       },
       onResponse: function (error, response) {
-          // console.log("resodjsd");
-          console.log(response);
-          if (response.data == "ok") {
-            // window.location.href =
-            //   "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
-            successTemplate: "<span>Thank you!</span>";
-            window.location.href = "https://makeaton.org/success.html";
-          }
-        },
+        // console.log("resodjsd");
+        console.log(response);
+        if (response.data == "ok") {
+          // window.location.href =
+          //   "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
+          successTemplate: "<span>Thank you!</span>";
+          window.location.href = "https://makeaton.org/success.html";
+        }
+      },
     });
   </script>
 </html>

@@ -26,7 +26,7 @@
     />
   </head>
   <body style="background-color: black">
-    <div class="container-fluid h-100 success-page-div">
+    <div class="container-fluid h-100 orientation-page-div">
       <!-----------------------------Nav bar---------------------------------------------->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="index.html">
@@ -53,46 +53,62 @@
               data-toggle="collapse"
               data-target="#navbarText"
             >
-              <a class="nav-link" href="./index.html"
+              <a class="nav-link" href="https://makeaton.org/index.html"
                 >HOME<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#about">ABOUT</a>
+              <a class="nav-link" href="https://makeaton.org/index.html#about"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#schedule">SCHEDULE</a>
+              <a
+                class="nav-link"
+                href="https://makeaton.org/index.html#schedule"
+                >SCHEDULE</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#sponsors">SPONSORS</a>
+              <a
+                class="nav-link"
+                href="https://makeaton.org/index.html#sponsors"
+                >SPONSORS</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#faq">FAQs</a>
+              <a class="nav-link" href="https://makeaton.org/index.html#faq"
+                >FAQs</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#contact">CONTACT</a>
+              <a class="nav-link" href="https://makeaton.org/index.html#contact"
+                >CONTACT</a
+              >
             </li>
             <li class="nav-item nav">
-              <a class="nav-link" href="./team.html">TEAM</a>
+              <a class="nav-link" href="https://makeaton.org/team.html">TEAM</a>
             </li>
             <li class="nav-item" id="blogLink">
               <a class="nav-link" href="https://medium.com/writeabyte">BLOG</a>
-            </li>
-            <li class="nav-item" id="events">
-              <a class="nav-link" href="https://live.makeaton.org/">EVENTS</a>
             </li>
           </ul>
         </div>
       </nav>
       <!-----------------------------Nav bar end---------------------------------------------->
 
-      <div class="container success-msg-div">
-        <h2>You have successfully registered</h2>
-        <img src="./assets/img/email.png" style="width: 30vw" />
+      <div class="container orientation-msg-div">
+        <!-- <img src="./assets/img/waiting.svg" style="width: 25vw" /> -->
+        <div
+          id="demo"
+          class="col col-12 text-center count-text hx h2 d-flex justify-content-center"
+        >
+          __ __ __
+        </div>
         <br />
-        <h4>you will receive a mail from us shortly</h4>
+        <br />
+        <h2 id="tuneText">Tune in at 2 PM on 29.10.2020 for the orientation</h2>
       </div>
-
       <br />
       <br />
     </div>
@@ -102,6 +118,7 @@
     <script src="./assets/data/contact.js"></script>
     <script src="./assets//data/team.js"></script>
     <script src="./assets/js/team.js"></script>
+    <script src="./assets/js/countdown1.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
