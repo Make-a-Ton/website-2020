@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("October 28 , 2020 23:17:00").getTime();
+var countDownDate = new Date("October 29 , 2020 14:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -18,9 +18,6 @@ var x = setInterval(function () {
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML =
     "<div class='p-2'>" +
-    days +
-    "<br> <small> days </small> </div>" +
-    "<div class='p-2'>" +
     hours +
     " <br> <small> hours </small> </div>" +
     "<div class='p-2'>" +
@@ -33,6 +30,12 @@ var x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Done!";
+    document.getElementById("demo").innerHTML =
+      "<div class='yt-embed'>" +
+      // "<iframe class='yt-window' src='https://www.youtube.com/embed/CXLGWnLahdg' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
+      // "<div class='count-btn'><a href='https://www.youtube.com/watch?v=S5Bt7PUgLL8&ab_channel=Make-a-Ton2020'>Continue watching on Youtube to interact with the speakers!</a></div>" +
+      "<div class='click-btn'><a href='https://www.youtube.com/watch?v=oS1BTuuAeCs'>Stream on Youtube</a></div>" +
+      "</div>";
+    document.getElementById("tuneText").style.display = "none";
   }
 }, 1000);

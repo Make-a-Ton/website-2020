@@ -1724,7 +1724,7 @@ input[type="test"] {
 .orientation-msg-div {
   align-items: center;
   text-align: center;
-  padding-top: 170px;
+  padding-top: 100px;
 }
 .orientation-msg-div h2 {
   color: #0e76bb;
@@ -1732,6 +1732,125 @@ input[type="test"] {
 
 .count-text {
   color: #0e76bb;
+}
+
+.count-btn {
+  margin-top: 20px;
+}
+
+.count-btn:hover {
+  cursor: pointer;
+}
+
+.yt-embed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.count-btn a {
+  color: #56b3ed;
+  transition: all cubic-bezier(0.73, -0.04, 0.14, 1.34);
+  transition-duration: 0.5s;
+}
+
+.count-btn a:hover {
+  color: #0099ff;
+  text-decoration: underline;
+}
+
+.click-btn,
+.link-btn {
+  min-width: 100px;
+  min-height: 50px;
+  background-color: #0e76bc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.click-btn:hover,
+.link-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 1s ease-in-out;
+}
+
+.click-btn a,
+.link-btn a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.click-btn a:hover,
+.link-btn a:hover {
+  color: white;
+}
+
+.list-events {
+  border-color: #0e76bc;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 8px #0e76bc96;
+}
+
+.btn-disabled {
+  min-width: 100px;
+  min-height: 50px;
+  color: white;
+  background-color: rgb(145, 143, 143);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.eventsDiv {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventsDiv p {
+  margin: 0px !important;
+}
+
+.ImpText {
+  font-size: 20px;
+}
+
+.smallText {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 520px) {
+  .yt-window {
+    height: 350px;
+  }
+
+  .ImpText {
+    font-size: 15px;
+  }
+
+  .smallText {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 521px) {
+  .yt-window {
+    height: 350px;
+    width: 500px;
+  }
 }
 
 /* Orientation page ends */
