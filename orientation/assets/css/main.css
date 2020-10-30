@@ -1762,14 +1762,14 @@ input[type="test"] {
 
 .click-btn,
 .link-btn {
-  min-width: 100px;
+  max-width: 170px;
   min-height: 50px;
   background-color: #0e76bc;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: large;
+  font-size: 16px;
 }
 
 .click-btn:hover,
