@@ -106,13 +106,17 @@ function before_day() {
     <div class="containernew leftnew lax" data-lax-preset="fadeIn blurIn-5">
     <div class="contentnew">
       <h2>${ele.Right.Date}</h2>
-      <p>${ele.Right.Event}</p>
+      <h3>${ele.Right.Event}</h3>
+      <h4 style = 'color: white;'>${ele.Right.by}</h4>
+      <p>${ele.Right.time}</p>
     </div>
   </div>
   <div class="containernew rightnew lax" data-lax-preset="fadeIn blurIn-5">
     <div class="contentnew">
     <h2>${ele.left.Date}</h2>
-    <p>${ele.left.Event}</p>
+      <h3>${ele.left.Event}</h3>
+      <h4 style = 'color: white;'>${ele.left.by}</h4>
+      <p>${ele.left.time}</p>
     </div>
   </div>
       `;
