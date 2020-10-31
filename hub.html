@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        html,body{
-            margin: 0;
-            padding: 0;
-        }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-        <iframe id="screen"src="https://hubs.mozilla.com/JM9xED9/makeatontest/?embed_token=25a9de77259b945ed6b7d2723f952acb"  allow="microphone; camera; vr; speaker;"></iframe>
+  <body>
+    <iframe
+      id="screen"
+      src="https://hubs.mozilla.com/JM9xED9/makeatontest/?embed_token=25a9de77259b945ed6b7d2723f952acb"
+      allow="microphone; camera; vr; speaker;"
+    ></iframe>
 
     <script>
-        let screen = document.getElementById("screen");
-        window.onload = ()=>{
-            screen.style.width = window.innerWidth +"px";
-            screen.style.height = window.innerHeight +"px";
-        }
-        window.addEventListener('resize',()=>{
-            screen.style.width = window.innerWidth +"px";
-            screen.style.height = window.innerHeight +"px";
-        })
+      let screen = document.getElementById("screen");
+      window.onload = () => {
+        screen.style.width = window.innerWidth + "px";
+        screen.style.height = window.innerHeight + "px";
+      };
+      window.addEventListener("resize", () => {
+        screen.style.width = window.innerWidth + "px";
+        screen.style.height = window.innerHeight + "px";
+      });
     </script>
-</body>
+  </body>
 </html>
